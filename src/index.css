@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #0B0C0D;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+ font-family: 'Helvetica-Bold';
+ src: url('./fonts/HelveticaNeueLTStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'Helvetica';
+ src: url('./fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'Pixel';
+ src: url('./fonts/NeuePixelGrotesk.ttf') format('opentype');
 }
