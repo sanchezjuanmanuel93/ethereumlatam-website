@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react'
-import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import logo from '../assets/navbar-logo.svg'
 
-const Navbar = () => {
+const Footer = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const medium = 700
   return (
-    <NavbarSection>
+    <FooterSection>
       <Container>
-        <img alt="img" src={logo} />
-        {width >= medium && <p>Menu</p>}
+        <div>
+          <img alt="img" src={logo} />
+        </div>
         <GreenButton href="https://google.com" target="_blank">
-          <FormattedMessage id="hero.button" />!
+          Get Tickets!
         </GreenButton>
       </Container>
-    </NavbarSection>
+    </FooterSection>
   )
 }
 
-const NavbarSection = styled.section`
+const FooterSection = styled.section`
   background: #faf7f5;
   margin: auto;
   width: 100%;
@@ -58,4 +58,4 @@ const GreenButton = styled.a`
   color: #000000;
 `
 
-export default Navbar
+export default Footer

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import logo from '../assets/navbar-logo.svg'
 
@@ -15,7 +14,7 @@ const Navbar = () => {
         <img alt="img" src={logo} />
         {width >= medium && <p>Menu</p>}
         <GreenButton href="https://google.com" target="_blank">
-          <FormattedMessage id="hero.button" />!
+          Get Tickets!
         </GreenButton>
       </Container>
     </NavbarSection>

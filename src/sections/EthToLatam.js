@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
 import Loop from '../components/Loop'
 import date1 from '../assets/date1.svg'
 import date2 from '../assets/date2.svg'
@@ -10,34 +11,19 @@ const EthToLatam = () => (
   <EthToLatamSection>
     <Container>
       <h1>
-        B<span className="pixel">r</span>
-        ingin
-        <span className="pixel">g E</span>
-        TH <Arrow src={arrow} />
+        <FormattedHTMLMessage
+          id="ethtolatam.title"
+        />
+        <Arrow src={arrow} />
         <br />
         <Green>
-          t<span className="pixel">o</span> L<span className="pixel">a</span>
-          tam
+          <FormattedHTMLMessage id="ethtolatam.title2" />
           <Underline src={underline} />
         </Green>
       </h1>
       <TextBox>
-        <p>
-          The ETH Latam conference builds upon the work of the local pioneers
-          that laid the foundations for a <span>vibrant community</span> that
-          made crypto mainstream in one of the countries where it’s most needed.
-        </p>
-        <p>
-          In Latin America{' '}
-          <span>
-            the possibilities enabled by Ethereum are not an option, but the
-            alternative
-          </span>{' '}
-          for individuals to build a new system where no one is left behind. ETH
-          Latam brings together the global community of builders with one of the
-          most vibrant crypto communities on earth, who use Ethereum protocols
-          in their everyday lives.{' '}
-        </p>
+        <FormattedMessage id="ethtolatam.paragraph1" />
+        <FormattedMessage id="ethtolatam.paragraph2" />
       </TextBox>
     </Container>
     <Loop reverse content={<img src={date1} />} />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import Loop from '../components/Loop'
 import image from '../assets/carousel.png'
@@ -9,11 +10,11 @@ const Hero = () => (
     <Container>
       <Box>
         <p>
-          August
+          <FormattedMessage id="hero.month" />
           <br />
-          11-12-13-14
+          <FormattedMessage id="hero.date" />
           <br />
-          2022
+          <FormattedMessage id="hero.year" />
         </p>
         <img alt="img" src={logo} />
         <p className="green">
@@ -23,7 +24,7 @@ const Hero = () => (
         </p>
       </Box>
       <Button href="https://google.com" target="_blank">
-        get tickets!
+        <FormattedMessage id="hero.button" />!
       </Button>
     </Container>
     <Loop reverse={true} content={<img alt="img" src={image} />} />
