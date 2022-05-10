@@ -3,8 +3,7 @@
   "hero.month": "AGOSTO",
   "hero.year": "2022",
   "hero.button": "Obtener Tickets!",
-  "ethtolatam.titlesample": "S<span class='pixel'>o</span>br<span class='pixel'>e E</span>TH",
-  "ethtolatam.title": "B<span class='pixel'>pixellll</span>ingin TH",
+  "ethtolatam.title": "S<span class='pixel'>o</span>br<span class='pixel'>e E</span>TH",
   "ethtolatam.title2": "L<span class='pixel'>a</span>tam",
   "ethtolatam.paragraph1": "<p>La conferencia ETH Latam es posible gracias a las bases que sentaron los pioneros locales, quienes lograron construir una <span>comunidad vibrante</span> que logró que cripto sea mainstream en uno de los países que más lo necesita.</p>",
   "ethtolatam.paragraph2": "<p>En Latinoamérica las posibilidades que brinda Ethereum no son sólo una opción, sino la alternativa para que las personas construyan un nuevo sistema donde nadie se quede atrás. ETH Latam reúne a la comunidad global de creadores con una de las comunidades cripto más vibrantes del mundo, que utilizan los protocolos de Ethereum en su vida cotidiana.</p>",
@@ -25,5 +24,5 @@
   "faqs.6.title": "¿Cómo puedo organizar un side event?",
   "faqs.6.content": "<p>Nuestro objetivo con ETH Latam es fomentar la coordinación descentralizada de una eventos basados ​​en Ethereum. Naturalmente, habrá muchos más eventos, fiestas y actividades durante la semana de ETH Latam.</p><p>Si deseas organizar tu propio side event, aquí hay una lista de espacios co-working y bares en la ciudad.</p>",
   "faqs.7.title": "¿Preguntas o ideas?",
-  "faqs.7.content": "¿Tienes alguna pregunta o idea que quisieras sugerir? Envíanos un correo electrónico a correo electrónico a <a href='mailto:hello@ethlatam.org'>hello@ethlatam.org</a>"
+  "faqs.7.content": "¿Tienes alguna pregunta o idea que quisieras sugerir? Envíanos un correo electrónico a <a href='mailto:hello@ethlatam.org'>hello@ethlatam.org</a>"
 }

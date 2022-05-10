@@ -22,8 +22,8 @@ const EthToLatam = () => (
         </Green>
       </h1>
       <TextBox>
-        <FormattedMessage id="ethtolatam.paragraph1" />
-        <FormattedMessage id="ethtolatam.paragraph2" />
+        <FormattedHTMLMessage id="ethtolatam.paragraph1" />
+        <FormattedHTMLMessage id="ethtolatam.paragraph2" />
       </TextBox>
     </Container>
     <Loop reverse content={<img src={date1} />} />

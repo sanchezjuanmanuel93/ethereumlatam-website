@@ -73,9 +73,6 @@ export default function App() {
 
 const FaqsSection = styled.section`
   background: #0b0c0d;
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-position: left 300px;
   color: white;
   text-align: center;
   height: auto;
@@ -119,6 +116,9 @@ const FaqsSection = styled.section`
 `
 
 const Container = styled.div`
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-position: left bottom;
   max-width: 1440px;
   padding: 160px 40px;
   @media only screen and (min-width: 1440px) {

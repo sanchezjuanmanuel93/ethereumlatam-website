@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals'
 
 import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
-import messages_pt from './translations/es.json'
+import messages_pt from './translations/pt.json'
 
 
 

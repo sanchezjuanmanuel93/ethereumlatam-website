@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      
+      <EthToLatam />
       <Speakers />
       <Where />
       <Faqs/>
