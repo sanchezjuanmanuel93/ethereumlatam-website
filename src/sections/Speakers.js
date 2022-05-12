@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import background from '../assets/speakers-line.svg'
 import arrow from '../assets/arrow-down.svg'
 import alisha from '../assets/speakers/alisha.png'
 import alejo from '../assets/speakers/alejo.png'
@@ -518,28 +519,16 @@ const Arrow = styled.img`
   padding-bottom: 11px;
 `
 
-const TextBox = styled.div`
-  padding: 123px 0 0 434px;
-  p {
-    font-family: 'Helvetica';
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    color: #737373;
-    span {
-      color: #faf7f5;
-    }
-  }
-`
-
 const Container = styled.div`
   max-width: 1440px;
-  padding: 160px 40px;
+  padding: 160px 40px 320px 40px;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-position: right bottom;
   @media only screen and (min-width: 1440px) {
     margin: 0 auto;
   }
   text-align: left;
-  padding-bottom: 160px;
 `
 
 export default Speakers

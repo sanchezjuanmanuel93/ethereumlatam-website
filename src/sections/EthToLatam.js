@@ -83,7 +83,7 @@ const TextBox = styled.div`
 
 const Container = styled.div`
   max-width: 1440px;
-  padding: 160px 40px;
+  padding: 110px 40px 160px 40px;
   @media only screen and (min-width: 1440px) {
     margin: 0 auto;
   }

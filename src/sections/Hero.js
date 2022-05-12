@@ -1,5 +1,6 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
+import background from '../assets/hero-line.svg'
 import styled from 'styled-components'
 import Loop from '../components/Loop'
 import image from '../assets/carousel.png'
@@ -35,6 +36,10 @@ const HeroSection = styled.section`
   background: #0b0c0d;
   color: white;
   text-align: center;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 50px;
   height: auto;
   p {
     font-family: 'Pixel';
@@ -66,6 +71,14 @@ const Box = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 700px) {
+    padding-top: 70px;
+    flex-direction: column;
+    img {
+      max-width: 90%;
+      padding: 60px 0;
+    }
+  }
 `
 
 const Button = styled.a`
