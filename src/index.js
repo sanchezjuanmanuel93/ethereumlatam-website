@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import { IntlProvider } from 'react-intl'
 import { addLocaleData } from 'react-intl'
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
 import messages_pt from './translations/pt.json'
-
-
 
 const messages = {
   es: messages_es,
@@ -21,14 +20,16 @@ const messages = {
 let defaultLanguage = 'en'
 
 ReactDOM.render(
-  <IntlProvider
-    locale={localStorage.getItem('locale') || defaultLanguage}
-    messages={messages[localStorage.getItem('locale') || defaultLanguage]}
-  >
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </IntlProvider>,
+  <Router>
+    <IntlProvider
+      locale={localStorage.getItem('locale') || defaultLanguage}
+      messages={messages[localStorage.getItem('locale') || defaultLanguage]}
+    >
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </IntlProvider>
+  </Router>,
   document.getElementById('root')
 )
 

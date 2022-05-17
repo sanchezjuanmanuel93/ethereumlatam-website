@@ -10,7 +10,7 @@ import uniswap from '../assets/sponsors/uniswap.svg'
 import elementFi from '../assets/sponsors/elementFi.svg'
 import livepeer from '../assets/sponsors/livepeer.svg'
 import optimism from '../assets/sponsors/optimism.svg'
-import gearBox from '../assets/sponsors/gearbox.svg'
+import gearBox from '../assets/sponsors/gearBox.svg'
 import chainlink from '../assets/sponsors/chainlink.svg'
 import maker from '../assets/sponsors/maker.svg'
 import aave from '../assets/sponsors/aave.svg'
@@ -18,12 +18,10 @@ import ripio from '../assets/sponsors/ripio.svg'
 import belo from '../assets/sponsors/belo.svg'
 
 const Sponsors = () => (
-  <SponsorsSection>
+  <SponsorsSection id="sponsors">
     <Container>
       <h1>
-      <FormattedHTMLMessage
-        id="sponsors.title"
-      />
+        <FormattedHTMLMessage id="sponsors.title" />
       </h1>
       <Row>
         <BoxItem className="tierOne">
@@ -127,6 +125,11 @@ const SponsorsSection = styled.section`
     text-transform: uppercase;
     color: #faf7f5;
     position: relative;
+    @media only screen and (max-width: 700px) {
+      font-size: 44px;
+      line-height: 45px;
+      margin-bottom: 73px;
+    }
   }
   span.pixel {
     font-family: 'Pixel';
@@ -139,9 +142,18 @@ const Row = styled.div`
   justify-content: flex-end;
   outline: 1px solid white;
   max-width: 1134px;
+  @media only screen and (max-width: 700px) {
+    max-width: 360px;
+    width: 360px;
+  }
+  @media only screen and (min-width: 701px) and (max-width: 1230px) {
+    max-width: 600px;
+    width: 600px;
+  }
   margin-right: 0;
   margin-left: auto;
   margin-bottom: 1px;
+  flex-wrap: wrap;
 `
 
 const BoxInfo = styled.div`
@@ -149,6 +161,7 @@ const BoxInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 `
 
 const BoxItem = styled.div`
@@ -164,6 +177,12 @@ const BoxItem = styled.div`
   &.tierOne {
     height: 220px;
     width: 378px;
+    @media only screen and (max-width: 700px) {
+      width: 360px;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 1230px) {
+      width: 600px;
+    }
     .div {
       height: 216px;
       width: 374px;
@@ -172,6 +191,12 @@ const BoxItem = styled.div`
   &.tierTwo {
     height: 110px;
     width: 283.5px;
+    @media only screen and (max-width: 700px) {
+      width: 180px;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 1230px) {
+      width: 300px;
+    }
 
     .div {
       height: 106px;
@@ -181,6 +206,12 @@ const BoxItem = styled.div`
   &.tierThree {
     height: 88px;
     width: 189px;
+    @media only screen and (max-width: 700px) {
+      width: 120px;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 1230px) {
+      width: 200px;
+    }
 
     .div {
       height: 84px;
@@ -192,11 +223,31 @@ const BoxItem = styled.div`
 const Container = styled.div`
   max-width: 1440px;
   padding: 0 40px 160px 40px;
+  @media only screen and (max-width: 700px) {
+    padding: 0 15px 80px 15px;
+  }
   @media only screen and (min-width: 1440px) {
     margin: 0 auto;
   }
   text-align: left;
   padding-bottom: 160px;
 `
+
+// const Line = styled.div`
+//   position: relative;
+//   z-index: 1;
+//   left: -9px;
+//   width: 208px;
+//   top: 44px;
+//   height: 1px;
+//   background-color: white;
+//   transform: rotate(25deg);
+//   @media only screen and (max-width: 700px) {
+//     left: -14px;
+//     width: 147px;
+//     top: 43px;
+//     transform: rotate(36deg);
+//   }
+// `
 
 export default Sponsors

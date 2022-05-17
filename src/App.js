@@ -4,7 +4,8 @@ import EthToLatam from './sections/EthToLatam'
 import Speakers from './sections/Speakers'
 import Sponsors from './sections/Sponsors'
 import Faqs from './sections/Faqs'
-import Where from './sections/Where'
+import Venue from './sections/Venue'
+import Footer from './sections/Footer'
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <EthToLatam />
       <Speakers />
       <Sponsors />
-      <Where />
+      <Venue />
       <Faqs/>
+      <Footer />
     </div>
   )
 }

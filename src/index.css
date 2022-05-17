@@ -16,6 +16,9 @@ code {
 .indentation {
   padding-left: 160px;
 }
+.hamburguer-react {
+  z-index: 3!important;
+}
 
 @font-face {
  font-family: 'Helvetica-Bold';

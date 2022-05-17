@@ -1,4 +1,9 @@
 {
+  "navbar.about": "About",
+  "navbar.speakers": "Speakers",
+  "navbar.sponsors": "Sponsors",
+  "navbar.venue": "Venue",
+  "navbar.faqs": "Faqs",
   "hero.date": "11-12-13-14",
   "hero.month": "AUGUST",
   "hero.year": "2022",
@@ -19,7 +24,7 @@
   "faqs.3.title": "I'm new to Ethereum, can I participate?",
   "faqs.3.content": "Absolutely! Our agenda contemplates talks for both beginners and experienced people of the web3 world. The focus in general are those who are involved/interested in the Ethereum ecosystem and want to dive deeper!",
   "faqs.4.title": "How much does it cost to attend?",
-  "faqs.4.content": "The tickets are free! All updates regarding the tickets will be broadcasted via our <a href='https://twitter.com/ethlatam' target='_blank'>Twitter</a>, <a href='https://discord.gg/8swP4HjEbr' target='_blank'>Discord<a/> and <a href='' target='_blank'>Mirror<a/>.",
+  "faqs.4.content": "The tickets are free! All updates regarding the tickets will be broadcasted via our <a href='https://twitter.com/ethlatam' target='_blank'>Twitter</a> and <a href='https://discord.gg/8swP4HjEbr' target='_blank'>Discord<a/>.",
   "faqs.5.title": "Where to stay?",
   "faqs.5.content": "There are plenty of hotels near the venue. <a>Here<a/> you can find a list of recommended hotels",
   "faqs.6.title": "How can I host a side event?",

@@ -40,7 +40,7 @@ export default function App() {
   }
 
   return (
-    <FaqsSection>
+    <FaqsSection id="faqs">
       <Container>
         <h1>
           <FormattedHTMLMessage id="faqs.title" />
@@ -84,6 +84,11 @@ const FaqsSection = styled.section`
     text-transform: uppercase;
     color: #faf7f5;
     position: relative;
+    @media only screen and (max-width: 700px) {
+      font-size: 44px;
+      line-height: 45px;
+      margin-bottom: 73px;
+    }
   }
   span.pixel {
     font-family: 'Pixel';
@@ -121,6 +126,9 @@ const Container = styled.div`
   background-position: left bottom;
   max-width: 1440px;
   padding: 160px 40px;
+  @media only screen and (max-width: 700px) {
+    font-size: 80px 15px;
+  }
   @media only screen and (min-width: 1440px) {
     margin: 0 auto;
   }
