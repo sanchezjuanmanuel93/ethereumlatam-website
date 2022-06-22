@@ -7,7 +7,6 @@ import buenosAiresCiudad from '../assets/sponsors2/buenosAiresCiudad.svg'
 
 import ripio from '../assets/sponsors2/ripio.svg'
 import thinkandDev from '../assets/sponsors2/ThinkandDev.png'
-
 import belo from '../assets/sponsors2/belo.svg'
 import argent from '../assets/sponsors2/Argent.svg'
 import maker from '../assets/sponsors2/Maker.svg'
@@ -27,24 +26,19 @@ const Sponsors = () => (
         <FormattedHTMLMessage id="sponsors.title" />
       </h1>
       <Row>
-        <BoxItem className="tierZero">
+        <BoxItem className="tierOne">
           <BoxInfo>
             <img src={ripio} width="280"/>
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierZero">
+        <BoxItem className="tierOne">
           <BoxInfo>
           <img src={buenosAiresCiudad} width="350"/>
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierZero">
+        <BoxItem className="tierOne">
           <BoxInfo>
             <img src={thinkandDev} height="180"/>
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierZero">
-          <BoxInfo>
-            <img width="300" src={ethereumFoundation} />
           </BoxInfo>
         </BoxItem>
       </Row>
@@ -59,13 +53,15 @@ const Sponsors = () => (
             <img width="170" src={argent} />
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierTwo"/>
-        
-        <BoxItem className="tierTwo" />
+        <BoxItem className="tierTwo">
+          <BoxInfo>
+            <img width="300" src={ethereumFoundation} />
+          </BoxInfo>
+        </BoxItem>
+          <BoxItem className="tierTwo" />
     </Row>
     <Row>
-        <BoxItem className="tierTwo"/>
-        <BoxItem className="tierTwo">
+        <BoxItem className="tierTwo" >
           <BoxInfo>
             <img width="210" src={maker} />
           </BoxInfo>

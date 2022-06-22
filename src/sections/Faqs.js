@@ -20,10 +20,6 @@ export default function App() {
         content: intl.formatMessage({ id: 'faqs.3.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.4.title' }),
-        content: intl.formatMessage({ id: 'faqs.4.content' }),
-      },
-      {
         title: intl.formatMessage({ id: 'faqs.5.title' }),
         content: intl.formatMessage({ id: 'faqs.5.content' }),
       },
