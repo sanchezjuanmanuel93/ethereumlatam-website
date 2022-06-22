@@ -14,7 +14,7 @@ const Navbar = () => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const [isOpen, setOpen] = useState(false)
-  const medium = 700
+  const medium = 900
 
   return (
     <NavbarSection>

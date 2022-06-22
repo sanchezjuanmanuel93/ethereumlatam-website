@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 
 const Tabs = ({ mode }) => {
-  console.log(mode, 'mode')
   return (
     <TabsBox mode={mode}>
       <a href="#about">

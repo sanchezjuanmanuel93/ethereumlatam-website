@@ -1,21 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FormattedHTMLMessage } from 'react-intl'
-import ethereumFoundation from '../assets/sponsors/ethereumFoundation.svg'
-import yearn from '../assets/sponsors/yearn.svg'
-import buenosAiresCiudad from '../assets/sponsors/buenosAiresCiudad.svg'
-import theGraph from '../assets/sponsors/theGraph.svg'
-import connext from '../assets/sponsors/connext.svg'
-import uniswap from '../assets/sponsors/uniswap.svg'
-import elementFi from '../assets/sponsors/elementFi.svg'
-import livepeer from '../assets/sponsors/livepeer.svg'
-import optimism from '../assets/sponsors/optimism.svg'
-import gearBox from '../assets/sponsors/gearBox.svg'
-import chainlink from '../assets/sponsors/chainlink.svg'
-import maker from '../assets/sponsors/maker.svg'
-import aave from '../assets/sponsors/aave.svg'
-import ripio from '../assets/sponsors/ripio.svg'
-import belo from '../assets/sponsors/belo.svg'
+
+import ethereumFoundation from '../assets/sponsors2/ethereumFoundation.svg'
+import buenosAiresCiudad from '../assets/sponsors2/buenosAiresCiudad.svg'
+
+import ripio from '../assets/sponsors2/ripio.svg'
+import thinkandDev from '../assets/sponsors2/ThinkandDev.png'
+
+import belo from '../assets/sponsors2/belo.svg'
+import argent from '../assets/sponsors2/Argent.svg'
+import maker from '../assets/sponsors2/Maker.svg'
+import starkware from '../assets/sponsors2/starkware.png'
+import wink from '../assets/sponsors2/wink.svg'
+
+import theGraph from '../assets/sponsors2/TheGraph.svg'
+import exactly from '../assets/sponsors2/Exactly.jpg'
+import lens from '../assets/sponsors2/lens.svg'
+import lemon from '../assets/sponsors2/lemon.svg'
+import scroll from '../assets/sponsors2/Scroll.svg'
 
 const Sponsors = () => (
   <SponsorsSection id="sponsors">
@@ -24,87 +27,87 @@ const Sponsors = () => (
         <FormattedHTMLMessage id="sponsors.title" />
       </h1>
       <Row>
-        <BoxItem className="tierOne">
+        <BoxItem className="tierZero">
           <BoxInfo>
-            <img src={ethereumFoundation} />
+            <img src={ripio} width="280"/>
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierOne">
+        <BoxItem className="tierZero">
           <BoxInfo>
-            <img src={yearn} />
+          <img src={buenosAiresCiudad} width="350"/>
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierOne">
+        <BoxItem className="tierZero">
           <BoxInfo>
-            <img src={buenosAiresCiudad} />
+            <img src={thinkandDev} height="180"/>
           </BoxInfo>
         </BoxItem>
-      </Row>
-      <Row>
-        <BoxItem className="tierTwo">
+        <BoxItem className="tierZero">
           <BoxInfo>
-            <img src={theGraph} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img src={connext} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img src={uniswap} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img src={elementFi} />
+            <img width="300" src={ethereumFoundation} />
           </BoxInfo>
         </BoxItem>
       </Row>
       <Row>
         <BoxItem className="tierTwo">
           <BoxInfo>
-            <img src={livepeer} />
+            <img width="270" src={belo} />
           </BoxInfo>
         </BoxItem>
         <BoxItem className="tierTwo">
           <BoxInfo>
-            <img src={optimism} />
+            <img width="170" src={argent} />
           </BoxInfo>
         </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img src={gearBox} />
-          </BoxInfo>
-        </BoxItem>
+        <BoxItem className="tierTwo"/>
+        
         <BoxItem className="tierTwo" />
+    </Row>
+    <Row>
+        <BoxItem className="tierTwo"/>
+        <BoxItem className="tierTwo">
+          <BoxInfo>
+            <img width="210" src={maker} />
+          </BoxInfo>
+        </BoxItem>
+        <BoxItem className="tierTwo">
+          <BoxInfo>
+            <img width="220" src={starkware} />
+          </BoxInfo>
+        </BoxItem>
+        <BoxItem className="tierTwo">
+          <BoxInfo>
+            <img width="200" src={wink} />
+          </BoxInfo>
+        </BoxItem>
+        
+        
       </Row>
       <Row>
         <BoxItem className="tierThree" />
         <BoxItem className="tierThree">
           <BoxInfo>
-            <img src={chainlink} />
+            <img src={theGraph} />
           </BoxInfo>
         </BoxItem>
         <BoxItem className="tierThree">
           <BoxInfo>
-            <img src={maker} />
+            <img className="lens" src={lens} />
           </BoxInfo>
         </BoxItem>
         <BoxItem className="tierThree">
           <BoxInfo>
-            <img src={aave} />
+            <img width="120" src={exactly} />
           </BoxInfo>
         </BoxItem>
         <BoxItem className="tierThree">
           <BoxInfo>
-            <img src={ripio} />
+            <img src={lemon} />
           </BoxInfo>
         </BoxItem>
         <BoxItem className="tierThree">
           <BoxInfo>
-            <img src={belo} />
+            <img width="130" src={scroll} />
           </BoxInfo>
         </BoxItem>
       </Row>
@@ -174,6 +177,20 @@ const BoxItem = styled.div`
   img {
     overflow: hidden;
   }
+  &.tierZero {
+    height: 250px;
+    width: 567px;
+    @media only screen and (max-width: 700px) {
+      width: 360px;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 1230px) {
+      width: 600px;
+    }
+    .div {
+      height: 290px;
+      width: 560px;
+    }
+  }
   &.tierOne {
     height: 220px;
     width: 378px;
@@ -216,6 +233,12 @@ const BoxItem = styled.div`
     .div {
       height: 84px;
       width: 185px;
+    }
+    img {
+      max-width: 80%;
+      &.lens {
+        max-height: 100%;
+      }
     }
   }
 `

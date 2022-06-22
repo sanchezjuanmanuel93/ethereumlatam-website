@@ -5,7 +5,6 @@ import background from '../assets/faq-line.svg'
 
 export default function App() {
   const intl = useIntl()
-  console.log('faqq', intl.formatMessage({ id: 'faqs.1.title' }))
   const data = {
     rows: [
       {
