@@ -6,31 +6,37 @@ import Loop from '../components/Loop'
 import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = () => (
-  <HeroSection>
-    <Container>
-      <Box>
-        <p>
-          <FormattedMessage id="hero.month" />
-          <br />
-          <FormattedMessage id="hero.date" />
-          <br />
-          <FormattedMessage id="hero.year" />
-        </p>
-        <img alt="img" src={logo} />
-        <p className="green">
-          @BuenosAires
-          <br />
-          >> Argentina
-        </p>
-      </Box>
-      <Button target="_blank">
-        <FormattedMessage id="hero.button" />!
-      </Button>
-    </Container>
-    <Loop reverse={true} content={<img alt="img" src={image} />} />
-  </HeroSection>
-)
+const Hero = () => {
+  const locale = localStorage.getItem('locale')
+  return (
+    <HeroSection>
+      <Container>
+        <Box>
+          <p>
+            <FormattedMessage id="hero.month" />
+            <br />
+            <FormattedMessage id="hero.date" />
+            <br />
+            <FormattedMessage id="hero.year" />
+          </p>
+          <img alt="img" src={logo} />
+          <p className="green">
+            @BuenosAires
+            <br />
+            >> Argentina
+          </p>
+        </Box>
+        <Button
+          target="_blank"
+          className={locale == 'es' ? 'spanish' : 'other'}
+        >
+          <FormattedMessage id="hero.button" />!
+        </Button>
+      </Container>
+      <Loop reverse={true} content={<img alt="img" src={image} />} />
+    </HeroSection>
+  )
+}
 
 const HeroSection = styled.section`
   background: #0b0c0d;
@@ -99,6 +105,13 @@ const Button = styled.a`
   border: 3px solid #faf7f5;
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
+  @media only screen and (max-width: 700px) {
+    &.spanish {
+      padding: 0;
+      border: 0;
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
 `
 
 export default Hero
