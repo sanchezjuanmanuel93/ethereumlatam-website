@@ -14,10 +14,12 @@ import starkware from '../assets/sponsors2/starkware.png'
 import wink from '../assets/sponsors2/wink.svg'
 
 import theGraph from '../assets/sponsors2/TheGraph.svg'
-import exactly from '../assets/sponsors2/Exactly.jpg'
+import exactly from '../assets/sponsors2/exactly.svg'
 import lens from '../assets/sponsors2/lens.svg'
 import lemon from '../assets/sponsors2/lemon.svg'
 import scroll from '../assets/sponsors2/Scroll.svg'
+import ethGlobal from '../assets/sponsors2/ETHGlobal.svg'
+import decentraland from '../assets/sponsors2/decentraland.svg'
 
 const Sponsors = () => {
   const locale = localStorage.getItem('locale')
@@ -66,7 +68,11 @@ const Sponsors = () => {
               <img width="300" src={ethereumFoundation} />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierTwo" />
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width={width >= medium ? 200 : 150} src={decentraland} />
+            </BoxInfo>
+          </BoxItem>
         </Row>
         <Row>
           <BoxItem className="tierTwo">
@@ -86,7 +92,11 @@ const Sponsors = () => {
           </BoxItem>
         </Row>
         <Row>
-          <BoxItem className="tierThree" />
+        <BoxItem className="tierThree">
+          <BoxInfo>
+            <img src={ethGlobal} />
+          </BoxInfo>
+        </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo>
               <img src={theGraph} />
