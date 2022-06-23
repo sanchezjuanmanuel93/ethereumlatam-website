@@ -83,11 +83,15 @@ const FaqsSection = styled.section`
       font-size: 44px;
       line-height: 45px;
       margin-bottom: 73px;
+      .indentation {
+        padding-left: 30px;
+      }
     }
   }
   span.pixel {
     font-family: 'Pixel';
   }
+  
   .faq-body {
     max-width: 907px;
     outline: 1px solid white;

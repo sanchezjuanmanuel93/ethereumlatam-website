@@ -185,7 +185,7 @@ const Speakers = () => {
               <img src={mariano} />
               <div>
                 <h1>Mariano Conti</h1>
-                <h2>pleasrDAO</h2>
+                <h2>Good Guy</h2>
               </div>
             </Content>
           </BoxItem>
@@ -337,7 +337,6 @@ const BoxItem = styled.div`
 `
 const Content = styled.div`
   overflow: hidden;
-
   @media only screen and (min-width: 701px) {
     width: 268px;
   }
@@ -378,7 +377,7 @@ const Content = styled.div`
       @media only screen and (max-width: 540px) {
         width: calc(100% - 26px);
         object-fit: cover;
-        object-position: center;
+        object-position: 50% 20%;
       }
     }
   }
@@ -399,7 +398,6 @@ const Content = styled.div`
       @media only screen and (max-width: 540px) {
         width: calc(100% - 26px);
         object-fit: cover;
-        object-position: top;
       }
     }
   }

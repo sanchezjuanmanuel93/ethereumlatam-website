@@ -29,8 +29,8 @@ export default function App() {
             <FormattedHTMLMessage id="venue.address" />
           </h2>
           {width < medium && <img className="venue" src={venueSmall} />}
-          <a>
-            
+          <a href="https://www.cecbuenosaires.com.ar/" target="_blank">
+            <FormattedHTMLMessage id="venue.link" />
           </a>
         </Box>
         <div>

@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="https://twitter.com/ethlatam" target="_blank"><img alt="img" src={twitter} /></a>
           <a href="https://t.me/ETHLatam" target="_blank"><img alt="img" src={telegram} /></a>
           <a href="https://www.instagram.com/ethlatam" target="_blank"><img alt="img" src={instagram} /></a>
-          <a href="https://discord.gg/8swP4HjEbr" target="_blank"><img alt="img" src={discord} /></a>
+          <a href="https://discord.gg/D7uyZDXKDM" target="_blank"><img alt="img" src={discord} /></a>
         </div>
         <h1>ETHLatam 2022 ©</h1>
       </Container>

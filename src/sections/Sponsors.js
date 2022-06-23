@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FormattedHTMLMessage } from 'react-intl'
 
@@ -19,97 +19,104 @@ import lens from '../assets/sponsors2/lens.svg'
 import lemon from '../assets/sponsors2/lemon.svg'
 import scroll from '../assets/sponsors2/Scroll.svg'
 
-const Sponsors = () => (
-  <SponsorsSection id="sponsors">
-    <Container>
-      <h1>
-        <FormattedHTMLMessage id="sponsors.title" />
-      </h1>
-      <Row>
-        <BoxItem className="tierOne">
-          <BoxInfo>
-            <img src={ripio} width="280"/>
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierOne">
-          <BoxInfo>
-          <img src={buenosAiresCiudad} width="350"/>
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierOne">
-          <BoxInfo>
-            <img src={thinkandDev} height="180"/>
-          </BoxInfo>
-        </BoxItem>
-      </Row>
-      <Row>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="270" src={belo} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="170" src={argent} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="300" src={ethereumFoundation} />
-          </BoxInfo>
-        </BoxItem>
+const Sponsors = () => {
+  const locale = localStorage.getItem('locale')
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
+  const medium = 700
+
+  return (
+    <SponsorsSection id="sponsors" locale={locale}>
+      <Container>
+        <h1>
+          <FormattedHTMLMessage id="sponsors.title" />
+        </h1>
+        <Row>
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={ripio} width="280" />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={buenosAiresCiudad} width="350" />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={thinkandDev} height="180" />
+            </BoxInfo>
+          </BoxItem>
+        </Row>
+        <Row>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width="270" src={belo} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width={width >= medium ? 170 : 150} src={argent} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width="300" src={ethereumFoundation} />
+            </BoxInfo>
+          </BoxItem>
           <BoxItem className="tierTwo" />
-    </Row>
-    <Row>
-        <BoxItem className="tierTwo" >
-          <BoxInfo>
-            <img width="210" src={maker} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="220" src={starkware} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="200" src={wink} />
-          </BoxInfo>
-        </BoxItem>
-        
-        
-      </Row>
-      <Row>
-        <BoxItem className="tierThree" />
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img src={theGraph} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img className="lens" src={lens} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img width="120" src={exactly} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img src={lemon} />
-          </BoxInfo>
-        </BoxItem>
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img width="130" src={scroll} />
-          </BoxInfo>
-        </BoxItem>
-      </Row>
-    </Container>
-  </SponsorsSection>
-)
+        </Row>
+        <Row>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width={width >= medium ? 210 : 150} src={maker} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width={width >= medium ? 220 : 160} src={starkware} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width="200" src={wink} />
+            </BoxInfo>
+          </BoxItem>
+        </Row>
+        <Row>
+          <BoxItem className="tierThree" />
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img src={theGraph} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img className="lens" src={lens} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img width="120" src={exactly} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img src={lemon} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img width="130" src={scroll} />
+            </BoxInfo>
+          </BoxItem>
+        </Row>
+      </Container>
+    </SponsorsSection>
+  )
+}
 
 const SponsorsSection = styled.section`
   background: #0b0c0d;
@@ -125,7 +132,7 @@ const SponsorsSection = styled.section`
     color: #faf7f5;
     position: relative;
     @media only screen and (max-width: 700px) {
-      font-size: 44px;
+      font-size: ${props => (props.locale == 'pt' ? '40px' : '44px')};
       line-height: 45px;
       margin-bottom: 73px;
     }

@@ -5,7 +5,6 @@ import Flags from './Flags'
 import Tabs from './Tabs'
 
 const Menu = ({ open }) => {
-  console.log("open", open)
   return (
     <StyledMenu open={open}>
       <Tabs mode="small"/>
