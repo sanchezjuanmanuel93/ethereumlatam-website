@@ -24,9 +24,7 @@ const Hero = () => (
           >> Argentina
         </p>
       </Box>
-      <Button href="https://google.com" target="_blank">
-        <FormattedMessage id="hero.button" />!
-      </Button>
+      
     </Container>
     <Loop reverse={true} content={<img alt="img" src={image} />} />
   </HeroSection>

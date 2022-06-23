@@ -29,8 +29,8 @@ export default function App() {
             <FormattedHTMLMessage id="venue.address" />
           </h2>
           {width < medium && <img className="venue" src={venueSmall} />}
-          <a href="https://google.com">
-            <FormattedHTMLMessage id="venue.link" />
+          <a>
+            
           </a>
         </Box>
         <div>
