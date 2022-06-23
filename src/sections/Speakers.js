@@ -155,7 +155,7 @@ const Speakers = () => {
           </BoxItem>
           <BoxItem className="vip">
             <Content className="vipContent">
-              <img src={stani} />
+              <img style={{ objectPosition: '100%' }} src={stani} />
               <div>
                 <h1>Stani Kulechov</h1>
                 <h2>Aave Companies</h2>
