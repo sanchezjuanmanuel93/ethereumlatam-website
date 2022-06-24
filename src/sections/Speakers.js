@@ -94,7 +94,7 @@ const Speakers = () => {
             <Content className="importantPersonContent">
               <img style={{ objectPosition: '100% 40%' }} src={siesta} />
               <div>
-                <h1>Siesta</h1>
+                <h1>Frenetik Void</h1>
                 <h2>Game Disease</h2>
               </div>
             </Content>

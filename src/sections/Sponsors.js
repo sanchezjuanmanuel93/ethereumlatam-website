@@ -109,17 +109,17 @@ const Sponsors = () => {
           </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo>
-              <img width="120" src={exactly} />
+              <img width={width >= medium ? 120 : 95} src={exactly} />
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo>
-              <img src={lemon} />
+              <img width={width >= medium ? 120 : 95} src={lemon} />
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo>
-              <img width="130" src={scroll} />
+              <img width={width >= medium ? 130 : 95} src={scroll} />
             </BoxInfo>
           </BoxItem>
         </Row>
