@@ -12,7 +12,7 @@ import argent from '../assets/sponsors2/Argent.svg'
 import maker from '../assets/sponsors2/Maker.svg'
 import starkware from '../assets/sponsors2/starkware.png'
 import wink from '../assets/sponsors2/wink.svg'
-
+import auth0 from '../assets/sponsors2/auth0.svg'
 import theGraph from '../assets/sponsors2/TheGraph.svg'
 import exactly from '../assets/sponsors2/exactly.svg'
 import lens from '../assets/sponsors2/lens.svg'
@@ -77,6 +77,11 @@ const Sponsors = () => {
         <Row>
           <BoxItem className="tierTwo">
             <BoxInfo>
+              <img width={width >= medium ? 210 : 150} src={ethGlobal} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
               <img width={width >= medium ? 210 : 150} src={maker} />
             </BoxInfo>
           </BoxItem>
@@ -92,11 +97,11 @@ const Sponsors = () => {
           </BoxItem>
         </Row>
         <Row>
-        <BoxItem className="tierThree">
-          <BoxInfo>
-            <img src={ethGlobal} />
-          </BoxInfo>
-        </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img width="90" src={auth0} />
+            </BoxInfo>
+          </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo>
               <img src={theGraph} />
@@ -268,22 +273,5 @@ const Container = styled.div`
   text-align: left;
   padding-bottom: 160px;
 `
-
-// const Line = styled.div`
-//   position: relative;
-//   z-index: 1;
-//   left: -9px;
-//   width: 208px;
-//   top: 44px;
-//   height: 1px;
-//   background-color: white;
-//   transform: rotate(25deg);
-//   @media only screen and (max-width: 700px) {
-//     left: -14px;
-//     width: 147px;
-//     top: 43px;
-//     transform: rotate(36deg);
-//   }
-// `
 
 export default Sponsors
