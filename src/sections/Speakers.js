@@ -66,7 +66,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/" className="importantPersonContent">
+            <Content target="_blank" className="importantPersonContent">
               <img style={{ objectPosition: '100% 36%' }} src={alan} />
               <div>
                 <h1>Alan Donoso Naumczuk</h1>
@@ -75,7 +75,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/" className="importantPersonContent">
+            <Content target="_blank" className="importantPersonContent">
               <img src={nicolas} />
               <div>
                 <h1>Nicolas Venturo</h1>
@@ -172,7 +172,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/" className="importantPersonContent">
+            <Content target="_blank" className="importantPersonContent">
               <img src={gerrit} />
               <div>
                 <h1>Gerrit Hall</h1>
@@ -217,7 +217,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/" className="vipContent">
+            <Content target="_blank" className="vipContent">
               <img src={georgios} />
               <div>
                 <h1>Georgios Konstantopoulos</h1>
@@ -245,7 +245,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/" className="importantPersonContent">
+            <Content target="_blank" className="importantPersonContent">
               <img src={jose} />
               <div>
                 <h1>José Alfonso Fabrega</h1>
