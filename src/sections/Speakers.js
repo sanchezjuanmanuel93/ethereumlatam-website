@@ -313,7 +313,7 @@ const Elipse = styled.img`
 
 const BoxWrapper = styled.div`
   column-gap: 0px;
-  outline: 1px solid white;
+  outline: 1px solid #4D4D4D;
   margin-right: 0;
   margin-left: auto;
   column-count: 4;
@@ -351,7 +351,7 @@ const BoxItem = styled.div`
   margin-top: 0px;
   font-family: 'Helvetica';
   font-weight: 400;
-  outline: 1px solid white;
+  outline: 1px solid #4D4D4D;
   &.vip {
     height: 245px;
   }

@@ -135,7 +135,7 @@ const Sponsors = () => {
 
 const SponsorsSection = styled.section`
   background: #0b0c0d;
-  color: white;
+  color: #4D4D4D;
   text-align: center;
   height: auto;
   h1 {
@@ -161,7 +161,7 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  outline: 1px solid white;
+  outline: 1px solid #4D4D4D;
   max-width: 1134px;
   @media only screen and (max-width: 700px) {
     max-width: 360px;
@@ -191,7 +191,7 @@ const BoxItem = styled.div`
   display: inline-block;
   margin: 0;
   text-align: center;
-  outline: 1px solid white;
+  outline: 1px solid #4D4D4D;
   img {
     overflow: hidden;
   }
