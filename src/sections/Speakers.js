@@ -11,12 +11,12 @@ import camila from '../assets/speakers2/camila.jpeg'
 import camilaR from '../assets/speakers2/camilaR.jpeg'
 import cryptoChica from '../assets/speakers2/cryptoChica.png'
 import gabriel from '../assets/speakers2/gabriel.jpeg'
-import mariano from '../assets/speakers2/mariano.png'
+import mariano from '../assets/speakers2/mariano.jpeg'
 import martin from '../assets/speakers2/martin.jpeg'
 import nadia from '../assets/speakers2/nadia.jpeg'
 import stani from '../assets/speakers2/stani.png'
 import patricio from '../assets/speakers2/patricio.jpeg'
-import santiago from '../assets/speakers2/santiago.png'
+import santiago from '../assets/speakers2/santiago.jpeg'
 import siesta from '../assets/speakers2/siesta.png'
 import georgios from '../assets/speakers2/georgios.jpeg'
 import gerrit from '../assets/speakers2/gerrit.jpg'
@@ -66,7 +66,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" className="importantPersonContent">
+            <Content target="_blank" href="https://twitter.com/donosonaumczuk" className="importantPersonContent">
               <img style={{ objectPosition: '100% 36%' }} src={alan} />
               <div>
                 <h1>Alan Donoso Naumczuk</h1>
@@ -75,7 +75,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" className="importantPersonContent">
+            <Content target="_blank" href="https://twitter.com/mrnventuro" className="importantPersonContent">
               <img src={nicolas} />
               <div>
                 <h1>Nicolas Venturo</h1>
@@ -92,7 +92,6 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/the_ethernaut" className="importantPersonContent">
               <img src={alejandro} />
@@ -217,7 +216,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="vip">
-            <Content target="_blank" className="vipContent">
+            <Content target="_blank" href="https://twitter.com/gakonst" className="vipContent">
               <img src={georgios} />
               <div>
                 <h1>Georgios Konstantopoulos</h1>
@@ -245,7 +244,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" className="importantPersonContent">
+            <Content target="_blank" href="https://twitter.com/josefabregab" className="importantPersonContent">
               <img src={jose} />
               <div>
                 <h1>José Alfonso Fabrega</h1>
@@ -365,6 +364,7 @@ const BoxItem = styled.div`
 `
 const Content = styled.a`
   overflow: hidden;
+  text-decoration: none;
   @media only screen and (min-width: 701px) {
     width: 268px;
   }
