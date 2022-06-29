@@ -7,7 +7,6 @@ import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
 const Hero = () => {
-  const locale = localStorage.getItem('locale')
   return (
     <HeroSection>
       <Container>
@@ -26,10 +25,7 @@ const Hero = () => {
             >> Argentina
           </p>
         </Box>
-        <Button
-          target="_blank"
-          className={locale == 'es' ? 'spanish' : 'other'}
-        >
+        <Button href="https://www.eventbrite.com/e/ethlatam-at-buenos-aires-tickets-374680147407" target="_blank">
           <FormattedMessage id="hero.button" />!
         </Button>
       </Container>

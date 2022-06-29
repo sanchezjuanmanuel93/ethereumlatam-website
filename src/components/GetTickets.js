@@ -5,8 +5,8 @@ import styled from 'styled-components'
 const GetTickets = () => {
   return (
     <>
-      <GreenButton href="https://google.com" target="_blank">
-        <FormattedMessage id="hero.button" />
+      <GreenButton href="https://www.eventbrite.com/e/ethlatam-at-buenos-aires-tickets-374680147407" target="_blank">
+        <FormattedMessage id="navbar.button" />
       </GreenButton>
     </>
   )

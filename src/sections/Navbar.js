@@ -25,6 +25,7 @@ const Navbar = () => {
             <Tabs mode="large" />
             <div className="right">
               <Flags />
+              <GetTickets />
             </div>
           </>
         ) : (
