@@ -7,10 +7,12 @@ import buenosAiresCiudad from '../assets/sponsors2/buenosAiresCiudad.svg'
 
 import ripio from '../assets/sponsors2/ripio.svg'
 import thinkandDev from '../assets/sponsors2/ThinkandDev.png'
+import wonderland from '../assets/sponsors2/Wonderland.png'
 import belo from '../assets/sponsors2/belo.svg'
 import argent from '../assets/sponsors2/Argent.svg'
 import maker from '../assets/sponsors2/Maker.svg'
 import starkware from '../assets/sponsors2/starkware.png'
+import epns from '../assets/sponsors2/epns.svg'
 import wink from '../assets/sponsors2/wink.svg'
 import auth0 from '../assets/sponsors2/auth0.svg'
 import theGraph from '../assets/sponsors2/TheGraph.svg'
@@ -20,6 +22,7 @@ import lemon from '../assets/sponsors2/lemon.svg'
 import scroll from '../assets/sponsors2/Scroll.svg'
 import ethGlobal from '../assets/sponsors2/ETHGlobal.svg'
 import decentraland from '../assets/sponsors2/decentraland.svg'
+import oz from '../assets/sponsors2/OZ.svg'
 
 const Sponsors = () => {
   const locale =
@@ -31,6 +34,7 @@ const Sponsors = () => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const medium = 700
+  
 
   return (
     <SponsorsSection id="sponsors" locale={locale}>
@@ -72,15 +76,19 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
+            <BoxInfo />
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo />
+          </BoxItem>
+          <BoxItem className="tierTwo">
             <BoxInfo>
               <img width={width >= medium ? 200 : 150} src={decentraland} />
             </BoxInfo>
           </BoxItem>
-        </Row>
-        <Row>
           <BoxItem className="tierTwo">
             <BoxInfo>
-              <img width={width >= medium ? 210 : 150} src={ethGlobal} />
+              <img width={width >= medium ? 210 : 150} src={oz} />
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
@@ -97,6 +105,14 @@ const Sponsors = () => {
             <BoxInfo>
               <img width="200" src={wink} />
             </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img width="150" src={epns} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo />
           </BoxItem>
         </Row>
         <Row>
@@ -121,6 +137,21 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
+            <BoxInfo />
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo />
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo />
+          </BoxItem>
+          
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img width={width >= medium ? 210 : 150} src={ethGlobal} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
             <BoxInfo>
               <img width={width >= medium ? 120 : 95} src={lemon} />
             </BoxInfo>
@@ -130,6 +161,14 @@ const Sponsors = () => {
               <img width={width >= medium ? 130 : 95} src={scroll} />
             </BoxInfo>
           </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo>
+              <img src={wonderland} />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierThree">
+            <BoxInfo />
+          </BoxItem>
         </Row>
       </Container>
     </SponsorsSection>
@@ -138,7 +177,7 @@ const Sponsors = () => {
 
 const SponsorsSection = styled.section`
   background: #0b0c0d;
-  color: #4D4D4D;
+  color: #4d4d4d;
   text-align: center;
   height: auto;
   h1 {
@@ -164,7 +203,7 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  outline: 1px solid #4D4D4D;
+  outline: 1px solid #4d4d4d;
   max-width: 1134px;
   @media only screen and (max-width: 700px) {
     max-width: 360px;
@@ -194,7 +233,7 @@ const BoxItem = styled.div`
   display: inline-block;
   margin: 0;
   text-align: center;
-  outline: 1px solid #4D4D4D;
+  outline: 1px solid #4d4d4d;
   img {
     overflow: hidden;
   }
