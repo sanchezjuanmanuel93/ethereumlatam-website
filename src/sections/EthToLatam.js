@@ -13,7 +13,10 @@ const EthToLatam = () => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const medium = 700
-  const locale = localStorage.getItem('locale')
+  const locale =
+    typeof window.localStorage !== 'undefined'
+      ? localStorage.getItem('locale')
+      : 'en'
 
   return (
     <EthToLatamSection id="about">

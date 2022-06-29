@@ -22,7 +22,10 @@ import ethGlobal from '../assets/sponsors2/ETHGlobal.svg'
 import decentraland from '../assets/sponsors2/decentraland.svg'
 
 const Sponsors = () => {
-  const locale = localStorage.getItem('locale')
+  const locale =
+    typeof window.localStorage !== 'undefined'
+      ? localStorage.getItem('locale')
+      : 'en'
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))

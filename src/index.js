@@ -18,12 +18,16 @@ const messages = {
 }
 
 let defaultLanguage = 'en'
+const locale =
+  typeof window.localStorage !== 'undefined'
+    ? localStorage.getItem('locale')
+    : 'en'
 
 ReactDOM.render(
   <Router>
     <IntlProvider
-      locale={localStorage.getItem('locale') || defaultLanguage}
-      messages={messages[localStorage.getItem('locale') || defaultLanguage]}
+      locale={locale || defaultLanguage}
+      messages={messages[locale || defaultLanguage]}
     >
       <React.StrictMode>
         <App />

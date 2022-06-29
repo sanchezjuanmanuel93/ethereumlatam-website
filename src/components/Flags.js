@@ -6,12 +6,16 @@ import eeuu from '../assets/eeuu.svg'
 
 const GetTickets = () => {
   const changeLanguage = lang => {
-    console.log('lang', lang)
-    localStorage.setItem('locale', lang)
+    if (typeof window.localStorage !== 'undefined') {
+      localStorage.setItem('locale', lang)
+    }
     window.location.reload()
   }
 
-  const locale = localStorage.getItem('locale')
+  const locale =
+    typeof window.localStorage !== 'undefined'
+      ? localStorage.getItem('locale')
+      : 'en'
 
   return (
     <FlagBox>

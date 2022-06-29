@@ -6,7 +6,10 @@ import defiant from '../assets/media/defiant.svg'
 import rekt from '../assets/media/rekt.svg'
 
 const MediaPartner = () => {
-  const locale = localStorage.getItem('locale')
+  const locale =
+    typeof window.localStorage !== 'undefined'
+      ? localStorage.getItem('locale')
+      : 'en'
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
