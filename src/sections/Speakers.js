@@ -8,8 +8,10 @@ import oxjean from '../assets/speakers2/0xjean.jpeg'
 import alan from '../assets/speakers2/alan.jpg'
 import alejandro from '../assets/speakers2/alejandro.png'
 import camila from '../assets/speakers2/camila.jpeg'
+import damian from '../assets/speakers2/damian.png'
 import camilaR from '../assets/speakers2/camilaR.jpeg'
 import cryptoChica from '../assets/speakers2/cryptoChica.png'
+import matias from '../assets/speakers2/matias.png'
 import gabriel from '../assets/speakers2/gabriel.jpeg'
 import mariano from '../assets/speakers2/mariano.jpeg'
 import martin from '../assets/speakers2/martin.jpeg'
@@ -101,11 +103,15 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          {width >= medium && (
-            <BoxItem className="importantPerson">
-              <Content className="importantPersonContent" />
-            </BoxItem>
-          )}
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/dschenkelman" className="importantPersonContent">
+              <img src={damian} />
+              <div>
+                <h1>Damian Schenkelman</h1>
+                <h2>Auth0</h2>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/frenetikvoid" className="importantPersonContent">
               <img style={{ objectPosition: '100% 40%' }} src={siesta} />
@@ -258,6 +264,15 @@ const Speakers = () => {
               <div>
                 <h1>Julien Bouteloup</h1>
                 <h2>Rekt</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/woloski" className="importantPersonContent">
+              <img src={matias} />
+              <div>
+                <h1>Matias Woloski</h1>
+                <h2>Auth0</h2>
               </div>
             </Content>
           </BoxItem>

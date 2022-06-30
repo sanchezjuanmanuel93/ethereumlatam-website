@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import { FormattedHTMLMessage } from 'react-intl'
 
 import ethereumFoundation from '../assets/sponsors2/ethereumFoundation.svg'
-import buenosAiresCiudad from '../assets/sponsors2/buenosAiresCiudad.svg'
+import buenosAiresCiudad from '../assets/sponsors2/ba.svg'
 
 import ripio from '../assets/sponsors2/ripio.svg'
+import protofire from '../assets/sponsors2/protofire.svg'
 import thinkandDev from '../assets/sponsors2/ThinkandDev.png'
 import wonderland from '../assets/sponsors2/Wonderland.png'
 import belo from '../assets/sponsors2/belo.svg'
@@ -34,7 +35,6 @@ const Sponsors = () => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const medium = 700
-  
 
   return (
     <SponsorsSection id="sponsors" locale={locale}>
@@ -50,7 +50,7 @@ const Sponsors = () => {
           </BoxItem>
           <BoxItem className="tierOne">
             <BoxInfo>
-              <img src={buenosAiresCiudad} width="350" />
+              <img src={buenosAiresCiudad} width="200" />
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierOne">
@@ -76,7 +76,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
-            <BoxInfo />
+            <BoxInfo>
+              <img width="180" src={protofire} />
+            </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
             <BoxInfo />
@@ -145,7 +147,7 @@ const Sponsors = () => {
           <BoxItem className="tierThree">
             <BoxInfo />
           </BoxItem>
-          
+
           <BoxItem className="tierThree">
             <BoxInfo>
               <img width={width >= medium ? 210 : 150} src={ethGlobal} />
