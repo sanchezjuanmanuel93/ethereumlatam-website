@@ -55,7 +55,7 @@ const Sponsors = () => {
           </BoxItem>
           <BoxItem className="tierOne">
             <BoxInfo>
-              <img src={thinkandDev} height="180" />
+              <img src={wink} width="300" />
             </BoxInfo>
           </BoxItem>
         </Row>
@@ -105,7 +105,7 @@ const Sponsors = () => {
           </BoxItem>
           <BoxItem className="tierTwo">
             <BoxInfo>
-              <img width="200" src={wink} />
+              <img height="75" src={thinkandDev} />
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">

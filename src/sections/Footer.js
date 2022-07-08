@@ -4,6 +4,7 @@ import twitter from '../assets/twitter.svg'
 import telegram from '../assets/telegram.svg'
 import instagram from '../assets/instagram.svg'
 import discord from '../assets/discord.svg'
+import roadToDevcon from '../assets/roadToDevcon.svg'
 
 const Footer = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -14,13 +15,24 @@ const Footer = () => {
   return (
     <FooterSection>
       <Container>
+        <img src={roadToDevcon} />
         <div>
-          <a href="https://twitter.com/ethlatam" target="_blank"><img alt="img" src={twitter} /></a>
-          <a href="https://t.me/ETHLatam" target="_blank"><img alt="img" src={telegram} /></a>
-          <a href="https://www.instagram.com/ethlatam" target="_blank"><img alt="img" src={instagram} /></a>
-          <a href="https://discord.gg/D7uyZDXKDM" target="_blank"><img alt="img" src={discord} /></a>
+          <div>
+            <a href="https://twitter.com/ethlatam" target="_blank">
+              <img alt="img" src={twitter} />
+            </a>
+            <a href="https://t.me/ETHLatam" target="_blank">
+              <img alt="img" src={telegram} />
+            </a>
+            <a href="https://www.instagram.com/ethlatam" target="_blank">
+              <img alt="img" src={instagram} />
+            </a>
+            <a href="https://discord.gg/D7uyZDXKDM" target="_blank">
+              <img alt="img" src={discord} />
+            </a>
+          </div>
+          <h1>ETHLatam 2022 ©</h1>
         </div>
-        <h1>ETHLatam 2022 ©</h1>
       </Container>
     </FooterSection>
   )
@@ -32,6 +44,7 @@ const FooterSection = styled.section`
   width: 100%;
   position: relative;
   text-align: center;
+  border-bottom: solid 8px #80ff9f;
 `
 
 const Container = styled.div`
@@ -40,9 +53,9 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
+  padding: 24px 40px 0 40px;
   gap: 16px;
-  height: 72px;
+  height: auto;
 
   @media only screen and (min-width: 1440px) {
     margin: 0 auto;

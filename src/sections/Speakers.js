@@ -22,7 +22,7 @@ import santiago from '../assets/speakers2/santiago.jpeg'
 import siesta from '../assets/speakers2/siesta.png'
 import georgios from '../assets/speakers2/georgios.jpeg'
 import gerrit from '../assets/speakers2/gerrit.jpg'
-import jose from '../assets/speakers2/jose.jpeg'
+import jose from '../assets/speakers2/jose.jpg'
 import marcelo from '../assets/speakers2/marcelo.jpg'
 import sebastian from '../assets/speakers2/sebastian.jpeg'
 import nicolas from '../assets/speakers2/nicolas.jpeg'
@@ -57,6 +57,15 @@ const Speakers = () => {
           ers {width >= medium && <Arrow src={arrow} />}
         </h1>
         <BoxWrapper>
+        <BoxItem className="vip">
+          <Content target="_blank" href="https://twitter.com/sserrano44" className="vipContent">
+          <img src={aya} />
+          <div>
+            <h1>Aya Miyaguchi</h1>
+            <h2>Ethereum Foundation</h2>
+          </div>
+          </Content>
+        </BoxItem>
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/jnptzl"  className="importantPersonContent">
               <img src={oxjean} />
@@ -75,6 +84,16 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="vip">
+            <Content target="_blank" href="https://twitter.com/fiiiu_" className="vipContent">
+              <img src={alejo} />
+              <div>
+                <h1>Alejo Salles</h1>
+                <h2>Flashbots</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/donosonaumczuk" className="importantPersonContent">
               <img style={{ objectPosition: '100% 36%' }} src={alan} />
@@ -138,24 +157,6 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/smpalladino" className="vipContent">
-              <img src={santiago} />
-              <div>
-                <h1>Santiago Palladino</h1>
-                <h2>OpenZeppelin</h2>
-              </div>
-            </Content>
-          </BoxItem>
-          <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/StaniKulechov" className="vipContent">
-              <img style={{ objectPosition: '100%' }} src={stani} />
-              <div>
-                <h1>Stani Kulechov</h1>
-                <h2>Aave Companies</h2>
-              </div>
-            </Content>
-          </BoxItem>
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/camiinthisthang" className="importantPersonContent">
               <img style={{ objectPosition: '100% 40%' }} src={camila} />
@@ -183,7 +184,7 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-
+          
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/cryptochica_arg" className="importantPersonContent">
               <img src={cryptoChica} />
@@ -208,6 +209,15 @@ const Speakers = () => {
               <div>
                 <h1>Manuel Beaudroit</h1>
                 <h2>Belo</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="vip">
+            <Content target="_blank" href="https://twitter.com/StaniKulechov" className="vipContent">
+              <img style={{ objectPosition: '100%' }} src={stani} />
+              <div>
+                <h1>Stani Kulechov</h1>
+                <h2>Aave Companies</h2>
               </div>
             </Content>
           </BoxItem>
@@ -267,26 +277,18 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/nahbur" className="vipContent">
-              <img style={{ objectPosition: '100% 10%' }} src={nahuel} />
+            <Content target="_blank" href="https://twitter.com/worthalter" className="vipContent">
+              <img style={{ objectPosition: '100% 30%' }} src={patricioW} />
               <div>
-                <h1>Nahuel Burbach</h1>
-                <h2>Zerion</h2>
+                <h1>Patricio Worthalter</h1>
+                <h2>POAP</h2>
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/fiiiu_" className="vipContent">
-              <img src={alejo} />
-              <div>
-                <h1>Alejo Salles</h1>
-                <h2>Flashbots</h2>
-              </div>
-            </Content>
-          </BoxItem>
+          
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/josefabregab" className="importantPersonContent">
-              <img src={jose} />
+              <img style={{ objectPosition: '100% 27%' }} src={jose} />
               <div>
                 <h1>José Alfonso Fabrega</h1>
                 <h2>Metis</h2>
@@ -312,23 +314,15 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/worthalter" className="importantPersonContent">
-              <img style={{ objectPosition: '100% 30%' }} src={patricioW} />
-              <div>
-                <h1>Patricio Worthalter</h1>
-                <h2>POAP</h2>
-              </div>
-            </Content>
-          </BoxItem>
-          <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/sserrano44" className="vipContent">
-            <img src={aya} />
+            <Content target="_blank" href="https://twitter.com/nahbur" className="importantPersonContent">
+            <img style={{ objectPosition: '100% 20%' }} src={nahuel} />
             <div>
-              <h1>Aya Miyaguchi</h1>
-              <h2>Ethereum Foundation</h2>
+              <h1>Nahuel Burbach</h1>
+              <h2>Zerion</h2>
             </div>
             </Content>
           </BoxItem>
+          
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/RHLSTHRM" className="importantPersonContent">
               <img style={{ objectPosition: '100% 40%' }} src={rahul} />
@@ -344,6 +338,15 @@ const Speakers = () => {
               <div>
                 <h1>Skeletor Spaceman</h1>
                 <h2>Wonderland</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="vip">
+            <Content target="_blank" href="https://twitter.com/smpalladino" className="vipContent">
+              <img src={santiago} />
+              <div>
+                <h1>Santiago Palladino</h1>
+                <h2>OpenZeppelin</h2>
               </div>
             </Content>
           </BoxItem>
