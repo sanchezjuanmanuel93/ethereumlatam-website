@@ -91,10 +91,12 @@ const FaqsSection = styled.section`
   span.pixel {
     font-family: 'Pixel';
   }
-  
+  .faq-row {
+    border-bottom: 1px solid #4D4D4D!important;
+  }
   .faq-body {
     max-width: 907px;
-    outline: 1px solid white;
+    outline: 1px solid #4D4D4D;
     background: #0b0c0d;
     margin-right: 0;
     margin-left: auto;

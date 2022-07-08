@@ -117,56 +117,6 @@ const BoxItem = styled.div`
       width: 560px;
     }
   }
-  &.tierOne {
-    height: 220px;
-    width: 378px;
-    @media only screen and (max-width: 700px) {
-      width: 360px;
-    }
-    @media only screen and (min-width: 701px) and (max-width: 1230px) {
-      width: 600px;
-    }
-    .div {
-      height: 216px;
-      width: 374px;
-    }
-  }
-  &.tierTwo {
-    height: 110px;
-    width: 283.5px;
-    @media only screen and (max-width: 700px) {
-      width: 180px;
-    }
-    @media only screen and (min-width: 701px) and (max-width: 1230px) {
-      width: 300px;
-    }
-
-    .div {
-      height: 106px;
-      width: 279px;
-    }
-  }
-  &.tierThree {
-    height: 88px;
-    width: 189px;
-    @media only screen and (max-width: 700px) {
-      width: 120px;
-    }
-    @media only screen and (min-width: 701px) and (max-width: 1230px) {
-      width: 200px;
-    }
-
-    .div {
-      height: 84px;
-      width: 185px;
-    }
-    img {
-      max-width: 80%;
-      &.lens {
-        max-height: 100%;
-      }
-    }
-  }
 `
 
 const Container = styled.div`
