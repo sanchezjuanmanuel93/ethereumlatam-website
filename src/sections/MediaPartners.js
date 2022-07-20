@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FormattedHTMLMessage } from 'react-intl'
 
 import defiant from '../assets/media/defiant.svg'
+import bankless from '../assets/media/bankless.svg'
 import rekt from '../assets/media/rekt.svg'
 
 const MediaPartner = () => {
@@ -23,13 +24,17 @@ const MediaPartner = () => {
           <FormattedHTMLMessage id="media.title" />
         </h1>
         <Row>
-          <BoxItem className="tierZero">
+          <BoxItem className="tierOne">
             <BoxInfo>
               <img src={rekt} width="230" />
             </BoxInfo>
           </BoxItem>
-        
-          <BoxItem className="tierZero">
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={bankless} width="130" />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierOne">
             <BoxInfo>
               <img src={defiant} height="120" />
             </BoxInfo>
@@ -106,6 +111,20 @@ const BoxItem = styled.div`
   &.tierZero {
     height: 250px;
     width: 567px;
+    @media only screen and (max-width: 700px) {
+      width: 360px;
+    }
+    @media only screen and (min-width: 701px) and (max-width: 1230px) {
+      width: 600px;
+    }
+    .div {
+      height: 290px;
+      width: 560px;
+    }
+  }
+  &.tierOne {
+    height: 250px;
+    width: 378px;
     @media only screen and (max-width: 700px) {
       width: 360px;
     }

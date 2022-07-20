@@ -25,6 +25,7 @@ import ethGlobal from '../assets/sponsors2/ETHGlobal.svg'
 import decentraland from '../assets/sponsors2/decentraland.svg'
 import oz from '../assets/sponsors2/OZ.svg'
 import metis from '../assets/sponsors2/metis.svg'
+import bitso from '../assets/sponsors2/bitso.svg'   
 
 const Sponsors = () => {
   const locale =
@@ -145,7 +146,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
-            <BoxInfo />
+            <BoxInfo>
+              <img width={width >= medium ? 130 : 95} src={bitso} />
+            </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
             <BoxInfo />
