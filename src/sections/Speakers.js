@@ -29,7 +29,6 @@ import nicolas from '../assets/speakers2/nicolas.jpeg'
 import julien from '../assets/speakers2/julien.jpeg'
 import fernanda from '../assets/speakers2/fernanda.jpeg'
 import alejo from '../assets/speakers2/alejo.jpeg'
-
 import patricioW from '../assets/speakers2/patricioW.jpg'
 import skeletor from '../assets/speakers2/skeletor.jpeg'
 import aya from '../assets/speakers2/aya.jpeg'
@@ -37,6 +36,15 @@ import rahul from '../assets/speakers2/rahul.jpg'
 import rodrigo from '../assets/speakers2/rodrigo.jpg'
 import manuel from '../assets/speakers2/manuel.jpg'
 import nahuel from '../assets/speakers2/nahuel.JPG'
+
+import harsh from '../assets/speakers2/harsh.jpeg'
+import felipe from '../assets/speakers2/felipe.png'
+import matiasN from '../assets/speakers2/matiasN.jpg'
+import oli from '../assets/speakers2/oli.jpeg'
+import antonela from '../assets/speakers2/antonela.png'
+import vicky from '../assets/speakers2/vicky.jpeg'
+import gino from '../assets/speakers2/gino.jpeg'
+import adrian from '../assets/speakers2/adrian.jpeg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -93,8 +101,8 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          
-          
+
+
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/donosonaumczuk" className="importantPersonContent">
               <img style={{ objectPosition: '100% 36%' }} src={alan} />
@@ -185,7 +193,7 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          
+
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/cryptochica_arg" className="importantPersonContent">
               <img src={cryptoChica} />
@@ -277,8 +285,8 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content target="_blank" href="https://twitter.com/fiiiu_" className="vipContent">
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/fiiiu_" className="importantPersonContent">
               <img src={alejo} />
               <div>
                 <h1>Alejo Salles</h1>
@@ -286,8 +294,8 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          
-          
+
+
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/josefabregab" className="importantPersonContent">
               <img style={{ objectPosition: '100% 27%' }} src={jose} />
@@ -324,7 +332,7 @@ const Speakers = () => {
             </div>
             </Content>
           </BoxItem>
-          
+
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/RHLSTHRM" className="importantPersonContent">
               <img style={{ objectPosition: '100% 40%' }} src={rahul} />
@@ -349,6 +357,78 @@ const Speakers = () => {
               <div>
                 <h1>Santiago Palladino</h1>
                 <h2>OpenZeppelin</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/harshrajat" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={harsh} />
+              <div>
+                <h1>Harsh Rajat</h1>
+                <h2>EPNS</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/holantonela" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={antonela} />
+              <div>
+                <h1>Antonela Debiasi</h1>
+                <h2>Metamask</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/fvallejod" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={felipe} />
+              <div>
+                <h1>Felipe Vallejos</h1>
+                <h2>Bitso</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="vip">
+            <Content target="_blank" href="" className="vipContent">
+              <img style={{ objectPosition: '100% 40%' }} src={gino} />
+              <div>
+                <h1>Gino Cingolani Trucco</h1>
+                <h2>Decentraland</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/oligold_" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 20%' }} src={oli} />
+              <div>
+                <h1>Olivia Goldschmidt</h1>
+                <h2>Periodista</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/AddessoAdrian" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={adrian} />
+              <div>
+                <h1>Adrián Addesso</h1>
+                <h2>PieDAO</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/vickyguareschi" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={vicky} />
+              <div>
+                <h1>Vicky Guareschi</h1>
+                <h2>Lemon</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/MatiasNisenson" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 20%' }} src={matiasN} />
+              <div>
+                <h1>Matias Nisenson</h1>
+                <h2>Wonderland</h2>
               </div>
             </Content>
           </BoxItem>
