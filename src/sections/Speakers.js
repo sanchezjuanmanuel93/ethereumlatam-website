@@ -388,7 +388,7 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="vip">
-            <Content target="_blank" href="" className="vipContent">
+            <Content target="_blank" href="https://twitter.com/ginocingolani" className="vipContent">
               <img style={{ objectPosition: '100% 40%' }} src={gino} />
               <div>
                 <h1>Gino Cingolani Trucco</h1>
