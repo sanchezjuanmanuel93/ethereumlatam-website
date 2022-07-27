@@ -5,6 +5,7 @@ import { FormattedHTMLMessage } from 'react-intl'
 import defiant from '../assets/media/defiant.svg'
 import bankless from '../assets/media/bankless.svg'
 import rekt from '../assets/media/rekt.svg'
+import platzi from '../assets/media/platzi.svg'
 
 const MediaPartner = () => {
   const locale =
@@ -24,19 +25,24 @@ const MediaPartner = () => {
           <FormattedHTMLMessage id="media.title" />
         </h1>
         <Row>
-          <BoxItem className="tierOne">
+          <BoxItem className="tierTwo">
             <BoxInfo>
               <img src={rekt} width="230" />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierOne">
+          <BoxItem className="tierTwo">
             <BoxInfo>
               <img src={bankless} width="130" />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierOne">
+          <BoxItem className="tierTwo">
             <BoxInfo>
               <img src={defiant} height="120" />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierTwo">
+            <BoxInfo>
+              <img src={platzi} height="120" />
             </BoxInfo>
           </BoxItem>
         </Row>
@@ -106,20 +112,21 @@ const BoxItem = styled.div`
   outline: 1px solid #4D4D4D;
   img {
     overflow: hidden;
-    max-width: 80%;
+    max-width: 70%;
   }
-  &.tierZero {
-    height: 250px;
-    width: 567px;
+  &.tierTwo {
+    height: 180px;
+    width: 283.5px;
     @media only screen and (max-width: 700px) {
-      width: 360px;
+      width: 180px;
     }
     @media only screen and (min-width: 701px) and (max-width: 1230px) {
-      width: 600px;
+      width: 300px;
     }
+
     .div {
-      height: 290px;
-      width: 560px;
+      height: 106px;
+      width: 279px;
     }
   }
   &.tierOne {
