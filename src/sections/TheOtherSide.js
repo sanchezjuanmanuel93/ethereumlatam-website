@@ -22,7 +22,7 @@ export default function App() {
           <h1>
             <FormattedHTMLMessage id="theOtherSide.title" />
           </h1>
-          <Button href="" target="_blank">
+          <Button href="https://ethlatam.notion.site/ETHLatam-Side-Events-fbb102cb6fe643f095e826d9a821869b" target="_blank">
             Side events
           </Button>
           {width < medium && <img className="side" src={sideSmall} />}
