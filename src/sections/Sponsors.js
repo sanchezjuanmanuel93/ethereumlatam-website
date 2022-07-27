@@ -10,7 +10,7 @@ import protofire from '../assets/sponsors2/protofire.svg'
 import thinkandDev from '../assets/sponsors2/ThinkandDev.png'
 import wonderland from '../assets/sponsors2/Wonderland.png'
 import belo from '../assets/sponsors2/belo.svg'
-import argent from '../assets/sponsors2/Argent.svg'
+import argent from '../assets/sponsors2/worldcoin.svg'
 import maker from '../assets/sponsors2/Maker.svg'
 import starkware from '../assets/sponsors2/starkware.png'
 import epns from '../assets/sponsors2/epns.svg'
@@ -25,7 +25,8 @@ import ethGlobal from '../assets/sponsors2/ETHGlobal.svg'
 import decentraland from '../assets/sponsors2/decentraland.svg'
 import oz from '../assets/sponsors2/OZ.svg'
 import metis from '../assets/sponsors2/metis.svg'
-import bitso from '../assets/sponsors2/bitso.svg'   
+import bitso from '../assets/sponsors2/bitso.svg'
+import livepeer from '../assets/sponsors2/livepeer.svg'
 
 const Sponsors = () => {
   const locale =
@@ -116,7 +117,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
-            <BoxInfo />
+          <BoxInfo>
+            <img width="150" src={livepeer} />
+          </BoxInfo>
           </BoxItem>
         </Row>
         <Row>
