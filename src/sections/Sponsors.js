@@ -27,6 +27,8 @@ import oz from '../assets/sponsors2/OZ.svg'
 import metis from '../assets/sponsors2/metis.svg'
 import bitso from '../assets/sponsors2/bitso.svg'
 import livepeer from '../assets/sponsors2/livepeer.svg'
+import connext from '../assets/sponsors2/connext.svg'
+import polygon from '../assets/sponsors2/polygon.svg'
 
 const Sponsors = () => {
   const locale =
@@ -117,9 +119,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierTwo">
-          <BoxInfo>
-            <img width="150" src={livepeer} />
-          </BoxInfo>
+            <BoxInfo>
+              <img width="150" src={livepeer} />
+            </BoxInfo>
           </BoxItem>
         </Row>
         <Row>
@@ -154,7 +156,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
-            <BoxInfo />
+            <BoxInfo>
+              <img width={width >= medium ? 210 : 150} src={polygon} />
+            </BoxInfo>
           </BoxItem>
 
           <BoxItem className="tierThree">
@@ -178,7 +182,9 @@ const Sponsors = () => {
             </BoxInfo>
           </BoxItem>
           <BoxItem className="tierThree">
-            <BoxInfo />
+            <BoxInfo>
+              <img src={connext} />
+            </BoxInfo>
           </BoxItem>
         </Row>
       </Container>
