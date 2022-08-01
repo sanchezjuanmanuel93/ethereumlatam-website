@@ -32,7 +32,7 @@ import alejo from '../assets/speakers2/alejo.jpeg'
 import patricioW from '../assets/speakers2/patricioW.jpg'
 import skeletor from '../assets/speakers2/skeletor.jpeg'
 import aya from '../assets/speakers2/aya.jpeg'
-import rahul from '../assets/speakers2/rahul.jpg'
+import arjun from '../assets/speakers2/arjun.jpeg'
 import rodrigo from '../assets/speakers2/rodrigo.jpg'
 import manuel from '../assets/speakers2/manuel.jpg'
 import nahuel from '../assets/speakers2/nahuel.JPG'
@@ -342,10 +342,10 @@ const Speakers = () => {
           </BoxItem>
 
           <BoxItem className="importantPerson">
-            <Content target="_blank" href="https://twitter.com/RHLSTHRM" className="importantPersonContent">
-              <img style={{ objectPosition: '100% 40%' }} src={rahul} />
+            <Content target="_blank" href="https://twitter.com/arjunbhuptani" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 40%' }} src={arjun} />
               <div>
-                <h1>Rahul Sethuram</h1>
+                <h1>Arjun Bhuptani</h1>
                 <h2>Connext</h2>
               </div>
             </Content>
