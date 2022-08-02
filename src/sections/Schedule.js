@@ -65,7 +65,7 @@ const Schedule = () => {
   const medium = 700
 
   return (
-    <ScheduleSection id="media" locale={locale}>
+    <ScheduleSection id="schedule" locale={locale}>
       <Container>
         <h1>
           <FormattedHTMLMessage id="schedule.title" />

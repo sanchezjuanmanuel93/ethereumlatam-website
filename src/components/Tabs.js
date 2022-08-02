@@ -17,6 +17,12 @@ const Tabs = ({ mode }) => {
       <a href="#venue">
         <FormattedMessage id="navbar.venue" />
       </a>
+      <a href="#schedule">
+        <FormattedMessage id="navbar.schedule" />
+      </a>
+      <a href="#theOtherSide">
+        Side events
+      </a>
       <a href="#faqs">
         <FormattedMessage id="navbar.faqs" />
       </a>
@@ -36,7 +42,7 @@ const TabsBox = styled.div`
     text-transform: uppercase;
     text-decoration: none;
     color: #4d4d4d;
-
+    text-align: left;
     padding: ${props => (props.mode == 'large' ? '0 10px' : '25px 0')};
     background: transparent;
     border: 0px solid;
