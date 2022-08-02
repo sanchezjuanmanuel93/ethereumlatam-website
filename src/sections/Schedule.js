@@ -187,7 +187,7 @@ const Schedule = () => {
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
-                  <h3>TBD</h3>
+                  <h3>It's web3 bitch</h3>
                   <p>
                     <img src={sebastian} />
                     Sebastián Serrano - Ripio
@@ -309,8 +309,8 @@ const Schedule = () => {
                   <p>Stage 1</p>
                   <h3>Stablecoins: algorithms vs collateral</h3>
                   <p>
-                    Mariano Dipietrantonio - MakerDao / Benjamin - Qidao /
-                    Christina Beltramini - Aave <br /> Mod: Julien - Rekt
+                    Mariano Di Pietrantonio - MakerDao / Benjamin - Qidao /
+                    Stani Kulechov - Aave
                   </p>
                 </div>
                 <div>
@@ -542,7 +542,7 @@ const Schedule = () => {
                   <p>Stage 1</p>
                   <h3>
                     Fireside Chat Game Disease: Explorá la verdadera naturaleza
-                    del unvierso NFT
+                    del universo NFT
                   </h3>
                   <p>
                     <img src={siesta} />
@@ -568,8 +568,7 @@ const Schedule = () => {
                 <div>
                   <p>Stage 1</p>
                   <h3>
-                    Axie infinity revoluciona el metaverso: NFT'S, Web3,
-                    Play&earn
+                    Axie Infinity revoluciona el metaverso: NFTs, Web3 y Play&Earn
                   </h3>
                   <p>
                     <img src={fernanda} /> Fernanda Dixon - Axie
