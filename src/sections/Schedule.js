@@ -82,6 +82,7 @@ const Schedule = () => {
             <Entry>
               <Hours>9:15 - 9:30</Hours>
               <div>
+                <p>Stage 1</p>
                 <h3>Opening Ceremony</h3>
                 <p>
                   <img src={evan} />
@@ -92,6 +93,7 @@ const Schedule = () => {
             <Entry>
               <Hours>9:30 - 9.55</Hours>
               <div>
+                <p>Stage 1</p>
                 <h3>TBD</h3>
                 <p>
                   <img src={aya} />
@@ -102,6 +104,7 @@ const Schedule = () => {
             <Entry>
               <Hours>10:00 - 10:25</Hours>
               <div>
+                <p>Stage 1</p>
                 <h3>TBD</h3>
                 <p>Skylar - Ethereum Foundation</p>
               </div>
@@ -109,6 +112,7 @@ const Schedule = () => {
             <Entry>
               <Hours>10:30-10:55</Hours>
               <div>
+                <p>Stage 1</p>
                 <h3>Entering the era of Web3 Social </h3>
                 <p>
                   <img src={stani} />
@@ -310,7 +314,7 @@ const Schedule = () => {
                   <h3>Stablecoins: algorithms vs collateral</h3>
                   <p>
                     Mariano Di Pietrantonio - MakerDao / Benjamin - Qidao /
-                    Stani Kulechov - Aave
+                    Stani Kulechov - Aave <br /> Mod: TBC
                   </p>
                 </div>
                 <div>
@@ -530,7 +534,10 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Exprésate! Identidad evolutiva on-chain y NFTs para atraer a la próxima generación de usuarios a Web3</h3>
+                  <h3>
+                    Exprésate! Identidad evolutiva on-chain y NFTs para atraer a
+                    la próxima generación de usuarios a Web3
+                  </h3>
                   <p>Nahuel Burbach - Zerion</p>
                 </div>
               </div>
@@ -568,7 +575,8 @@ const Schedule = () => {
                 <div>
                   <p>Stage 1</p>
                   <h3>
-                    Axie Infinity revoluciona el metaverso: NFTs, Web3 y Play&Earn
+                    Axie Infinity revoluciona el metaverso: NFTs, Web3 y
+                    Play&Earn
                   </h3>
                   <p>
                     <img src={fernanda} /> Fernanda Dixon - Axie
@@ -816,7 +824,6 @@ const Date = styled.div`
     text-transform: uppercase;
     margin: 0;
     padding-left: 16px;
-
   }
 `
 
