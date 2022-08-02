@@ -530,8 +530,8 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Construyendo una comunidad etérea de artistas</h3>
-                  <p>Cryptoarg</p>
+                  <h3>Exprésate! Identidad evolutiva on-chain y NFTs para atraer a la próxima generación de usuarios a Web3</h3>
+                  <p>Nahuel Burbach - Zerion</p>
                 </div>
               </div>
             </Entry>
