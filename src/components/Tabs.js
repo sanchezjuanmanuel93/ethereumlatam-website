@@ -17,7 +17,7 @@ const Tabs = ({ mode }) => {
       <a href="#venue">
         <FormattedMessage id="navbar.venue" />
       </a>
-      <a href="#schedule">
+      <a href="#agenda">
         <FormattedMessage id="navbar.schedule" />
       </a>
       <a href="#theOtherSide">
