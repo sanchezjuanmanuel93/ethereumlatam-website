@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import EthToLatam from './sections/EthToLatam'
 import Speakers from './sections/Speakers'
 import Sponsors from './sections/Sponsors'
+import Schedule from './sections/Schedule'
 import MediaPartners from './sections/MediaPartners'
 import Faqs from './sections/Faqs'
 import TheOtherSide from './sections/TheOtherSide'
@@ -17,11 +18,11 @@ function App() {
       <EthToLatam />
       <Speakers />
       <Sponsors />
-      <TheOtherSide />
       <MediaPartners/>
       <Venue />
+      <Schedule />
+      <TheOtherSide />
       <Faqs/>
-
       <Footer />
     </div>
   )
