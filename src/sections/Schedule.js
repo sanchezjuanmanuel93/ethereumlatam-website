@@ -9,6 +9,7 @@ import alan from '../assets/speakers2/alan.jpg'
 import alejandro from '../assets/speakers2/alejandro.png'
 import camila from '../assets/speakers2/camila.jpeg'
 import damian from '../assets/speakers2/damian.png'
+import juanManuel from '../assets/speakers2/juanManuel.png'
 import camilaR from '../assets/speakers2/camilaR.jpeg'
 import cryptoChica from '../assets/speakers2/cryptoChica.png'
 import matias from '../assets/speakers2/matias.png'
@@ -25,7 +26,7 @@ import gerrit from '../assets/speakers2/gerrit.jpg'
 import jose from '../assets/speakers2/jose.jpg'
 import marcelo from '../assets/speakers2/marcelo.jpg'
 import sebastian from '../assets/speakers2/sebastian.jpeg'
-import nicolas from '../assets/speakers2/nicolas.jpeg'
+import nicolas from '../assets/speakers2/nicolas.jpg'
 import julien from '../assets/speakers2/julien.jpeg'
 import fernanda from '../assets/speakers2/fernanda.jpeg'
 import alejo from '../assets/speakers2/alejo.jpeg'
@@ -36,7 +37,7 @@ import arjun from '../assets/speakers2/arjun.jpeg'
 import rodrigo from '../assets/speakers2/rodrigo.jpg'
 import manuel from '../assets/speakers2/manuel.jpg'
 import nahuel from '../assets/speakers2/nahuel.JPG'
-
+import demian from '../assets/speakers2/demian.jpg'
 import harsh from '../assets/speakers2/harsh.jpeg'
 import julian from '../assets/speakers2/julian.jpg'
 import matiasN from '../assets/speakers2/matiasN.jpg'
@@ -46,12 +47,14 @@ import vicky from '../assets/speakers2/vicky.jpeg'
 import gino from '../assets/speakers2/gino.jpeg'
 import adrian from '../assets/speakers2/adrian.jpeg'
 import diego from '../assets/speakers2/diego.jpeg'
-
+import renat from '../assets/speakers2/renat.jpg'
 import evin from '../assets/speakers2/evin.jpg'
 import will from '../assets/speakers2/will.png'
 import wade from '../assets/speakers2/wade.jpeg'
 import sxysun from '../assets/speakers2/sxysun.jpg'
+import pablo from '../assets/speakers2/pablo.jpg'
 import shannon from '../assets/speakers2/shannon.jpeg'
+import agusx1211 from '../assets/speakers2/agusx1211.jpg'
 
 const Schedule = () => {
   const locale =
@@ -142,7 +145,7 @@ const Schedule = () => {
                 <div>
                   <p>Stage 1</p>
                   <h3>Legal Challenges for Web 3 projects</h3>
-                  <p>Juan Manuel Campos Álvarez</p>
+                  <p><img src={juanManuel} /> Juan Manuel Campos Álvarez</p>
                 </div>
                 <div>
                   <p>Stage 2</p>
@@ -179,7 +182,7 @@ const Schedule = () => {
                     Payroll y Treasury management: Los problemas de llevar las
                     finanzas en una compañía web3.0
                   </h3>
-                  <p>Demian Drabyk - Wink</p>
+                  <p><img src={demian} /> Demian Drabyk - Wink</p>
                 </div>
               </div>
             </Entry>
@@ -278,7 +281,7 @@ const Schedule = () => {
                   <h3>
                     How to transition to Web3: why, what does it take, and how?
                   </h3>
-                  <p>Renat Khasanshyn - Protofire</p>
+                  <p><img src={renat} />Renat Khasanshyn - Protofire</p>
                 </div>
               </div>
             </Entry>
@@ -317,7 +320,7 @@ const Schedule = () => {
                 <div>
                   <p>Stage 2</p>
                   <h3>Justicia Descentralizada: Resolviendo Disputas en Mercados de NFTs</h3>
-                  <p>Jean - Kleros</p>
+                  <p><img src={oxjean} />Jean - Kleros</p>
                 </div>
               </div>
             </Entry>
@@ -361,7 +364,7 @@ const Schedule = () => {
                   <h3>
                     Riesgos y seguridad en Crypto: análisis y plan de acción
                   </h3>
-                  <p>Pablo Sabatella</p>
+                  <p><img src={pablo} />Pablo Sabatella</p>
                 </div>
               </div>
             </Entry>
@@ -442,7 +445,7 @@ const Schedule = () => {
                   <h3>
                     Nobody can handle the 24 words - A case for contract wallets
                   </h3>
-                  <p>Agusx1211 - Horizon</p>
+                  <p><img src={agusx1211} />Agusx1211 - Horizon</p>
                 </div>
               </div>
             </Entry>
@@ -535,7 +538,7 @@ const Schedule = () => {
                     Exprésate! Identidad evolutiva on-chain y NFTs para atraer a
                     la próxima generación de usuarios a Web3
                   </h3>
-                  <p>Nahuel Burbach - Zerion</p>
+                  <p><img src={nahuel} />Nahuel Burbach - Zerion</p>
                 </div>
               </div>
             </Entry>

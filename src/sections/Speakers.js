@@ -25,7 +25,7 @@ import gerrit from '../assets/speakers2/gerrit.jpg'
 import jose from '../assets/speakers2/jose.jpg'
 import marcelo from '../assets/speakers2/marcelo.jpg'
 import sebastian from '../assets/speakers2/sebastian.jpeg'
-import nicolas from '../assets/speakers2/nicolas.jpeg'
+import nicolas from '../assets/speakers2/nicolas.jpg'
 import julien from '../assets/speakers2/julien.jpeg'
 import fernanda from '../assets/speakers2/fernanda.jpeg'
 import alejo from '../assets/speakers2/alejo.jpeg'
@@ -122,7 +122,7 @@ const Speakers = () => {
           </BoxItem>
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/mrnventuro" className="importantPersonContent">
-              <img src={nicolas} />
+              <img style={{ objectPosition: '100% 70%' }} src={nicolas} />
               <div>
                 <h1>Nicolas Venturo</h1>
                 <h2>Balancer</h2>
