@@ -36,5 +36,6 @@
   "faqs.6.content": "<p>Nosso objetivo com a ETH Latam é incentivar a coordenação descentralizada de uma série de eventos relacionados à Ethereum. Naturalmente, haverão muitos outros eventos, festas e atividades acontecendo na mesma semana.</p><p>Se você quiser organizar seu próprio evento paralelo, pode entrar em contato com a gente preenchendo <a href='https://docs.google.com/forms/d/e/1FAIpQLSeMF0NTey0Dgq8_74e6Ddc9NU2ISTguiHH0_mM8EpYRdhbGIw/viewform'>este formulário</a></p>",
   "faqs.7.title": "Sugestões ou ideias?",
   "faqs.7.content": "Se você tiver alguma sugestão ou ideia, pode entrar em contato com a gente através do nosso email: <a href='mailto:hello@ethlatam.org'>hello@ethlatam.org</a>",
-  "schedule.break": "Lunch break"
+  "schedule.break": "Lunch break",
+  "schedule.closing": "Cerimônia de encerramento"
 }

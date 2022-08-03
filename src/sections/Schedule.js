@@ -84,10 +84,7 @@ const Schedule = () => {
               <div>
                 <p>Stage 1</p>
                 <h3>Opening Ceremony</h3>
-                <p>
-                  <img src={evan} />
-                  Evan Van Ness
-                </p>
+                <p>Sebastián Aldasoro</p>
               </div>
             </Entry>
             <Entry>
@@ -110,7 +107,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>10:30-10:55</Hours>
+              <Hours>10:30 - 10:55</Hours>
               <div>
                 <p>Stage 1</p>
                 <h3>Entering the era of Web3 Social </h3>
@@ -140,7 +137,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>11:30 -12:00</Hours>
+              <Hours>11:30 - 12:00</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -165,7 +162,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>13:30 -13:55</Hours>
+              <Hours>13:30 - 13:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -207,7 +204,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>14:30- 14:55</Hours>
+              <Hours>14:30 - 14:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -226,7 +223,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>15:00 -15:25</Hours>
+              <Hours>15:00 - 15:25</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -286,7 +283,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>16:30 -17:00</Hours>
+              <Hours>16:30 - 17:00</Hours>
               <div>
                 <h3>TBD</h3>
                 <p>
@@ -307,7 +304,7 @@ const Schedule = () => {
           </Date>
           <Talks>
             <Entry>
-              <Hours>10:30-11:00</Hours>
+              <Hours>10:30 - 11:00</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -319,7 +316,7 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Kleros</h3>
+                  <h3>Justicia Descentralizada: Resolviendo Disputas en Mercados de NFTs</h3>
                   <p>Jean - Kleros</p>
                 </div>
               </div>
@@ -348,7 +345,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>11:30 -12:00</Hours>
+              <Hours>11:30 - 12:00</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -377,7 +374,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>13:30 -13:55</Hours>
+              <Hours>13:30 - 13:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -419,7 +416,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>14:30- 14:55</Hours>
+              <Hours>14:30 - 14:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -438,7 +435,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>15:00 -15:25</Hours>
+              <Hours>15:00 - 15:25</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 2</p>
@@ -492,7 +489,7 @@ const Schedule = () => {
               </div>
             </Entry>
             <Entry>
-              <Hours>16:30 -17:00</Hours>
+              <Hours>16:30 - 17:00</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -522,7 +519,7 @@ const Schedule = () => {
           </Date>
           <Talks>
             <Entry>
-              <Hours>13:30 -13:55</Hours>
+              <Hours>13:30 - 13:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -558,19 +555,16 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>
-                    Exprésate! Identidad evolutiva on-chain y NFTs para atraer a
-                    la próxima generación de usuarios a Web3
-                  </h3>
+                  <h3>Panel: Music NFTs</h3>
                   <p>
-                    <img src={nahuel} />
-                    Nahuel Burbach - Zerion
+                    Enigma / sweetman.eth / Nicolás Madoery <br /> Mod:
+                    Sebastián Aldasoro
                   </p>
                 </div>
               </div>
             </Entry>
             <Entry>
-              <Hours>14:30- 14:55</Hours>
+              <Hours>14:30 - 14:55</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -584,13 +578,16 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Panel: Music NFTs</h3>
-                  <p>Enigma / sweetman.eth / Nicolás Madoery / Sebas</p>
+                  <h3>
+                    What it means to have a digital web3 identity: doxxed, anon
+                    or a mix.
+                  </h3>
+                  <p>White Chocolate - Hashmasks</p>
                 </div>
               </div>
             </Entry>
             <Entry>
-              <Hours>15:00 -15:25</Hours>
+              <Hours>15:00 - 15:25</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
@@ -605,11 +602,8 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>
-                    What it means to have a digital web3 identity: doxxed, anon
-                    or a mix.
-                  </h3>
-                  <p>White Chocolate - Hashmasks</p>
+                  <h3>Play-and-Earn Gaming in the Hispanic markets</h3>
+                  <p>Martin Blaquier</p>
                 </div>
               </div>
             </Entry>
@@ -626,8 +620,11 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Play-and-Earn Gaming in the Hispanic markets</h3>
-                  <p>Martin Blaquier</p>
+                  <h3>
+                    Mint your first music NFT with Zora V3, 0xSplits & Lens
+                    Protocol
+                  </h3>
+                  <p>sweetman.eth - Mintsongs</p>
                 </div>
               </div>
             </Entry>
@@ -639,18 +636,10 @@ const Schedule = () => {
                   <h3>Ethereum Q&A</h3>
                   <p>TBC</p>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    Mint your first music NFT with Zora V3, 0xSplits & Lens
-                    Protocol
-                  </h3>
-                  <p>sweetman.eth - Mintsongs</p>
-                </div>
               </div>
             </Entry>
             <Entry>
-              <Hours>16:30 -17:00</Hours>
+              <Hours>16:30 - 17:00</Hours>
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
