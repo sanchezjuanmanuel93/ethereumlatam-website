@@ -188,7 +188,7 @@ const Schedule = () => {
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
-                  <h3>It's web3 bitch</h3>
+                  <h3>Web3 for LatAm: the revolution will not be centralized</h3>
                   <p>
                     <img src={sebastian} />
                     Sebastián Serrano - Ripio
@@ -643,7 +643,7 @@ const Schedule = () => {
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
-                  <h3>Cierre</h3>
+                  <h3><FormattedHTMLMessage id="schedule.closing" /></h3>
                 </div>
               </div>
             </Entry>
