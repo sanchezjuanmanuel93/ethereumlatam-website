@@ -46,13 +46,18 @@ import vicky from '../assets/speakers2/vicky.jpeg'
 import gino from '../assets/speakers2/gino.jpeg'
 import adrian from '../assets/speakers2/adrian.jpeg'
 import diego from '../assets/speakers2/diego.jpeg'
-
+import juanManuel from '../assets/speakers2/juanManuel.png'
 import evin from '../assets/speakers2/evin.jpg'
 import will from '../assets/speakers2/will.png'
 import wade from '../assets/speakers2/wade.jpeg'
 import sxysun from '../assets/speakers2/sxysun.jpg'
 import shannon from '../assets/speakers2/shannon.jpeg'
 import pablo from '../assets/speakers2/pablo.jpg'
+import agusx1211 from '../assets/speakers2/agusx1211.jpg'
+import renat from '../assets/speakers2/renat.jpg'
+import maxi from '../assets/speakers2/maxi.jpeg'
+import patricioM from '../assets/speakers2/patricioM.jpg'
+import wei3erHase from '../assets/speakers2/wei3erHase.jpg'
 
 
 const Speakers = () => {
@@ -295,6 +300,15 @@ const Speakers = () => {
             </Content>
           </BoxItem>
           <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/wei3erHase" className="importantPersonContent">
+              <img src={wei3erHase} />
+              <div>
+                <h1>Wei3erHase</h1>
+                <h2>Defi Wonderland</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
             <Content target="_blank" href="https://twitter.com/fiiiu_" className="importantPersonContent">
               <img src={alejo} />
               <div>
@@ -492,6 +506,51 @@ const Speakers = () => {
               <div>
                 <h1>Pablo Sabbatella</h1>
                 <h2>Defy Education</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/agusx1211" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={agusx1211} />
+              <div>
+                <h1>Agusx1211</h1>
+                <h2>Horizon</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/renatco" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={renat} />
+              <div>
+                <h1>Renat</h1>
+                <h2>Protofire</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://www.linkedin.com/in/juan-manuel-campos-alvarez-syls/" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={juanManuel} />
+              <div>
+                <h1>Juan Manuel Campos A</h1>
+                <h2>Salaberren y Lopez Sanson</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/maxidbustos" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={maxi} />
+              <div>
+                <h1>Maxi Bustos</h1>
+                <h2>Futureswap</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/patriciomolina" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={patricioM} />
+              <div>
+                <h1>Patricio Molina</h1>
+                <h2>Exactly</h2>
               </div>
             </Content>
           </BoxItem>
