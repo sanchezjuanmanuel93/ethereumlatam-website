@@ -529,7 +529,7 @@ const Speakers = () => {
           </BoxItem>
           <BoxItem className="importantPerson">
             <Content target="_blank" href="https://www.linkedin.com/in/juan-manuel-campos-alvarez-syls/" className="importantPersonContent">
-              <img style={{ objectPosition: '100% 50%' }} src={juanManuel} />
+              <img style={{ objectPosition: '100% 20%' }} src={juanManuel} />
               <div>
                 <h1>Juan Manuel Campos A</h1>
                 <h2>Salaberren y Lopez Sanson</h2>
