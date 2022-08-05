@@ -82,6 +82,13 @@ const Schedule = () => {
             <h3>11th</h3>
           </Date>
           <Talks>
+          <Entry>
+            <Hours>8:00</Hours>
+            <div>
+              <p>Stage 1</p>
+              <h3>Acreditación</h3>
+            </div>
+          </Entry>
             <Entry>
               <Hours>9:15 - 9:30</Hours>
               <div>
@@ -313,8 +320,8 @@ const Schedule = () => {
                   <p>Stage 1</p>
                   <h3>Stablecoins: algorithms vs collateral</h3>
                   <p>
-                    Mariano Di Pietrantonio - MakerDao / Benjamin - Qidao /
-                    Stani Kulechov - Aave <br /> Mod: TBC
+                    Mariano Di Pietrantonio - MakerDao / Benjamin - QiDao /
+                    Stani Kulechov - Aave / Julien Bouteloup - Rekt <br /> Mod: Andrew Piscione
                   </p>
                 </div>
                 <div>
@@ -364,7 +371,7 @@ const Schedule = () => {
                   <h3>
                     Riesgos y seguridad en Crypto: análisis y plan de acción
                   </h3>
-                  <p><img src={pablo} />Pablo Sabatella</p>
+                  <p><img src={pablo} />Pablo Sabbatella</p>
                 </div>
               </div>
             </Entry>
@@ -410,7 +417,7 @@ const Schedule = () => {
                 </div>
                 <div>
                   <p>Stage 2</p>
-                  <h3>Oracles (Ke3per Network)</h3>
+                  <h3>Oracles suck</h3>
                   <p>
                     <img src={skeletor} />
                     Skeletor Spaceman - Defi Wonderland
@@ -526,9 +533,9 @@ const Schedule = () => {
               <div className="twoColumns">
                 <div>
                   <p>Stage 1</p>
-                  <h3>TBD</h3>
+                  <h3>Descentralizacion: El feature clave del metaverso</h3>
                   <p>
-                    <img src={gino} />
+                    <img src={quid} />
                     Gino Cingolani Trucco - Decentraland
                   </p>
                 </div>
