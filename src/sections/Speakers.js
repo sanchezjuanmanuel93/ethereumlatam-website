@@ -52,6 +52,7 @@ import will from '../assets/speakers2/will.png'
 import wade from '../assets/speakers2/wade.jpeg'
 import sxysun from '../assets/speakers2/sxysun.jpg'
 import shannon from '../assets/speakers2/shannon.jpeg'
+import pablo from '../assets/speakers2/pablo.jpg'
 
 
 const Speakers = () => {
@@ -482,6 +483,15 @@ const Speakers = () => {
               <div>
                 <h1>Xinyuan Sun</h1>
                 <h2>Flashbots</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/PabloSabbatella" className="importantPersonContent">
+              <img style={{ objectPosition: '100% 50%' }} src={pablo} />
+              <div>
+                <h1>Pablo Sabbatella</h1>
+                <h2>Defy Education</h2>
               </div>
             </Content>
           </BoxItem>

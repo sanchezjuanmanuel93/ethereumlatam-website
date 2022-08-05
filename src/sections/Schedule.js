@@ -535,7 +535,7 @@ const Schedule = () => {
                   <p>Stage 1</p>
                   <h3>Descentralizacion: El feature clave del metaverso</h3>
                   <p>
-                    <img src={quid} />
+                    <img src={gino} />
                     Gino Cingolani Trucco - Decentraland
                   </p>
                 </div>
