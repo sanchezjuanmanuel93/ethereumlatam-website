@@ -25,9 +25,9 @@ const Hero = () => {
             >> Argentina
           </p>
         </Box>
-        
-        <Button href="https://www.eventbrite.com/e/ethlatam-at-buenos-aires-tickets-374680147407" target="_blank">
-          <FormattedMessage id="hero.button" />!
+
+        <Button>
+          <FormattedMessage id="hero.button" />
         </Button>
       </Container>
       <Loop reverse={true} content={<img alt="img" src={image} />} />

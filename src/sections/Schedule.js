@@ -31,7 +31,7 @@ import julien from '../assets/speakers2/julien.jpeg'
 import fernanda from '../assets/speakers2/fernanda.jpeg'
 import alejo from '../assets/speakers2/alejo.jpeg'
 import patricioW from '../assets/speakers2/patricioW.jpg'
-import skeletor from '../assets/speakers2/skeletor.jpeg'
+import skeletor from '../assets/speakers2/skeletor.jpg'
 import aya from '../assets/speakers2/aya.jpeg'
 import arjun from '../assets/speakers2/arjun.jpeg'
 import rodrigo from '../assets/speakers2/rodrigo.jpg'
@@ -67,598 +67,797 @@ const Schedule = () => {
   }, [])
   const medium = 700
 
+  const [active, setActive] = useState(0)
+  const handleClick = e => {
+    const index = parseInt(e.target.id, 0)
+    if (index !== active) {
+      setActive(index)
+    }
+  }
+
   return (
     <ScheduleSection id="agenda" locale={locale}>
       <Container>
-        <h1>
-          <FormattedHTMLMessage id="schedule.title" />
-        </h1>
-        <Day>
-          <Date className="one">
-            <h2>
-              /<span className="pixel">01</span>
-            </h2>
-            <h3>Thursday</h3>
-            <h3>11th</h3>
-          </Date>
-          <Talks>
-          <Entry>
-            <Hours>8:00</Hours>
-            <div>
-              <p>Stage 1</p>
-              <h3>Acreditación</h3>
-            </div>
-          </Entry>
-            <Entry>
-              <Hours>9:15 - 9:30</Hours>
-              <div>
-                <p>Stage 1</p>
-                <h3>Opening Ceremony</h3>
-                <p>Sebastián Aldasoro</p>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>9:30 - 9.55</Hours>
-              <div>
-                <p>Stage 1</p>
-                <h3>TBD</h3>
-                <p>
-                  <img src={aya} />
-                  Aya Miyaguchi - Ethereum Foundation
-                </p>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>10:00 - 10:25</Hours>
-              <div>
-                <p>Stage 1</p>
-                <h3>TBD</h3>
-                <p>Skylar - Ethereum Foundation</p>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>10:30 - 10:55</Hours>
-              <div>
-                <p>Stage 1</p>
-                <h3>Entering the era of Web3 Social </h3>
-                <p>
-                  <img src={stani} />
-                  Stani Kulechov - Lens
-                </p>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>11:00 - 11:25</Hours>
-              <div className="twoColumns">
+        <Head>
+          <h1>
+            <FormattedHTMLMessage id="schedule.title" />
+          </h1>
+          <div>
+            <button
+              onClick={handleClick}
+              className={active === 0 && 'active'}
+              id={0}
+            >
+              TALKS
+            </button>
+            <button
+              onClick={handleClick}
+              className={active === 1 && 'active'}
+              id={1}
+            >
+              WORKSHOPS
+            </button>
+          </div>
+        </Head>
+        <Content className={active === 0 && 'active'}>
+          <Day>
+            <Date className="one">
+              <h2>
+                /<span className="pixel">01</span>
+              </h2>
+              <h3>Thursday</h3>
+              <h3>11th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>8:00</Hours>
                 <div>
                   <p>Stage 1</p>
-                  <h3>Identidad digital autosoberana</h3>
-                  <p>
-                    <img src={diego} /> Diego Fernández - GCBA
-                  </p>
+                  <h3>Acreditación</h3>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Producto y comunidad: evolución hacia web3</h3>
-                  <p>
-                    <img src={vicky} /> Vicky Guareschi - Lemon
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>11:30 - 12:00</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>9:15 - 9:30</Hours>
                 <div>
                   <p>Stage 1</p>
-                  <h3>Legal Challenges for Web 3 projects</h3>
-                  <p><img src={juanManuel} /> Juan Manuel Campos Álvarez</p>
+                  <h3>Opening Ceremony</h3>
+                  <p>Sebastián Aldasoro</p>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>UNO: The future is multichain farming</h3>
-                  <p>
-                    <img src={adrian} /> Adrián Addesso - PieDAO
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>12:00 - 13:30</Hours>
-              <div>
-                <h3>
-                  <FormattedHTMLMessage id="schedule.break" />
-                </h3>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>13:30 - 13:55</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>9:30 - 9.55</Hours>
                 <div>
                   <p>Stage 1</p>
-                  <h3>Panel: Crypto adoption in Latam</h3>
-                  <p>
-                    Marcelo Cavazzoli - Lemon / Manuel Beaudroit - Belo / Santos
-                    Barrios - Letsbit / Julián Colombo - Bitso. <br /> Mod:
-                    Olivia Goldschmidt
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
                   <h3>
-                    Payroll y Treasury management: Los problemas de llevar las
-                    finanzas en una compañía web3.0
+                    Supporting the Infinite Garden- how we started, how it's
+                    growing
                   </h3>
-                  <p><img src={demian} /> Demian Drabyk - Wink</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:00 - 14:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Web3 for LatAm: the revolution will not be centralized</h3>
                   <p>
-                    <img src={sebastian} />
-                    Sebastián Serrano - Ripio
+                    <img src={aya} />
+                    Aya Miyaguchi - Ethereum Foundation
                   </p>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    Fundraising: No hay una sola forma de levantar capital
-                  </h3>
-                  <p>Juan Ignacio Gallo - Fund.it</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:30 - 14:55</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>10:00 - 10:25</Hours>
                 <div>
                   <p>Stage 1</p>
+                  <h3>PoS, The Merge, and the Future of Ethereum</h3>
+                  <p>Skylar - Ethereum Foundation</p>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>10:30 - 10:55</Hours>
+                <div>
+                  <p>Stage 1</p>
+                  <h3>Entering the era of Web3 Social </h3>
+                  <p>
+                    <img src={stani} />
+                    Stani Kulechov - Lens
+                  </p>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>11:00 - 11:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Identidad Digital auto-soberana: el nuevo paradigma que
+                      implementará la Ciudad de Buenos Aires
+                    </h3>
+                    <p>
+                      <img src={diego} /> Diego Fernández - GCBA
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Producto y comunidad: evolución hacia web3</h3>
+                    <p>
+                      <img src={vicky} /> Vicky Guareschi - Lemon
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>11:30 - 12:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Legal Challenges for Web 3 projects</h3>
+                    <p>
+                      <img src={juanManuel} /> Juan Manuel Campos Álvarez
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      UNO: One fund, All chains | Stablecoin farming with no
+                      limits
+                    </h3>
+                    <p>
+                      <img src={adrian} /> Adrián Addesso - PieDAO
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>12:00 - 13:30</Hours>
+                <div>
+                  <h3>
+                    <FormattedHTMLMessage id="schedule.break" />
+                  </h3>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>13:30 - 13:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Panel: Crypto adoption in Latam</h3>
+                    <p>
+                      Marcelo Cavazzoli - Lemon / Manuel Beaudroit - Belo /
+                      Santos Barrios - Letsbit / Julián Colombo - Bitso. <br />{' '}
+                      Mod: Olivia Goldschmidt
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Payroll y Treasury management: Los problemas de llevar las
+                      finanzas en una compañía web3.0
+                    </h3>
+                    <p>
+                      <img src={demian} /> Demian Drabyk - Wink
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:00 - 14:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Web3 for LatAm: the revolution will not be centralized
+                    </h3>
+                    <p>
+                      <img src={sebastian} />
+                      Sebastián Serrano - Ripio
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Fundraising: No hay una sola forma de levantar capital
+                    </h3>
+                    <p>Juan Ignacio Gallo - Fund.it</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:30 - 14:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Decentralizing the time value of money</h3>
+                    <p>Gabriel Gruber - Exactly</p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Web3 mobile interoperatibility</h3>
+                    <p>Bruno Calmels - Defiant</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:00 - 15:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>The Key to Fun: Identity & Reputation in Web3</h3>
+                    <p>
+                      <img src={evin} /> Evin Mc Mullen - Disco
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Liquidity Mining, staking y lágrimas</h3>
+                    <p>
+                      <img src={nicolas} /> Nicolás Venturo - Balancer
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:30 - 15:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Vyper + DeFi = 💘</h3>
+                    <p>
+                      <img src={gerrit} /> Gerrit - Vyper
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Squeeth Conmigo: Como Podemos Crear DeFi-native
+                      derivatives
+                    </h3>
+                    <p>
+                      <img src={wade} /> Wadé - Opyn
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:00 - 16:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      How to transition to Web3: why, what does it take, and
+                      how?
+                    </h3>
+                    <p>
+                      <img src={renat} /> Renat Khasanshyn - Protofire
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>TBC</h3>
+                    <p>Babi - Pods</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:30 - 17:00</Hours>
+                <div>
                   <h3>TBD</h3>
                   <p>
-                    <img src={will} /> Will Villanueva - Element Finance
+                    <img src={mariano} />
+                    Mariano Conti
                   </p>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Liquidity Mining, staking y lágrimas</h3>
-                  <p>
-                    <img src={nicolas} /> Nicolás Venturo - Balancer
-                  </p>
+              </Entry>
+            </Talks>
+          </Day>
+          <Day>
+            <Date className="two">
+              <h2>
+                /<span className="pixel">02</span>
+              </h2>
+              <h3>Friday</h3>
+              <h3>12th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>10:00 - 10:30</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Stablecoins: algorithms vs collateral</h3>
+                    <p>
+                      Mariano Di Pietrantonio - MakerDao / Benjamin - QiDao /
+                      Stani Kulechov - Aave / Julien Bouteloup - Rekt <br />{' '}
+                      Mod: Andrew Piscione
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Lessons learned running a validator in LATAM outside AWS
+                    </h3>
+                    <p>Rodrigo Benzaquen - Sensei Node</p>
+                  </div>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:00 - 15:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>The Key to Fun: Identity & Reputation in Web3</h3>
-                  <p>
-                    <img src={evin} /> Evin Mc Mullen - Disco
-                  </p>
+              </Entry>
+              <Entry>
+                <Hours>10:30 - 11:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Router proxies</h3>
+                    <p>Alejandro Santander - Synthetix</p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Justicia Descentralizada: Resolviendo Disputas en Mercados
+                      de NFTs
+                    </h3>
+                    <p>
+                      <img src={oxjean} />
+                      Jean - Kleros
+                    </p>
+                  </div>
                 </div>
+              </Entry>
+              <Entry>
+                <Hours>11:00 - 11:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Hacks, rugs, lack of accountability, broken DAOs, and
+                      more. How do we fix it?
+                    </h3>
+                    <p>
+                      <img src={matiasN} /> Matías Niesenson - DeFi Wonderland
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Descentralizando la sociedad</h3>
+                    <p>
+                      <img src={jose} />
+                      José Alfonso Fabregas - Metis
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>11:30 - 12:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Identidad digital con Web3</h3>
+                    <p>
+                      <img src={damian} />
+                      <img src={matias} />
+                      Damian Schenkelman, Matias Woloski - Auth0
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Riesgos y seguridad en Crypto: análisis y plan de acción
+                    </h3>
+                    <p>
+                      <img src={pablo} />
+                      Pablo Sabbatella
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>12:00 - 13:30</Hours>
                 <div>
-                  <p>Stage 2</p>
                   <h3>
-                    Squeeth Conmigo: Como Podemos Crear DeFi-native derivatives
+                    <FormattedHTMLMessage id="schedule.break" />
+                  </h3>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>13:30 - 13:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Foundations for a New Internet: Why Web3 Infrastrucutre
+                      Matters
+                    </h3>
+                    <p>
+                      <img src={shannon} />
+                      Shannon Wells - Livepeer
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Privacy by design</h3>
+                    <p>Tiago Sada - Worldcoin</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:00 - 14:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Building xChain Applications with Connext</h3>
+                    <p>
+                      <img src={arjun} />
+                      Arjun - Connext
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Oracles suck</h3>
+                    <p>
+                      <img src={skeletor} />
+                      Skeletor Spaceman - Defi Wonderland
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:30 - 14:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>How to build Web3 communication in your protocol</h3>
+                    <p>Jaffet Sandi - EPNS</p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Usable security in web3</h3>
+                    <p>
+                      <img src={antonela} /> Antonela Debiasi - Metamask
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:00 - 15:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>The future of Ethereum scaling with Polygon</h3>
+                    <p>Luiz Henrique Amorim - Polygon</p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Comunicaciones en una DAO</h3>
+                    <p>Mariano Di Pietra - MakerDAO</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:30 - 15:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Building the infrastructure for secure web3 operations
+                    </h3>
+                    <p>
+                      <img src={santiago} />
+                      Santiago Palladino - OpenZeppelin
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      Nobody can handle the 24 words - A case for contract
+                      wallets
+                    </h3>
+                    <p>Agusx1211 - Horizon</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:00 - 16:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Past, Present, and Future of MEV</h3>
+                    <p>
+                      <img src={alejo} /> Alejo Salles - Flashbots
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>
+                      The Graph: Decentralized Data, web3 APIs, and Use Cases
+                    </h3>
+                    <p>Brian Berman - The Graph</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:30 - 17:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Slang: un nuevo compilador de Solidity</h3>
+                    <p>
+                      <img src={patricio} /> Patricio Palladino - Nomic
+                      Foundation
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Relieving Moloch’s Curse</h3>
+                    <p>
+                      <img src={sxysun} /> Xinyuan Sun - Flashbots
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+            </Talks>
+          </Day>
+          <Day>
+            <Date className="three">
+              <h2>
+                /<span className="pixel">03</span>
+              </h2>
+              <h3>Saturday</h3>
+              <h3>13th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>13:30 - 13:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Descentralizacion: El feature clave del metaverso</h3>
+                    <p>
+                      <img src={gino} />
+                      Gino Cingolani Trucco - Decentraland
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Tu identidad en Web3 - NFTs y SBTs</h3>
+                    <p>
+                      <img src={nahuel} />
+                      Nahuel Burbach - Zerion
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:00 - 14:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Fireside Chat Game Disease: Explorá la verdadera
+                      naturaleza del universo NFT
+                    </h3>
+                    <p>
+                      <img src={siesta} />
+                      Frenetik Void, Milton Sanz, Siesta
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Panel: Music NFTs</h3>
+                    <p>
+                      Enigma / sweetman.eth / Nicolás Madoery <br /> Mod:
+                      Sebastián Aldasoro
+                    </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>14:30 - 14:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      Axie Infinity revoluciona el metaverso: NFTs, Web3 y
+                      Play&Earn
+                    </h3>
+                    <p>
+                      <img src={fernanda} /> Fernanda Dixon - Axie
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Digital ID: Today's Dreams, Tomorrow's Reality</h3>
+                    <p>White Chocolate - Hashmasks</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:00 - 15:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      The Infinite Machine Movie: la intersección de Hollywood y
+                      NFTs
+                    </h3>
+                    <p>
+                      <img src={camilaR} />
+                      Camila Russo - The Defiant
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Play-and-Earn Gaming in the Hispanic markets</h3>
+                    <p>Martin Blaquier</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:30 - 15:55</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>4 años minteando soulbound tokens</h3>
+                    <p>
+                      <img src={patricioW} />
+                      Patricio Worthalter - POAP
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Smart contracts para música NFT</h3>
+                    <p>sweetman.eth - Mintsongs</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:00 - 16:25</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>Ethereum Q&A</h3>
+                    <p>TBC</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>16:30 - 17:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Stage 1</p>
+                    <h3>
+                      <FormattedHTMLMessage id="schedule.closing" />
+                    </h3>
+                  </div>
+                </div>
+              </Entry>
+            </Talks>
+          </Day>
+        </Content>
+        <Content className={active === 1 && 'active'}>
+          <Day>
+            <Date className="one">
+              <h2>
+                /<span className="pixel">01</span>
+              </h2>
+              <h3>Thursday</h3>
+              <h3>11th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>11:00 - 12:00</Hours>
+                <div>
+                  <h3>
+                    Unlock an endless world of possibilities via CoW Protocol
+                    SDK
                   </h3>
                   <p>
-                    <img src={wade} /> Wadé - Opyn
+                    Cristian Malfesi / Henry Palacios / Ramiro Vázquez -
+                    Protofire
                   </p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:30 - 15:55</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>12:00 - 13:30</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>Decentralizing the time value of money</h3>
-                  <p>
-                    <img src={gabriel} />
-                    Gabriel Gruber - Exactly
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Vyper + DeFi = 💘</h3>
-                  <p>
-                    <img src={gerrit} /> Gerrit - Vyper
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:00 - 16:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Router proxies</h3>
-                  <p>
-                    <img src={alejandro} /> Alejandro Santander - Synthetix
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
                   <h3>
-                    How to transition to Web3: why, what does it take, and how?
+                    <FormattedHTMLMessage id="schedule.break" />
                   </h3>
-                  <p><img src={renat} />Renat Khasanshyn - Protofire</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:30 - 17:00</Hours>
-              <div>
-                <h3>TBD</h3>
-                <p>
-                  <img src={mariano} />
-                  Mariano Conti
-                </p>
-              </div>
-            </Entry>
-          </Talks>
-        </Day>
-        <Day>
-          <Date className="two">
-            <h2>
-              /<span className="pixel">02</span>
-            </h2>
-            <h3>Friday</h3>
-            <h3>12th</h3>
-          </Date>
-          <Talks>
-            <Entry>
-              <Hours>10:30 - 11:00</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>14:00 - 15:00</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>Stablecoins: algorithms vs collateral</h3>
-                  <p>
-                    Mariano Di Pietrantonio - MakerDao / Benjamin - QiDao /
-                    Stani Kulechov - Aave / Julien Bouteloup - Rekt <br /> Mod: Andrew Piscione
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Justicia Descentralizada: Resolviendo Disputas en Mercados de NFTs</h3>
-                  <p><img src={oxjean} />Jean - Kleros</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>11:00 - 11:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
                   <h3>
-                    Hacks, rugs, lack of accountability, broken DAOs, and more.
-                    How do we fix it?
+                    Principles, methods and tools for a successful web3 launch
                   </h3>
-                  <p>
-                    <img src={matiasN} /> Matías Niesenson - DeFi Wonderland
-                  </p>
+                  <p>Maxi Bustos - FutureSwap</p>
                 </div>
+              </Entry>
+              <Entry>
+                <Hours>15:00 - 16:00</Hours>
                 <div>
-                  <p>Stage 2</p>
-                  <h3>Descentralizando la sociedad</h3>
-                  <p>
-                    <img src={jose} />
-                    José Alfonso Fabregas - Metis
-                  </p>
+                  <h3>Introducción a Lens Protocol</h3>
+                  <p>Alan Donoso</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>11:30 - 12:00</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>16:00 - 17:00</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>Identidad digital con Web3</h3>
-                  <p>
-                    <img src={damian} />
-                    <img src={matias} />
-                    Damian Schenkelman, Matias Woloski - Auth0
-                  </p>
+                  <h3>Completing the Defi credit market </h3>
+                  <p>Patricio Molina y Nicolás Castro García - Exactly</p>
                 </div>
+              </Entry>
+            </Talks>
+          </Day>
+          <Day>
+            <Date className="two">
+              <h2>
+                /<span className="pixel">02</span>
+              </h2>
+              <h3>Friday</h3>
+              <h3>12th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>10:30 - 12:00</Hours>
                 <div>
-                  <p>Stage 2</p>
                   <h3>
-                    Riesgos y seguridad en Crypto: análisis y plan de acción
+                    Cool projects on StarkNet that wouldn't be possible on L1
                   </h3>
-                  <p><img src={pablo} />Pablo Sabbatella</p>
+                  <p>Ohad Barta - Starware</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>12:00 - 13:30</Hours>
-              <div>
-                <h3>
-                  <FormattedHTMLMessage id="schedule.break" />
-                </h3>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>13:30 - 13:55</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>12:00 - 13:30</Hours>
                 <div>
-                  <p>Stage 1</p>
                   <h3>
-                    Foundations for a New Internet: Why Web3 Infrastrucutre
-                    Matters
+                    <FormattedHTMLMessage id="schedule.break" />
                   </h3>
-                  <p>
-                    <img src={shannon} />
-                    Shannon Wells - Livepeer
-                  </p>
                 </div>
+              </Entry>
+              <Entry>
+                <Hours>13:30 - 15:00</Hours>
                 <div>
-                  <p>Stage 2</p>
-                  <h3>Privacy by design</h3>
-                  <p>Tiago Sada - Worldcoin</p>
+                  <h3>Getting started with Cairo for StarkNet</h3>
+                  <p>Martin Triay - OpenZeppelin</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:00 - 14:25</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>15:00 - 16:00</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>Building xChain Applications with Connext</h3>
-                  <p>
-                    <img src={arjun} />
-                    Arjun - Connext
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Oracles suck</h3>
-                  <p>
-                    <img src={skeletor} />
-                    Skeletor Spaceman - Defi Wonderland
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:30 - 14:55</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Why Web3 Communication Matters</h3>
-                  <p>
-                    <img src={harsh} /> Harsh Rajat - EPNS
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Usable security in web3</h3>
-                  <p>
-                    <img src={antonela} /> Antonela Debiasi - Metamask
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:00 - 15:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 2</p>
                   <h3>
-                    Nobody can handle the 24 words - A case for contract wallets
+                    Solidity y su evolución: Buenas practicas en el
+                    Desarrollo/Testing
                   </h3>
-                  <p><img src={agusx1211} />Agusx1211 - Horizon</p>
+                  <p>Alejo Lovallo y Lucas Marc - Think&Dev</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:30 - 15:55</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry>
+                <Hours>16:00 - 17:00</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>
-                    Building the infrastructure for secure web3 operations
-                  </h3>
-                  <p>
-                    <img src={santiago} />
-                    Santiago Palladino - OpenZeppelin
-                  </p>
+                  <h3>Mastering the blockchain's dirty data</h3>
+                  <p>Wei3erHase - DeFi Wonderland</p>
                 </div>
+              </Entry>
+            </Talks>
+          </Day>
+          <Day>
+            <Date className="three">
+              <h2>
+                /<span className="pixel">03</span>
+              </h2>
+              <h3>Saturday</h3>
+              <h3 style={{ paddingBottom: '30px' }}>13th</h3>
+            </Date>
+            <Talks>
+              <Entry>
+                <Hours>13:30 - 14:30</Hours>
                 <div>
-                  <p>Stage 2</p>
-                  <h3>TBD</h3>
-                  <p>Brian - The Graph</p>
+                  <h3>Cryptoarg: construyendo una red etérea de artistas</h3>
+                  <p>Joaquina Salgado - Mar de Formas - Okytomo</p>
                 </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:00 - 16:25</Hours>
-              <div className="twoColumns">
+              </Entry>
+              <Entry style={{ borderBottom: '0px' }}>
+                <Hours>14:30 - 15:30</Hours>
                 <div>
-                  <p>Stage 1</p>
-                  <h3>Past, Present, and Future of MEV</h3>
-                  <p>
-                    <img src={alejo} /> Alejo Salles - Flashbots
-                  </p>
+                  <h3>Building Composable SVG NFTs with Scaffold-ETH</h3>
+                  <p>Damian Martinelli</p>
                 </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    Lessons learned running a validator in LATAM outside AWS
-                  </h3>
-                  <p>
-                    <img src={rodrigo} />
-                    Rodrigo Benzaquen - Sensei Node
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:30 - 17:00</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Slang: un nuevo compilador de Solidity</h3>
-                  <p>
-                    <img src={patricio} /> Patricio Palladino - Nomic Foundation
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Relieving Moloch’s Curse</h3>
-                  <p>
-                    <img src={sxysun} /> Xinyuan Sun - Flashbots
-                  </p>
-                </div>
-              </div>
-            </Entry>
-          </Talks>
-        </Day>
-        <Day>
-          <Date className="three">
-            <h2>
-              /<span className="pixel">03</span>
-            </h2>
-            <h3>Saturday</h3>
-            <h3>13th</h3>
-          </Date>
-          <Talks>
-            <Entry>
-              <Hours>13:30 - 13:55</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Descentralizacion: El feature clave del metaverso</h3>
-                  <p>
-                    <img src={gino} />
-                    Gino Cingolani Trucco - Decentraland
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    Exprésate! Identidad evolutiva on-chain y NFTs para atraer a
-                    la próxima generación de usuarios a Web3
-                  </h3>
-                  <p><img src={nahuel} />Nahuel Burbach - Zerion</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:00 - 14:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>
-                    Fireside Chat Game Disease: Explorá la verdadera naturaleza
-                    del universo NFT
-                  </h3>
-                  <p>
-                    <img src={siesta} />
-                    Frenetik Void, Milton Sanz, Siesta
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Panel: Music NFTs</h3>
-                  <p>
-                    Enigma / sweetman.eth / Nicolás Madoery <br /> Mod:
-                    Sebastián Aldasoro
-                  </p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>14:30 - 14:55</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>
-                    Axie Infinity revoluciona el metaverso: NFTs, Web3 y
-                    Play&Earn
-                  </h3>
-                  <p>
-                    <img src={fernanda} /> Fernanda Dixon - Axie
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    What it means to have a digital web3 identity: doxxed, anon
-                    or a mix.
-                  </h3>
-                  <p>White Chocolate - Hashmasks</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:00 - 15:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>
-                    The Infinite Machine Movie: la intersección de Hollywood y
-                    NFTs
-                  </h3>
-                  <p>
-                    <img src={camilaR} />
-                    Camila Russo - The Defiant
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>Play-and-Earn Gaming in the Hispanic markets</h3>
-                  <p>Martin Blaquier</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>15:30 - 15:55</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>4 años minteando soulbound tokens</h3>
-                  <p>
-                    <img src={patricioW} />
-                    Patricio Worthalter - POAP
-                  </p>
-                </div>
-                <div>
-                  <p>Stage 2</p>
-                  <h3>
-                    Mint your first music NFT with Zora V3, 0xSplits & Lens
-                    Protocol
-                  </h3>
-                  <p>sweetman.eth - Mintsongs</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:00 - 16:25</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3>Ethereum Q&A</h3>
-                  <p>TBC</p>
-                </div>
-              </div>
-            </Entry>
-            <Entry>
-              <Hours>16:30 - 17:00</Hours>
-              <div className="twoColumns">
-                <div>
-                  <p>Stage 1</p>
-                  <h3><FormattedHTMLMessage id="schedule.closing" /></h3>
-                </div>
-              </div>
-            </Entry>
-          </Talks>
-        </Day>
+              </Entry>
+            </Talks>
+          </Day>
+        </Content>
       </Container>
     </ScheduleSection>
   )
@@ -698,6 +897,12 @@ const Talks = styled.div`
     width: 100%;
   }
 `
+const Content = styled.div`
+  display: none;
+  &.active {
+    display: block;
+  }
+`
 
 const Hours = styled.p`
   width: 160px;
@@ -709,7 +914,7 @@ const Hours = styled.p`
 
 const Container = styled.div`
   max-width: 1440px;
-  padding: 0 40px 160px 40px;
+  padding: 60px 40px 160px 40px;
   @media only screen and (max-width: 1100px) {
     padding: 0 15px 80px 15px;
   }
@@ -718,6 +923,33 @@ const Container = styled.div`
   }
   text-align: left;
   padding-bottom: 160px;
+`
+const Head = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+    button {
+      font-family: 'Pixel';
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+      color: #8c8c8c;
+      border: 0px;
+      margin: 30px;
+      border-bottom: 4px solid transparent;
+      background: transparent;
+      &.active,
+      &:active {
+        border-bottom: 4px solid #80ff9f;
+        color: #faf7f5;
+      }
+    }
+  }
 `
 
 const Day = styled.div`
