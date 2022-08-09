@@ -3,13 +3,11 @@ import styled from 'styled-components'
 import { FormattedHTMLMessage } from 'react-intl'
 import background from '../assets/Mask.svg'
 
-import evan from '../assets/speakers2/evan.jpeg'
 import oxjean from '../assets/speakers2/0xjean.jpeg'
 import alan from '../assets/speakers2/alan.jpg'
 import alejandro from '../assets/speakers2/alejandro.png'
 import camila from '../assets/speakers2/camila.jpeg'
 import damian from '../assets/speakers2/damian.png'
-import juanManuel from '../assets/speakers2/juanManuel.png'
 import camilaR from '../assets/speakers2/camilaR.jpeg'
 import cryptoChica from '../assets/speakers2/cryptoChica.png'
 import matias from '../assets/speakers2/matias.png'
@@ -20,7 +18,6 @@ import nadia from '../assets/speakers2/nadia.jpeg'
 import stani from '../assets/speakers2/stani.png'
 import patricio from '../assets/speakers2/patricio.jpeg'
 import santiago from '../assets/speakers2/santiago.jpeg'
-import siesta from '../assets/speakers2/siesta.png'
 import georgios from '../assets/speakers2/georgios.jpeg'
 import gerrit from '../assets/speakers2/gerrit.jpg'
 import jose from '../assets/speakers2/jose.jpg'
@@ -30,6 +27,7 @@ import nicolas from '../assets/speakers2/nicolas.jpg'
 import julien from '../assets/speakers2/julien.jpeg'
 import fernanda from '../assets/speakers2/fernanda.jpeg'
 import alejo from '../assets/speakers2/alejo.jpeg'
+import alejoL from '../assets/speakers2/alejoL.jpg'
 import patricioW from '../assets/speakers2/patricioW.jpg'
 import skeletor from '../assets/speakers2/skeletor.jpg'
 import aya from '../assets/speakers2/aya.jpeg'
@@ -37,7 +35,7 @@ import arjun from '../assets/speakers2/arjun.jpeg'
 import rodrigo from '../assets/speakers2/rodrigo.jpg'
 import manuel from '../assets/speakers2/manuel.jpg'
 import nahuel from '../assets/speakers2/nahuel.JPG'
-import demian from '../assets/speakers2/demian.jpg'
+import demianD from '../assets/speakers2/demianD.jpg'
 import harsh from '../assets/speakers2/harsh.jpeg'
 import julian from '../assets/speakers2/julian.jpg'
 import matiasN from '../assets/speakers2/matiasN.jpg'
@@ -46,15 +44,45 @@ import antonela from '../assets/speakers2/antonela.png'
 import vicky from '../assets/speakers2/vicky.jpeg'
 import gino from '../assets/speakers2/gino.jpeg'
 import adrian from '../assets/speakers2/adrian.jpeg'
+import martinB from '../assets/speakers2/martinB.jpeg'
 import diego from '../assets/speakers2/diego.jpeg'
-import renat from '../assets/speakers2/renat.jpg'
+import juanManuel from '../assets/speakers2/juanManuel.png'
 import evin from '../assets/speakers2/evin.jpg'
-import will from '../assets/speakers2/will.png'
+import henry from '../assets/speakers2/henry.jpg'
 import wade from '../assets/speakers2/wade.jpeg'
 import sxysun from '../assets/speakers2/sxysun.jpg'
-import pablo from '../assets/speakers2/pablo.jpg'
 import shannon from '../assets/speakers2/shannon.jpeg'
+import pablo from '../assets/speakers2/pablo.jpg'
 import agusx1211 from '../assets/speakers2/agusx1211.jpg'
+import renat from '../assets/speakers2/renat.jpg'
+import lucas from '../assets/speakers2/lucas.jpg'
+import cristian from '../assets/speakers2/cristian.jpg'
+import juani from '../assets/speakers2/juani.jpg'
+import maxi from '../assets/speakers2/maxi.jpeg'
+import patricioM from '../assets/speakers2/patricioM.jpg'
+import wei3erHase from '../assets/speakers2/wei3erHase.jpg'
+import skylar from '../assets/speakers2/skylar.jpg'
+import santos from '../assets/speakers2/santos.jpg'
+import ohad from '../assets/speakers2/ohad.jpg'
+import ramiro from '../assets/speakers2/ramiro.jpg'
+import andrew from '../assets/speakers2/andrew.jpg'
+import luiz from '../assets/speakers2/luiz.jpg'
+import sebastianL from '../assets/speakers2/sL.jpg'
+import evan from '../assets/speakers2/evan.jpeg'
+import whiteChocolate from '../assets/speakers2/whiteChocolate.png'
+import milton from '../assets/speakers2/milton.png'
+import siesta from '../assets/speakers2/siesta.png'
+import siesta1 from '../assets/speakers2/siesta1.jpg'
+import damianM from '../assets/speakers2/damianM.jpg'
+import nicolasC from '../assets/speakers2/nicolasC.jpg'
+import marianoD from '../assets/speakers2/marianoD.jpg'
+import nicolasM from '../assets/speakers2/nicolasM.jpeg'
+import benjamin from '../assets/speakers2/benjamin.jpg'
+import brian from '../assets/speakers2/brian.jpg'
+import bruno from '../assets/speakers2/bruno.jpeg'
+import sweetman from '../assets/speakers2/sweetman.jpeg'
+
+import jaffet from '../assets/speakers2/jaffet.jpg'
 
 const Schedule = () => {
   const locale =
@@ -143,7 +171,10 @@ const Schedule = () => {
                 <div>
                   <p>Stage 1</p>
                   <h3>PoS, The Merge, and the Future of Ethereum</h3>
-                  <p>Skylar - Ethereum Foundation</p>
+                  <p>
+                    <img src={skylar} />
+                    Skylar - Ethereum Foundation
+                  </p>
                 </div>
               </Entry>
               <Entry>
@@ -186,8 +217,8 @@ const Schedule = () => {
                     <p>Stage 1</p>
                     <h3>Legal Challenges for Web 3 projects</h3>
                     <p>
-                      <img src={juanManuel} /> Juan Manuel Campos Álvarez /
-                      Sebastián López Sansón
+                      <img src={juanManuel} /> <img src={sebastianL} /> Juan
+                      Manuel Campos Álvarez / Sebastián López Sansón
                     </p>
                   </div>
                   <div>
@@ -217,6 +248,11 @@ const Schedule = () => {
                     <p>Stage 1</p>
                     <h3>Panel: Crypto adoption in Latam</h3>
                     <p>
+                      <img src={marcelo} />
+                      <img src={manuel} />
+                      <img src={santos} />
+                      <img src={julian} />
+                      <img src={oli} />
                       Marcelo Cavazzoli - Lemon / Manuel Beaudroit - Belo /
                       Santos Barrio - Letsbit / Julián Colombo - Bitso. <br />{' '}
                       Mod: Olivia Goldschmidt
@@ -229,7 +265,7 @@ const Schedule = () => {
                       finanzas en una compañía web3.0
                     </h3>
                     <p>
-                      <img src={demian} /> Demian Drabyk - Wink
+                      <img src={demianD} /> Demian Drabyk - Wink
                     </p>
                   </div>
                 </div>
@@ -252,7 +288,10 @@ const Schedule = () => {
                     <h3>
                       Fundraising: No hay una sola forma de levantar capital
                     </h3>
-                    <p>Juan Ignacio Gallo - Fund.it</p>
+                    <p>
+                      <img src={juani} />
+                      Juan Ignacio Gallo - Fund.it
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -262,12 +301,18 @@ const Schedule = () => {
                   <div>
                     <p>Stage 1</p>
                     <h3>Decentralizing the time value of money</h3>
-                    <p>Gabriel Gruber - Exactly</p>
+                    <p>
+                      <img src={gabriel} />
+                      Gabriel Gruber - Exactly
+                    </p>
                   </div>
                   <div>
                     <p>Stage 2</p>
                     <h3>Web3 mobile interoperatibility</h3>
-                    <p>Bruno Calmels - Defiant</p>
+                    <p>
+                      <img src={bruno} />
+                      Bruno Calmels - Defiant
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -360,6 +405,11 @@ const Schedule = () => {
                     <p>Stage 1</p>
                     <h3>Stablecoins: algorithms vs collateral</h3>
                     <p>
+                      <img src={marianoD} />
+                      <img src={benjamin} />
+                      <img src={stani} />
+                      <img src={julien} />
+                      <img src={andrew} />
                       Mariano Di Pietrantonio - MakerDao / Benjamin - QiDao /
                       Stani Kulechov - Aave / Julien Bouteloup - Rekt <br />{' '}
                       Mod: Andrew Piscione
@@ -370,7 +420,10 @@ const Schedule = () => {
                     <h3>
                       Lessons learned running a validator in LATAM outside AWS
                     </h3>
-                    <p>Rodrigo Benzaquen - Sensei Node</p>
+                    <p>
+                      <img src={rodrigo} />
+                      Rodrigo Benzaquen - Sensei Node
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -380,7 +433,10 @@ const Schedule = () => {
                   <div>
                     <p>Stage 1</p>
                     <h3>Router proxies</h3>
-                    <p>Alejandro Santander - Synthetix</p>
+                    <p>
+                      <img src={alejandro} />
+                      Alejandro Santander - Synthetix
+                    </p>
                   </div>
                   <div>
                     <p>Stage 2</p>
@@ -498,7 +554,10 @@ const Schedule = () => {
                   <div>
                     <p>Stage 1</p>
                     <h3>How to build Web3 communication in your protocol</h3>
-                    <p>Jaffet Sandi - EPNS</p>
+                    <p>
+                      <img src={jaffet} />
+                      Jaffet Sandi - EPNS
+                    </p>
                   </div>
                   <div>
                     <p>Stage 2</p>
@@ -515,12 +574,18 @@ const Schedule = () => {
                   <div>
                     <p>Stage 1</p>
                     <h3>The future of Ethereum scaling with Polygon</h3>
-                    <p>Luiz Henrique Amorim - Polygon</p>
+                    <p>
+                      <img src={luiz} />
+                      Luiz Henrique Amorim - Polygon
+                    </p>
                   </div>
                   <div>
                     <p>Stage 2</p>
                     <h3>Comunicaciones en una DAO</h3>
-                    <p>Mariano Di Pietra - MakerDAO</p>
+                    <p>
+                      <img src={marianoD} />
+                      Mariano Di Pietra - MakerDAO
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -543,7 +608,10 @@ const Schedule = () => {
                       Nobody can handle the 24 words - A case for contract
                       wallets
                     </h3>
-                    <p>Agusx1211 - Horizon</p>
+                    <p>
+                      <img src={agusx1211} />
+                      Agusx1211 - Horizon
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -562,7 +630,10 @@ const Schedule = () => {
                     <h3>
                       The Graph: Decentralized Data, web3 APIs, and Use Cases
                     </h3>
-                    <p>Brian Berman - The Graph</p>
+                    <p>
+                      <img src={brian} />
+                      Brian Berman - The Graph
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -629,6 +700,8 @@ const Schedule = () => {
                     </h3>
                     <p>
                       <img src={siesta} />
+                      <img src={milton} />
+                      <img src={siesta1} />
                       Frenetik Void / Milton Sanz / Siesta <br /> Mod: Romina
                       Sejas
                     </p>
@@ -637,6 +710,8 @@ const Schedule = () => {
                     <p>Stage 2</p>
                     <h3>Panel: Music NFTs</h3>
                     <p>
+                      <img src={sweetman} />
+                      <img src={nicolasM} />
                       Facundo Migoya / sweetman.eth / Nicolás Madoery <br />{' '}
                       Mod: Sebastián Aldasoro
                     </p>
@@ -659,7 +734,10 @@ const Schedule = () => {
                   <div>
                     <p>Stage 2</p>
                     <h3>Digital ID: Today's Dreams, Tomorrow's Reality</h3>
-                    <p>White Chocolate - Hashmasks</p>
+                    <p>
+                      <img src={whiteChocolate} />
+                      White Chocolate - Hashmasks
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -680,7 +758,10 @@ const Schedule = () => {
                   <div>
                     <p>Stage 2</p>
                     <h3>Play-and-Earn Gaming in the Hispanic markets</h3>
-                    <p>Martin Blaquier</p>
+                    <p>
+                      <img src={martinB} />
+                      Martin Blaquier
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -698,7 +779,10 @@ const Schedule = () => {
                   <div>
                     <p>Stage 2</p>
                     <h3>Smart contracts para música NFT</h3>
-                    <p>sweetman.eth - Mintsongs</p>
+                    <p>
+                      <img src={sweetman} />
+                      sweetman.eth - Mintsongs
+                    </p>
                   </div>
                 </div>
               </Entry>
@@ -752,6 +836,9 @@ const Schedule = () => {
                     SDK
                   </h3>
                   <p>
+                    <img src={cristian} />
+                    <img src={henry} />
+                    <img src={ramiro} />
                     Cristian Malfesi / Henry Palacios / Ramiro Vázquez -
                     Protofire
                   </p>
@@ -771,21 +858,30 @@ const Schedule = () => {
                   <h3>
                     Principles, methods and tools for a successful web3 launch
                   </h3>
-                  <p>Maxi Bustos - FutureSwap</p>
+                  <p>
+                    <img src={maxi} />
+                    Maxi Bustos - FutureSwap
+                  </p>
                 </div>
               </Entry>
               <Entry>
                 <Hours>15:00 - 16:00</Hours>
                 <div>
                   <h3>Introducción a Lens Protocol</h3>
-                  <p>Alan Donoso</p>
+                  <p>
+                    <img src={alan} />
+                    Alan Donoso
+                  </p>
                 </div>
               </Entry>
               <Entry>
                 <Hours>16:00 - 17:00</Hours>
                 <div>
                   <h3>Completing the Defi credit market </h3>
-                  <p>Patricio Molina y Nicolás Castro García - Exactly</p>
+                  <p>
+                    <img src={patricioM} /> <img src={nicolasC} />
+                    Patricio Molina y Nicolás Castro García - Exactly
+                  </p>
                 </div>
               </Entry>
             </Talks>
@@ -805,7 +901,10 @@ const Schedule = () => {
                   <h3>
                     Cool projects on StarkNet that wouldn't be possible on L1
                   </h3>
-                  <p>Ohad Barta - Starkware</p>
+                  <p>
+                    <img src={ohad} />
+                    Ohad Barta - Starkware
+                  </p>
                 </div>
               </Entry>
               <Entry>
@@ -820,7 +919,10 @@ const Schedule = () => {
                 <Hours>13:30 - 15:00</Hours>
                 <div>
                   <h3>Getting started with Cairo for StarkNet</h3>
-                  <p>Martin Triay - OpenZeppelin</p>
+                  <p>
+                    <img src={martin} />
+                    Martin Triay - OpenZeppelin
+                  </p>
                 </div>
               </Entry>
               <Entry>
@@ -830,14 +932,21 @@ const Schedule = () => {
                     Solidity y su evolución: Buenas practicas en el
                     Desarrollo/Testing
                   </h3>
-                  <p>Alejo Lovallo y Lucas Marc - Think&Dev</p>
+                  <p>
+                    <img src={alejoL} />
+                    <img src={lucas} />
+                    Alejo Lovallo y Lucas Marc - Think&Dev
+                  </p>
                 </div>
               </Entry>
               <Entry>
                 <Hours>16:00 - 17:00</Hours>
                 <div>
                   <h3>Mastering the blockchain's dirty data</h3>
-                  <p>Wei3erHase - DeFi Wonderland</p>
+                  <p>
+                    <img src={wei3erHase} />
+                    Wei3erHase - DeFi Wonderland
+                  </p>
                 </div>
               </Entry>
             </Talks>
@@ -862,7 +971,10 @@ const Schedule = () => {
                 <Hours>14:30 - 15:30</Hours>
                 <div>
                   <h3>Building Composable SVG NFTs with Scaffold-ETH</h3>
-                  <p>Damian Martinelli</p>
+                  <p>
+                    <img src={damianM} />
+                    Damian Martinelli
+                  </p>
                 </div>
               </Entry>
             </Talks>
