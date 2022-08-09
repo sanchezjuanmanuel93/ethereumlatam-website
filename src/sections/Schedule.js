@@ -186,7 +186,8 @@ const Schedule = () => {
                     <p>Stage 1</p>
                     <h3>Legal Challenges for Web 3 projects</h3>
                     <p>
-                      <img src={juanManuel} /> Juan Manuel Campos Álvarez
+                      <img src={juanManuel} /> Juan Manuel Campos Álvarez /
+                      Sebastián López Sansón
                     </p>
                   </div>
                   <div>
@@ -217,7 +218,7 @@ const Schedule = () => {
                     <h3>Panel: Crypto adoption in Latam</h3>
                     <p>
                       Marcelo Cavazzoli - Lemon / Manuel Beaudroit - Belo /
-                      Santos Barrios - Letsbit / Julián Colombo - Bitso. <br />{' '}
+                      Santos Barrio - Letsbit / Julián Colombo - Bitso. <br />{' '}
                       Mod: Olivia Goldschmidt
                     </p>
                   </div>
@@ -478,7 +479,7 @@ const Schedule = () => {
                     <h3>Building xChain Applications with Connext</h3>
                     <p>
                       <img src={arjun} />
-                      Arjun - Connext
+                      Arjun Bhuptani - Connext
                     </p>
                   </div>
                   <div>
@@ -628,15 +629,16 @@ const Schedule = () => {
                     </h3>
                     <p>
                       <img src={siesta} />
-                      Frenetik Void, Milton Sanz, Siesta
+                      Frenetik Void / Milton Sanz / Siesta <br /> Mod: Romina
+                      Sejas
                     </p>
                   </div>
                   <div>
                     <p>Stage 2</p>
                     <h3>Panel: Music NFTs</h3>
                     <p>
-                      Enigma / sweetman.eth / Nicolás Madoery <br /> Mod:
-                      Sebastián Aldasoro
+                      Facundo Migoya / sweetman.eth / Nicolás Madoery <br />{' '}
+                      Mod: Sebastián Aldasoro
                     </p>
                   </div>
                 </div>
@@ -721,6 +723,14 @@ const Schedule = () => {
                   </div>
                 </div>
               </Entry>
+              <Entry>
+                <Hours>17:00 - 19:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <h3>After party</h3>
+                  </div>
+                </div>
+              </Entry>
             </Talks>
           </Day>
         </Content>
@@ -795,7 +805,7 @@ const Schedule = () => {
                   <h3>
                     Cool projects on StarkNet that wouldn't be possible on L1
                   </h3>
-                  <p>Ohad Barta - Starware</p>
+                  <p>Ohad Barta - Starkware</p>
                 </div>
               </Entry>
               <Entry>
