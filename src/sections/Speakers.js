@@ -19,7 +19,6 @@ import nadia from '../assets/speakers2/nadia.jpeg'
 import stani from '../assets/speakers2/stani.png'
 import patricio from '../assets/speakers2/patricio.jpeg'
 import santiago from '../assets/speakers2/santiago.jpeg'
-import siesta from '../assets/speakers2/siesta.png'
 import georgios from '../assets/speakers2/georgios.jpeg'
 import gerrit from '../assets/speakers2/gerrit.jpg'
 import jose from '../assets/speakers2/jose.jpg'
@@ -73,12 +72,16 @@ import sebastianL from '../assets/speakers2/sL.jpg'
 import evan from '../assets/speakers2/evan.jpeg'
 import whiteChocolate from '../assets/speakers2/whiteChocolate.png'
 import milton from '../assets/speakers2/milton.png'
+import siesta from '../assets/speakers2/siesta.png'
+import siesta1 from '../assets/speakers2/siesta1.jpg'
 import damianM from '../assets/speakers2/damianM.jpg'
 import nicolasC from '../assets/speakers2/nicolasC.jpg'
 import marianoD from '../assets/speakers2/marianoD.jpg'
 import nicolasM from '../assets/speakers2/nicolasM.jpeg'
 import benjamin from '../assets/speakers2/benjamin.jpg'
+import brian from '../assets/speakers2/brian.jpg'
 import bruno from '../assets/speakers2/bruno.jpeg'
+import sweetman from '../assets/speakers2/sweetman.jpeg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -1057,6 +1060,45 @@ const Speakers = () => {
               <div>
                 <h1>Benjamin</h1>
                 <h2>Qidao</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/captain_siesta"
+              className="importantPersonContent"
+            >
+              <img  src={siesta1} />
+              <div>
+                <h1>Siesta</h1>
+                <h2>GameDisease</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/sweetman_eth"
+              className="importantPersonContent"
+            >
+              <img  src={sweetman} />
+              <div>
+                <h1>sweetman.eth</h1>
+                <h2>Mint Songs</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/bermchain"
+              className="importantPersonContent"
+            >
+              <img  src={brian} />
+              <div>
+                <h1>Brian Berman</h1>
+                <h2>The Graph</h2>
               </div>
             </Content>
           </BoxItem>
