@@ -65,8 +65,16 @@ import wei3erHase from '../assets/speakers2/wei3erHase.jpg'
 import skylar from '../assets/speakers2/skylar.jpg'
 import santos from '../assets/speakers2/santos.jpg'
 import ohad from '../assets/speakers2/ohad.jpg'
+import ramiro from '../assets/speakers2/ramiro.jpg'
+import andrew from '../assets/speakers2/andrew.jpg'
+import luiz from '../assets/speakers2/luiz.jpg'
+import sebastianL from '../assets/speakers2/sL.jpg'
 import evan from '../assets/speakers2/evan.jpeg'
 import whiteChocolate from '../assets/speakers2/whiteChocolate.png'
+import damianM from '../assets/speakers2/damianM.jpg'
+import nicolasC from '../assets/speakers2/nicolasC.jpg'
+import marianoD from '../assets/speakers2/marianoD.jpg'
+import nicolasM from '../assets/speakers2/nicolasM.jpeg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -295,6 +303,32 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/damianmarti"
+              className="importantPersonContent"
+            >
+              <img src={damianM} />
+              <div>
+                <h1>Damian Martinelli</h1>
+                <h2>.</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/PiscioneAndrew"
+              className="importantPersonContent"
+            >
+              <img src={andrew} />
+              <div>
+                <h1>Andrew A Piscione</h1>
+                <h2>.</h2>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="vip">
             <Content
               target="_blank"
@@ -448,7 +482,19 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/ramirotw"
+              className="importantPersonContent"
+            >
+              <img src={ramiro} />
+              <div>
+                <h1>Ramiro Vazquez</h1>
+                <h2>Protofire</h2>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -512,6 +558,32 @@ const Speakers = () => {
               <div>
                 <h1>Julien Bouteloup</h1>
                 <h2>Rekt</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/ncastrogarcia"
+              className="importantPersonContent"
+            >
+              <img src={nicolasC} />
+              <div>
+                <h1>Nicolás Castro García</h1>
+                <h2>Exactly</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/nicolasmadoery"
+              className="importantPersonContent"
+            >
+              <img src={nicolasM} />
+              <div>
+                <h1>Nicolás Madoery</h1>
+                <h2>.</h2>
               </div>
             </Content>
           </BoxItem>
@@ -753,6 +825,32 @@ const Speakers = () => {
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
+              href="https://twitter.com/LuizHen25292139"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 20%' }} src={luiz} />
+              <div>
+                <h1>Luiz Henrique Amorim</h1>
+                <h2>Polygon</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://www.linkedin.com/in/sebasti%C3%A1n-l%C3%B3pez-sans%C3%B3n-11a5634"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 20%' }} src={sebastianL} />
+              <div>
+                <h1>Sebastián López Sansón</h1>
+                <h2>Salaberren y Lopez Sanson</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
               href="https://twitter.com/sxysun1"
               className="importantPersonContent"
             >
@@ -890,6 +988,19 @@ const Speakers = () => {
               <div>
                 <h1>Cristian Malfesi</h1>
                 <h2>Protofire</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href=""
+              className="importantPersonContent"
+            >
+              <img  src={marianoD} />
+              <div>
+                <h1>Mariano Dipietrantonio</h1>
+                <h2>MakerDao</h2>
               </div>
             </Content>
           </BoxItem>
