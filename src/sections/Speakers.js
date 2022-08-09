@@ -46,6 +46,7 @@ import antonela from '../assets/speakers2/antonela.png'
 import vicky from '../assets/speakers2/vicky.jpeg'
 import gino from '../assets/speakers2/gino.jpeg'
 import adrian from '../assets/speakers2/adrian.jpeg'
+import martinB from '../assets/speakers2/martinB.jpeg'
 import diego from '../assets/speakers2/diego.jpeg'
 import juanManuel from '../assets/speakers2/juanManuel.png'
 import evin from '../assets/speakers2/evin.jpg'
@@ -71,10 +72,13 @@ import luiz from '../assets/speakers2/luiz.jpg'
 import sebastianL from '../assets/speakers2/sL.jpg'
 import evan from '../assets/speakers2/evan.jpeg'
 import whiteChocolate from '../assets/speakers2/whiteChocolate.png'
+import milton from '../assets/speakers2/milton.png'
 import damianM from '../assets/speakers2/damianM.jpg'
 import nicolasC from '../assets/speakers2/nicolasC.jpg'
 import marianoD from '../assets/speakers2/marianoD.jpg'
 import nicolasM from '../assets/speakers2/nicolasM.jpeg'
+import benjamin from '../assets/speakers2/benjamin.jpg'
+import bruno from '../assets/speakers2/bruno.jpeg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -313,6 +317,32 @@ const Speakers = () => {
               <div>
                 <h1>Damian Martinelli</h1>
                 <h2>.</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/miltonsanz7"
+              className="importantPersonContent"
+            >
+              <img src={milton} />
+              <div>
+                <h1>Milton Sanz</h1>
+                <h2>GameDisease</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/olaguildgames"
+              className="importantPersonContent"
+            >
+              <img src={martinB} />
+              <div>
+                <h1>Martin Blaquier</h1>
+                <h2>OLA Guild Games</h2>
               </div>
             </Content>
           </BoxItem>
@@ -1001,6 +1031,32 @@ const Speakers = () => {
               <div>
                 <h1>Mariano Dipietrantonio</h1>
                 <h2>MakerDao</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/calmbro_eth"
+              className="importantPersonContent"
+            >
+              <img  src={bruno} />
+              <div>
+                <h1>Bruno Calmels</h1>
+                <h2>Defiant</h2>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/benjamin918_"
+              className="importantPersonContent"
+            >
+              <img  src={benjamin} />
+              <div>
+                <h1>Benjamin</h1>
+                <h2>Qidao</h2>
               </div>
             </Content>
           </BoxItem>
