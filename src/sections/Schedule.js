@@ -372,7 +372,7 @@ const Schedule = () => {
                   </div>
                   <div>
                     <p>Stage 2</p>
-                    <h3>TBC</h3>
+                    <h3>The state of structured products in DeFi</h3>
                     <p>Babi - Pods</p>
                   </div>
                 </div>

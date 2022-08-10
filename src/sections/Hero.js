@@ -25,10 +25,14 @@ const Hero = () => {
             >> Argentina
           </p>
         </Box>
-
-        <Button>
-          <FormattedMessage id="hero.button" />
-        </Button>
+        <div className="streaming-buttons">
+          <Button href="https://youtu.be/wfh0qbgi6Dw" target="_blank">
+            Streaming Stage 1
+          </Button>
+          <Button href="https://youtu.be/3Cdsll-zVUE" target="_blank">
+            Streaming Stage 2
+          </Button>
+        </div>
       </Container>
       <Loop reverse={true} content={<img alt="img" src={image} />} />
     </HeroSection>
@@ -91,7 +95,7 @@ const Button = styled.a`
   background: transparent;
   font-family: 'Pixel';
   height: 40px;
-  margin: 72px auto 100px auto;
+  margin: 72px 20px 100px 20px;
   text-decoration: none;
   padding: 18px 36px;
   font-weight: 400;
@@ -102,6 +106,12 @@ const Button = styled.a`
   border: 3px solid #faf7f5;
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
+  @media only screen and (max-width: 800px) {
+    display: block;
+    width: 313px;
+    height: 58px;
+    margin: 72px auto 50px auto;
+  }
   @media only screen and (max-width: 700px) {
     &.spanish {
       padding: 0;
