@@ -321,11 +321,15 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>The Key to Fun: Identity & Reputation in Web3</h3>
+                    <h3>
+                      How to transition to Web3: why, what does it take, and
+                      how?
+                    </h3>
                     <p>
-                      <img src={evin} /> Evin Mc Mullen - Disco
+                      <img src={renat} /> Renat Khasanshyn - Protofire
                     </p>
                   </div>
+
                   <div>
                     <p>Stage 2</p>
                     <h3>Liquidity Mining, staking y lágrimas</h3>
@@ -362,12 +366,9 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>
-                      How to transition to Web3: why, what does it take, and
-                      how?
-                    </h3>
+                    <h3>The Key to Fun: Identity & Reputation in Web3</h3>
                     <p>
-                      <img src={renat} /> Renat Khasanshyn - Protofire
+                      <img src={evin} /> Evin Mc Mullen - Disco
                     </p>
                   </div>
                   <div>

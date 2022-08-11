@@ -59,6 +59,11 @@ const HeroSection = styled.section`
       color: #80ff9f;
     }
   }
+  .streaming-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 const Container = styled.div`
@@ -106,6 +111,9 @@ const Button = styled.a`
   border: 3px solid #faf7f5;
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
+  display: block;
+  width: 315px;
+  height: 61px;
   @media only screen and (max-width: 870px) {
     display: block;
     width: 254px;
