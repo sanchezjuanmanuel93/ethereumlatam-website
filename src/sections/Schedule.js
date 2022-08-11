@@ -15,6 +15,7 @@ import gabriel from '../assets/speakers2/gabriel.jpeg'
 import mariano from '../assets/speakers2/mariano.jpeg'
 import martin from '../assets/speakers2/martin.jpeg'
 import nadia from '../assets/speakers2/nadia.jpeg'
+import vitalik from '../assets/speakers2/vitalik.png'
 import stani from '../assets/speakers2/stani.png'
 import patricio from '../assets/speakers2/patricio.jpeg'
 import santiago from '../assets/speakers2/santiago.jpeg'
@@ -674,19 +675,8 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>Descentralizacion: El feature clave del metaverso</h3>
-                    <p>
-                      <img src={gino} />
-                      Gino Cingolani Trucco - Decentraland
-                    </p>
-                  </div>
-                  <div>
-                    <p>Stage 2</p>
-                    <h3>Tu identidad en Web3 - NFTs y SBTs</h3>
-                    <p>
-                      <img src={nahuel} />
-                      Nahuel Burbach - Zerion
-                    </p>
+                    <h3>Q&A Session with Vitalik Buterin</h3>
+                    <p><img src={vitalik} /><img src={evan} />Vitalik + Evan van Ness</p>
                   </div>
                 </div>
               </Entry>
@@ -695,18 +685,13 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>
-                      Fireside Chat Game Disease: Explorá la verdadera
-                      naturaleza del universo NFT
-                    </h3>
+                    <h3>Descentralizacion: El feature clave del metaverso</h3>
                     <p>
-                      <img src={siesta} />
-                      <img src={milton} />
-                      <img src={siesta1} />
-                      Frenetik Void / Milton Sanz / Siesta <br /> Mod: Romina
-                      Sejas
+                      <img src={gino} />
+                      Gino Cingolani Trucco - Decentraland
                     </p>
                   </div>
+
                   <div>
                     <p>Stage 2</p>
                     <h3>Panel: Music NFTs</h3>
@@ -792,8 +777,25 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>Ethereum Q&A</h3>
-                    <p>TBC</p>
+                    <h3>
+                      Fireside Chat Game Disease: Explorá la verdadera
+                      naturaleza del universo NFT
+                    </h3>
+                    <p>
+                      <img src={siesta} />
+                      <img src={milton} />
+                      <img src={siesta1} />
+                      Frenetik Void / Milton Sanz / Siesta <br /> Mod: Romina
+                      Sejas
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Tu identidad en Web3 - NFTs y SBTs</h3>
+                    <p>
+                      <img src={nahuel} />
+                      Nahuel Burbach - Zerion
+                    </p>
                   </div>
                 </div>
               </Entry>

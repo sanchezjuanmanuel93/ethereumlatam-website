@@ -6,6 +6,7 @@ import arrow from '../assets/arrow-down.svg'
 
 import oxjean from '../assets/speakers2/0xjean.jpeg'
 import alan from '../assets/speakers2/alan.jpg'
+import vitalik from '../assets/speakers2/vitalik.png'
 import alejandro from '../assets/speakers2/alejandro.png'
 import camila from '../assets/speakers2/camila.jpeg'
 import damian from '../assets/speakers2/damian.png'
@@ -1102,6 +1103,19 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="supervip">
+            <Content
+              target="_blank"
+              href="https://twitter.com/VitalikButerin"
+              className="supervipContent"
+            >
+              <img src={vitalik} style={{ objectPosition: '100% 20%' }} />
+              <div>
+                <h1>Vitalik</h1>
+                <h2>Ethereum Foundation</h2>
+              </div>
+            </Content>
+          </BoxItem>
         </BoxWrapper>
       </Container>
     </SpeakersSection>
@@ -1193,7 +1207,7 @@ const BoxItem = styled.div`
   font-family: 'Helvetica';
   font-weight: 400;
   outline: 1px solid #4d4d4d;
-  &.vip1 {
+  &.supervip {
     height: 228px;
   }
   &.vip {
@@ -1207,7 +1221,7 @@ const Content = styled.a`
   overflow: hidden;
   text-decoration: none;
   @media only screen and (min-width: 701px) {
-    width: 260px;
+    width: 100%;
   }
   div {
     max-width: 100%;
@@ -1237,7 +1251,7 @@ const Content = styled.a`
       }
     }
   }
-  &.vip1Content {
+  &.supervipContent {
     display: inline-block;
     h1,
     h2 {
@@ -1248,9 +1262,10 @@ const Content = styled.a`
     }
     img {
       height: 147px;
+      width: 228px;
       @media only screen and (max-width: 540px) {
-        width: calc(100% - 26px);
         object-fit: cover;
+        width: calc(100% - 26px);
         object-position: 50% 20%;
       }
     }
