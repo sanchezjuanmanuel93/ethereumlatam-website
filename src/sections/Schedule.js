@@ -380,7 +380,7 @@ const Schedule = () => {
               <Entry>
                 <Hours>16:30 - 17:00</Hours>
                 <div>
-                  <h3>TBD</h3>
+                  <h3>TBD: Todos Bien Descentralizados</h3>
                   <p>
                     <img src={mariano} />
                     Mariano Conti
@@ -461,7 +461,7 @@ const Schedule = () => {
                       more. How do we fix it?
                     </h3>
                     <p>
-                      <img src={matiasN} /> Matías Niesenson - DeFi Wonderland
+                      <img src={matiasN} /> Matías Niesenson - Wonderland
                     </p>
                   </div>
                   <div>
@@ -543,7 +543,7 @@ const Schedule = () => {
                     <h3>Oracles suck</h3>
                     <p>
                       <img src={skeletor} />
-                      Skeletor Spaceman - Defi Wonderland
+                      Skeletor Spaceman - Wonderland
                     </p>
                   </div>
                 </div>
@@ -945,7 +945,7 @@ const Schedule = () => {
                   <h3>Mastering the blockchain's dirty data</h3>
                   <p>
                     <img src={wei3erHase} />
-                    Wei3erHase - DeFi Wonderland
+                    Wei3erHase - Wonderland
                   </p>
                 </div>
               </Entry>
