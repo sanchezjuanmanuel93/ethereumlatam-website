@@ -106,10 +106,10 @@ const Button = styled.a`
   border: 3px solid #faf7f5;
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 870px) {
     display: block;
-    width: 313px;
-    height: 58px;
+    width: 254px;
+    height: 82px;
     margin: 72px auto 50px auto;
   }
   @media only screen and (max-width: 700px) {
