@@ -400,6 +400,12 @@ const Schedule = () => {
               <h3>12th</h3>
             </Date>
             <Talks>
+            <Entry>
+              <Hours>09:15</Hours>
+              <div>
+                <h3>Venue opening</h3>
+              </div>
+            </Entry>
               <Entry>
                 <Hours>10:00 - 10:30</Hours>
                 <div className="twoColumns">
@@ -670,6 +676,12 @@ const Schedule = () => {
               <h3>13th</h3>
             </Date>
             <Talks>
+            <Entry>
+              <Hours>12:30</Hours>
+              <div>
+                <h3>Venue opening</h3>
+              </div>
+            </Entry>
               <Entry>
                 <Hours>13:30 - 13:55</Hours>
                 <div className="twoColumns">
