@@ -26,10 +26,10 @@ const Hero = () => {
           </p>
         </Box>
         <div className="streaming-buttons">
-          <Button href="https://youtu.be/wfh0qbgi6Dw" target="_blank">
+          <Button href="https://youtu.be/m2hgU3WBDlU" target="_blank">
             Streaming Stage 1
           </Button>
-          <Button href="https://youtu.be/3Cdsll-zVUE" target="_blank">
+          <Button href="https://youtu.be/E3jTarGisG0" target="_blank">
             Streaming Stage 2
           </Button>
         </div>

@@ -434,14 +434,6 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Stage 1</p>
-                    <h3>Router proxies</h3>
-                    <p>
-                      <img src={alejandro} />
-                      Alejandro Santander - Synthetix
-                    </p>
-                  </div>
-                  <div>
-                    <p>Stage 2</p>
                     <h3>
                       Justicia Descentralizada: Resolviendo Disputas en Mercados
                       de NFTs
@@ -449,6 +441,14 @@ const Schedule = () => {
                     <p>
                       <img src={oxjean} />
                       Jean - Kleros
+                    </p>
+                  </div>
+                  <div>
+                    <p>Stage 2</p>
+                    <h3>Router proxies</h3>
+                    <p>
+                      <img src={alejandro} />
+                      Alejandro Santander - Synthetix
                     </p>
                   </div>
                 </div>
@@ -676,7 +676,11 @@ const Schedule = () => {
                   <div>
                     <p>Stage 1</p>
                     <h3>Q&A Session with Vitalik Buterin</h3>
-                    <p><img src={vitalik} /><img src={evan} />Vitalik + Evan van Ness</p>
+                    <p>
+                      <img src={vitalik} />
+                      <img src={evan} />
+                      Vitalik + Evan van Ness
+                    </p>
                   </div>
                 </div>
               </Entry>
