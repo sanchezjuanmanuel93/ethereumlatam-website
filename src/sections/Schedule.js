@@ -980,14 +980,14 @@ const Schedule = () => {
             </Date>
             <Talks>
               <Entry>
-                <Hours>13:30 - 14:30</Hours>
+                <Hours>14:00 - 15:00</Hours>
                 <div>
                   <h3>Cryptoarg: construyendo una red etérea de artistas</h3>
                   <p>Joaquina Salgado - Mar de Formas - Okytomo</p>
                 </div>
               </Entry>
               <Entry style={{ borderBottom: '0px' }}>
-                <Hours>14:30 - 15:30</Hours>
+                <Hours>15:00 - 16:00</Hours>
                 <div>
                   <h3>Building Composable SVG NFTs with Scaffold-ETH</h3>
                   <p>
