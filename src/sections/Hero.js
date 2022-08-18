@@ -6,13 +6,13 @@ import Loop from '../components/Loop'
 import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = () => {
+const Hero = ({heroText, heroSubText}) => {
   return (
     <HeroSection>
       <Container>
         <Box>
           <p>
-            <FormattedMessage id="hero.month" />
+            <FormattedMessage id="October" />
             <br />
             <FormattedMessage id="hero.date" />
             <br />
@@ -20,9 +20,9 @@ const Hero = () => {
           </p>
           <img alt="img" src={logo} />
           <p className="green">
-            @BuenosAires
+            { heroText }
             <br />
-            >> Argentina
+            { heroSubText }
           </p>
         </Box>
         
