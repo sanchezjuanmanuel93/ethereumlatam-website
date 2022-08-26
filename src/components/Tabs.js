@@ -3,6 +3,24 @@ import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 
 const Tabs = ({ mode }) => {
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+  const [subDropDown, setSubDropDown] = useState(false);
+  const showDropDown = () => {
+    setIsDropDownOpen(true)
+  }
+
+  const hideDropDown = () => {
+    if (subDropDown) {
+      setIsDropDownOpen(true)
+    } else {
+      setIsDropDownOpen(false)
+    }
+  }
+
+  const setAllStateToFalse = () => {
+    setIsDropDownOpen(false);
+    setSubDropDown(false);
+  }
   return (
     <TabsBox mode={mode}>
       <a href="#about">
@@ -26,6 +44,19 @@ const Tabs = ({ mode }) => {
       <a href="#faqs">
         <FormattedMessage id="navbar.faqs" />
       </a>
+      <a href="#faqs" onMouseOver={() => showDropDown()} onMouseLeave={() => hideDropDown()}>
+        <span>Editions</span>
+      </a>
+      {
+        isDropDownOpen && <div className='dropdown-div' onMouseEnter={() => setSubDropDown(true)} onMouseLeave={() => setAllStateToFalse()}>
+        <a href="/buenos-aires">
+          Buenos Aires
+        </a>
+        <a href="/">
+          Bogotá
+        </a>
+      </div>
+      }
     </TabsBox>
   )
 }
@@ -56,6 +87,15 @@ const TabsBox = styled.div`
     &:focus {
       border-bottom: solid 4px #80ff9f;
     }
+  }
+
+  .dropdown-div {
+    margin-top: 15%;
+    margin-left: -14%;
+  }
+
+  .dropdown-div > a {
+    color: white !important;
   }
 `
 

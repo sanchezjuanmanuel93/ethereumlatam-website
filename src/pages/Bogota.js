@@ -10,7 +10,7 @@ function Bogota () {
     return (
         <>
             <Navbar />
-            <Hero heroText="BOGOTÁ" heroSubText=">> COLOMBIA" />
+            <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" />
             <EthToLatam />
             <Venue />
             <TheOtherSide />

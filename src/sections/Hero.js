@@ -6,18 +6,27 @@ import Loop from '../components/Loop'
 import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = ({heroText, heroSubText}) => {
+const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink}) => {
+  console.log(heroMonth)
   return (
     <HeroSection>
       <Container>
         <Box>
-          <p>
-            <FormattedMessage id="October" />
+          {
+            (typeof heroMonth != 'undefined' || typeof heroDate != 'undefined' || typeof heroYear != 'undefined') ? <p>
+            <FormattedMessage id={heroMonth} />
+            <br />
+            <FormattedMessage id={heroDate} />
+            <br />
+            <FormattedMessage id={heroYear} />
+          </p> : <p>
+            <FormattedMessage id="hero.month" />
             <br />
             <FormattedMessage id="hero.date" />
             <br />
             <FormattedMessage id="hero.year" />
           </p>
+          }
           <img alt="img" src={logo} />
           <p className="green">
             { heroText }
@@ -26,7 +35,7 @@ const Hero = ({heroText, heroSubText}) => {
           </p>
         </Box>
         
-        <Button href="https://www.eventbrite.com/e/ethlatam-at-buenos-aires-tickets-374680147407" target="_blank">
+        <Button href={heroLink} target="_blank">
           <FormattedMessage id="hero.button" />!
         </Button>
       </Container>

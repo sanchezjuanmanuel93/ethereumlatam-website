@@ -12,6 +12,7 @@ import messages_es from './translations/es.json'
 import messages_pt from './translations/pt.json'
 import Index from "./pages/Index";
 import Bogota from './pages/Bogota';
+import BuenosAires from './pages/BuenosAires';
 
 const messages = {
   es: messages_es,
@@ -38,6 +39,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Index />} />
             <Route path='/bogota' exact element={<Bogota />} />
+            <Route path='/buenos-aires' exact element={<BuenosAires />} />
           </Routes>
         </IntlProvider>
       </Router>

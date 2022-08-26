@@ -8,7 +8,7 @@ import backgroundSmall from '../assets/venue-small-background.png'
 import venueLarge from '../assets/venue-large.png'
 import venueSmall from '../assets/venue-small.png'
 
-export default function App() {
+export default function App({venueTitle, venueAddress}) {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
@@ -23,14 +23,14 @@ export default function App() {
         <Box>
           <img src={location} />
           <h1>
-            <FormattedHTMLMessage id="venue.title" />
+            <FormattedMessage id={venueTitle} />
           </h1>
           <h2>
-            <FormattedHTMLMessage id="venue.address" />
+            <FormattedMessage id={venueAddress} />
           </h2>
           {width < medium && <img className="venue" src={venueSmall} />}
           <a href="https://www.cecbuenosaires.com.ar/" target="_blank">
-            <FormattedHTMLMessage id="venue.link" />
+            <FormattedMessage id="venue.link" />
           </a>
         </Box>
         <div>
@@ -55,7 +55,7 @@ const VenueSection = styled.section`
     background-position: top right;
   }
   h1 {
-    font-family: 'Helvetica';
+    font-family: 'Pixel';
     font-weight: 400;
     font-size: 72px;
     line-height: 64px;
