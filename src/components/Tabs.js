@@ -90,6 +90,7 @@ const TabsBox = styled.div`
   }
 
   .dropdown-div {
+    position: 'fixed';
     margin-top: 15%;
     margin-left: -14%;
   }

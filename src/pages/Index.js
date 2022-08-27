@@ -10,8 +10,8 @@ function Index () {
     return (
         <div className="App">
             <Navbar />
-            <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" heroMonth="October" heroDate="12" heroYear="2022" heroLink="https://www.google.com" />
-            <EthToLatam />
+            <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" heroMonth="October" heroDate="12" heroYear="2022" heroLink="https://www.google.com" heroImg={require("../assets/carousel-bog.png")} />
+            <EthToLatam typePassed="Bogota" />
             <Venue venueTitle="Agora" venueAddress="New address in Bogota" />
             <TheOtherSide />
             <Faqs/>

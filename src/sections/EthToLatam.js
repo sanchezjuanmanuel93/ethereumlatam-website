@@ -7,7 +7,7 @@ import date2 from '../assets/date22.svg'
 import underline from '../assets/latam-underline.svg'
 import arrow from '../assets/arrow.svg'
 
-const EthToLatam = () => {
+const EthToLatam = ({typePassed}) => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
@@ -31,10 +31,15 @@ const EthToLatam = () => {
             <Underline src={underline} />
           </Green>
         </h1>
-        <TextBox>
-          <FormattedHTMLMessage id="ethtolatam.paragraph1" />
-          <FormattedHTMLMessage id="ethtolatam.paragraph2" />
+        {
+          typePassed === 'Bogota' ? <TextBox>
+          <FormattedHTMLMessage id="ethtolatamBogota.paragraph1" />
+          <FormattedHTMLMessage id="ethtolatamBogota.paragraph2" />
+        </TextBox> : <TextBox>
+          <FormattedHTMLMessage id="ethtolatamBuenosAires.paragraph1" />
+          <FormattedHTMLMessage id="ethtolatamBuenosAires.paragraph2" />
         </TextBox>
+        }
       </Container>
       <Loop reverse content={<img src={date1} />} />
       <Loop content={<img src={date2} />} />

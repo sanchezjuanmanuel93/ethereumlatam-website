@@ -11,7 +11,7 @@ function Bogota () {
         <>
             <Navbar />
             <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" />
-            <EthToLatam />
+            <EthToLatam typePassed="Bogota" />
             <Venue />
             <TheOtherSide />
             <Faqs/>

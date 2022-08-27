@@ -3,10 +3,10 @@ import { FormattedMessage } from 'react-intl'
 import background from '../assets/hero-line.svg'
 import styled from 'styled-components'
 import Loop from '../components/Loop'
-import image from '../assets/carousel.png'
+//import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink}) => {
+const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink, heroImg}) => {
   console.log(heroMonth)
   return (
     <HeroSection>
@@ -39,7 +39,7 @@ const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink}) 
           <FormattedMessage id="hero.button" />!
         </Button>
       </Container>
-      <Loop reverse={true} content={<img alt="img" src={image} />} />
+      <Loop reverse={true} content={<img alt="img" src={heroImg} />} />
     </HeroSection>
   )
 }
