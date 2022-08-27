@@ -33,8 +33,7 @@ const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink, h
             <br />
             { heroSubText }
           </p>
-        </Box>
-        
+        </Box>        
         <Button href={heroLink} target="_blank">
           <FormattedMessage id="hero.button" />!
         </Button>
@@ -63,6 +62,12 @@ const HeroSection = styled.section`
     &.green {
       color: #80ff9f;
     }
+  }
+  .streaming-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 `
 
@@ -100,7 +105,7 @@ const Button = styled.a`
   background: transparent;
   font-family: 'Pixel';
   height: 40px;
-  margin: 72px auto 100px auto;
+  margin: 72px 20px 100px 20px;
   text-decoration: none;
   padding: 18px 36px;
   font-weight: 400;
@@ -111,6 +116,15 @@ const Button = styled.a`
   border: 3px solid #faf7f5;
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
+  display: block;
+  width: 315px;
+  height: 61px;
+  @media only screen and (max-width: 870px) {
+    display: block;
+    width: 254px;
+    height: 82px;
+    margin: 72px auto 50px auto;
+  }
   @media only screen and (max-width: 700px) {
     &.spanish {
       padding: 0;
