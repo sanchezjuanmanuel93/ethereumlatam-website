@@ -3,38 +3,42 @@ import { FormattedMessage } from 'react-intl'
 import background from '../assets/hero-line.svg'
 import styled from 'styled-components'
 import Loop from '../components/Loop'
-import image from '../assets/carousel.png'
+//import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = () => {
+const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink, heroImg}) => {
+  console.log(heroMonth)
   return (
     <HeroSection>
       <Container>
         <Box>
-          <p>
+          {
+            (typeof heroMonth != 'undefined' || typeof heroDate != 'undefined' || typeof heroYear != 'undefined') ? <p>
+            <FormattedMessage id={heroMonth} />
+            <br />
+            <FormattedMessage id={heroDate} />
+            <br />
+            <FormattedMessage id={heroYear} />
+          </p> : <p>
             <FormattedMessage id="hero.month" />
             <br />
             <FormattedMessage id="hero.date" />
             <br />
             <FormattedMessage id="hero.year" />
           </p>
+          }
           <img alt="img" src={logo} />
           <p className="green">
-            @BuenosAires
+            { heroText }
             <br />
-            >> Argentina
+            { heroSubText }
           </p>
-        </Box>
-        <div className="streaming-buttons">
-          <Button href="https://youtu.be/qU8XSfWfEKE" target="_blank">
-            Streaming Stage 1
-          </Button>
-          <Button href="https://youtu.be/AeBZ4dJKMzk" target="_blank">
-            Streaming Stage 2
-          </Button>
-        </div>
+        </Box>        
+        <Button href={heroLink} target="_blank">
+          <FormattedMessage id="hero.button" />!
+        </Button>
       </Container>
-      <Loop reverse={true} content={<img alt="img" src={image} />} />
+      <Loop reverse={true} content={<img alt="img" src={heroImg} />} />
     </HeroSection>
   )
 }
