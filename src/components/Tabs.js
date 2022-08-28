@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
+import Dropdown from 'react-dropdown'
 
 const Tabs = ({ mode }) => {
-  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  const [subDropDown, setSubDropDown] = useState(false);
+  
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false)
+  const [subDropDown, setSubDropDown] = useState(false)
   const showDropDown = () => {
     setIsDropDownOpen(true)
   }
@@ -17,9 +19,14 @@ const Tabs = ({ mode }) => {
     }
   }
 
+
+  const _onSelect = (option) => {
+    console.log('You selected ', option.label)
+    this.setState({selected: option})
+  }
   const setAllStateToFalse = () => {
-    setIsDropDownOpen(false);
-    setSubDropDown(false);
+    setIsDropDownOpen(false)
+    setSubDropDown(false)
   }
   return (
     <TabsBox mode={mode}>
@@ -38,25 +45,28 @@ const Tabs = ({ mode }) => {
       <a href="#agenda">
         <FormattedMessage id="navbar.schedule" />
       </a>
-      <a href="#theOtherSide">
-        Side events
-      </a>
+      <a href="#theOtherSide">Side events</a>
       <a href="#faqs">
         <FormattedMessage id="navbar.faqs" />
       </a>
-      <a href="#faqs" onMouseOver={() => showDropDown()} onMouseLeave={() => hideDropDown()}>
+    
+
+      <a
+        onMouseOver={() => showDropDown()}
+        onMouseLeave={() => hideDropDown()}
+      >
         <span>Editions</span>
       </a>
-      {
-        isDropDownOpen && <div className='dropdown-div' onMouseEnter={() => setSubDropDown(true)} onMouseLeave={() => setAllStateToFalse()}>
-        <a href="/buenos-aires">
-          Buenos Aires
-        </a>
-        <a href="/">
-          Bogotá
-        </a>
-      </div>
-      }
+      {isDropDownOpen && (
+        <div
+          className="dropdown-div"
+          onMouseEnter={() => setSubDropDown(true)}
+          onMouseLeave={() => setAllStateToFalse()}
+        >
+          <a href="/buenos-aires">Buenos Aires</a>
+          <a href="/">Bogotá</a>
+        </div>
+      )}
     </TabsBox>
   )
 }
@@ -74,7 +84,7 @@ const TabsBox = styled.div`
     text-decoration: none;
     color: #4d4d4d;
     text-align: left;
-    padding: ${props => (props.mode == 'large' ? '0 10px' : '25px 0')};
+    padding: ${props => (props.mode == 'large' ? '0 13px' : '20px 0')};
     background: transparent;
     border: 0px solid;
     display: block;

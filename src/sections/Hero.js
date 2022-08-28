@@ -6,29 +6,36 @@ import Loop from '../components/Loop'
 //import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = ({heroText, heroSubText, heroImg}) => {
+const Hero = ({ heroText, heroSubText, heroImg }) => {
   const edition = localStorage.getItem('edition')
   return (
     <HeroSection>
       <Container>
         <Box>
           <p>
-            <FormattedMessage id={edition + ".hero.month"} />
+            <FormattedMessage id={edition + '.hero.month'} />
             <br />
-            <FormattedMessage id={edition + ".hero.date"} />
+            <FormattedMessage id={edition + '.hero.date'} />
             <br />
-            <FormattedMessage id={edition + ".hero.year"} />
+            <FormattedMessage id={edition + '.hero.year'} />
           </p>
-          
+
           <img alt="img" src={logo} />
           <p className="green">
-            { heroText }
+            {heroText}
             <br />
-            { heroSubText }
+            {heroSubText}
           </p>
-        </Box>        
-        <Button href={edition=='buenos-aires' && 'https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists'} target="_blank">
-          <FormattedMessage id={edition + ".hero.button"} />
+        </Box>
+        <Button
+          href={
+            edition === 'buenos-aires'
+              ? 'https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists'
+              : undefined
+          }
+          target="_blank"
+        >
+          <FormattedMessage id={edition + '.hero.button'} />
         </Button>
       </Container>
       <Loop reverse={true} content={<img alt="img" src={heroImg} />} />
