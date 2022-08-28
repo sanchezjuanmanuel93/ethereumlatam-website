@@ -12,7 +12,7 @@ function Index () {
             <Navbar />
             <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" heroImg={require("../assets/carousel-bog.png")} />
             <EthToLatam typePassed="Bogota" />
-            <Venue venueTitle="Agora" venueAddress="New address in Bogota" />
+            <Venue/>
             <Faqs/>
             <Footer />
         </div>

@@ -12,7 +12,7 @@ import venueBog from '../assets/venue-bogota.png'
 import venueLargeBog from '../assets/venue-large-bogota.png'
 import venueSmallBog from '../assets/venue-small-bogota.png'
 
-export default function App({venueTitle, venueAddress}) {
+export default function Venue() {
   const [width, setWidth] = useState(window.innerWidth)
   const edition = localStorage.getItem('edition')
   useEffect(() => {
@@ -28,10 +28,10 @@ export default function App({venueTitle, venueAddress}) {
         <Box>
           <img src={location} />
           <h1>
-            <FormattedMessage id={venueTitle} />
+            <FormattedHTMLMessage id={edition + ".venue.title"}/>
           </h1>
           <h2>
-            <FormattedMessage id={venueAddress} />
+            <FormattedMessage id={edition + ".venue.address"} />
           </h2>
           {width < medium && <img className="venue" src={edition === 'bogota' ? venueSmallBog : venueSmall} />}
           <a href="https://www.cecbuenosaires.com.ar/" target="_blank">
@@ -61,7 +61,7 @@ const VenueSection = styled.section`
     background-position: top right;
   }
   h1 {
-    font-family: 'Pixel';
+    font-family: 'Helvetica';
     font-weight: 400;
     font-size: 72px;
     line-height: 64px;

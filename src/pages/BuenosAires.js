@@ -20,7 +20,7 @@ function BuenosAires () {
             <Speakers />
             <Sponsors />
             <MediaPartners/>
-            <Venue venueTitle="Centro de Convenciones" venueAddress="New address in BA"/>
+            <Venue />
             <Schedule />
             <TheOtherSide />
             <Faqs/>
