@@ -5,36 +5,34 @@ import background from '../assets/faq-line.svg'
 
 export default function App() {
   const intl = useIntl()
+  const f = 'faqs'
+  const edition = localStorage.getItem('edition')
   const data = {
     rows: [
       {
-        title: intl.formatMessage({ id: 'faqs.1.title' }),
-        content: intl.formatMessage({ id: 'faqs.1.content' }),
+        title: intl.formatMessage({ id: edition + '.faqs.1.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.1.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.2.title' }),
-        content: intl.formatMessage({ id: 'faqs.2.content' }),
+        title: intl.formatMessage({ id: edition + '.faqs.2.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.2.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.3.title' }),
-        content: intl.formatMessage({ id: 'faqs.3.content' }),
+        title: intl.formatMessage({ id: edition + '.faqs.3.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.3.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.4.title' }),
-        content: intl.formatMessage({ id: 'faqs.4.content' }),
+        title: intl.formatMessage({ id: edition + '.faqs.4.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.4.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.5.title' }),
-        content: intl.formatMessage({ id: 'faqs.5.content' }),
+        title: intl.formatMessage({ id: edition + '.faqs.5.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.5.content' }),
       },
       {
-        title: intl.formatMessage({ id: 'faqs.6.title' }),
-        content: intl.formatMessage({ id: 'faqs.6.content' }),
-      },
-      {
-        title: intl.formatMessage({ id: 'faqs.7.title' }),
-        content: intl.formatMessage({ id: 'faqs.7.content' }),
-      },
+        title: intl.formatMessage({ id: edition + '.faqs.6.title' }),
+        content: intl.formatMessage({ id: edition + '.faqs.6.content' }),
+      }
     ],
   }
 

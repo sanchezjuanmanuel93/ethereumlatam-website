@@ -26,6 +26,13 @@ const locale =
     ? localStorage.getItem('locale')
     : 'en'
 
+    let defaultEdition = 'bogota'
+    localStorage.setItem('edition', 'bogota')
+    const edition =
+      typeof window.localStorage !== 'undefined'
+        ? localStorage.getItem('edition')
+        : 'bogota'
+
 
 
 function App() {

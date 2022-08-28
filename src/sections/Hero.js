@@ -6,27 +6,20 @@ import Loop from '../components/Loop'
 //import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
 
-const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink, heroImg}) => {
-  console.log(heroMonth)
+const Hero = ({heroText, heroSubText, heroImg}) => {
+  const edition = localStorage.getItem('edition')
   return (
     <HeroSection>
       <Container>
         <Box>
-          {
-            (typeof heroMonth != 'undefined' || typeof heroDate != 'undefined' || typeof heroYear != 'undefined') ? <p>
-            <FormattedMessage id={heroMonth} />
+          <p>
+            <FormattedMessage id={edition + ".hero.month"} />
             <br />
-            <FormattedMessage id={heroDate} />
+            <FormattedMessage id={edition + ".hero.date"} />
             <br />
-            <FormattedMessage id={heroYear} />
-          </p> : <p>
-            <FormattedMessage id="hero.month" />
-            <br />
-            <FormattedMessage id="hero.date" />
-            <br />
-            <FormattedMessage id="hero.year" />
+            <FormattedMessage id={edition + ".hero.year"} />
           </p>
-          }
+          
           <img alt="img" src={logo} />
           <p className="green">
             { heroText }
@@ -34,8 +27,8 @@ const Hero = ({heroText, heroSubText, heroMonth, heroDate, heroYear, heroLink, h
             { heroSubText }
           </p>
         </Box>        
-        <Button href={heroLink} target="_blank">
-          <FormattedMessage id="hero.button" />!
+        <Button href={edition=='buenos-aires' && 'https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists'} target="_blank">
+          <FormattedMessage id={edition + ".hero.button"} />
         </Button>
       </Container>
       <Loop reverse={true} content={<img alt="img" src={heroImg} />} />
@@ -105,7 +98,7 @@ const Button = styled.a`
   background: transparent;
   font-family: 'Pixel';
   height: 40px;
-  margin: 72px 20px 100px 20px;
+  margin: 72px auto 100px auto;
   text-decoration: none;
   padding: 18px 36px;
   font-weight: 400;
@@ -117,7 +110,7 @@ const Button = styled.a`
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
   display: block;
-  width: 315px;
+  width: 366px;
   height: 61px;
   @media only screen and (max-width: 870px) {
     display: block;

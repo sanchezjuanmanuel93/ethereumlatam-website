@@ -11,6 +11,7 @@ import Venue from '../sections/Venue'
 import Footer from '../sections/Footer'
 
 function BuenosAires () {
+  localStorage.setItem('edition', 'buenos-aires')
     return (
         <div className="App">
             <Navbar />

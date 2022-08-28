@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
 import Loop from '../components/Loop'
-import date1 from '../assets/date11.svg'
-import date2 from '../assets/date22.svg'
+import date1 from '../assets/date1.svg'
+import date2 from '../assets/date2.svg'
+import date1bog from '../assets/date1-bogota.svg'
+import date2bog from '../assets/date2-bogota.svg'
 import underline from '../assets/latam-underline.svg'
 import arrow from '../assets/arrow.svg'
 
@@ -13,6 +15,7 @@ const EthToLatam = ({typePassed}) => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
   const medium = 700
+  const edition = localStorage.getItem('edition')
   const locale =
     typeof window.localStorage !== 'undefined'
       ? localStorage.getItem('locale')
@@ -31,18 +34,14 @@ const EthToLatam = ({typePassed}) => {
             <Underline src={underline} />
           </Green>
         </h1>
-        {
-          typePassed === 'Bogota' ? <TextBox>
-          <FormattedHTMLMessage id="ethtolatamBogota.paragraph1" />
-          <FormattedHTMLMessage id="ethtolatamBogota.paragraph2" />
-        </TextBox> : <TextBox>
-          <FormattedHTMLMessage id="ethtolatamBuenosAires.paragraph1" />
-          <FormattedHTMLMessage id="ethtolatamBuenosAires.paragraph2" />
+        <TextBox>
+          <FormattedHTMLMessage id={edition + ".ethtolatam.paragraph1"}/>
+          <FormattedHTMLMessage id={edition + ".ethtolatam.paragraph2"} />
         </TextBox>
-        }
+        
       </Container>
-      <Loop reverse content={<img src={date1} />} />
-      <Loop content={<img src={date2} />} />
+      <Loop reverse content={<img src={edition=='bogota' ? date1bog : date1} />} />
+      <Loop content={<img src={edition=='bogota' ? date2bog : date2} />} />
     </EthToLatamSection>
   )
 }

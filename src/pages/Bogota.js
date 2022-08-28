@@ -7,13 +7,13 @@ import Venue from '../sections/Venue'
 import Footer from '../sections/Footer'
 
 function Bogota () {
+  localStorage.setItem('edition', 'bogota')
     return (
         <>
             <Navbar />
             <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" />
             <EthToLatam typePassed="Bogota" />
             <Venue />
-            <TheOtherSide />
             <Faqs/>
             <Footer />
         </>
