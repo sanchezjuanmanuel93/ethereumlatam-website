@@ -49,24 +49,6 @@ const Tabs = ({ mode }) => {
       <a href="#faqs">
         <FormattedMessage id="navbar.faqs" />
       </a>
-    
-
-      <a
-        onMouseOver={() => showDropDown()}
-        onMouseLeave={() => hideDropDown()}
-      >
-        <span>Editions</span>
-      </a>
-      {isDropDownOpen && (
-        <div
-          className="dropdown-div"
-          onMouseEnter={() => setSubDropDown(true)}
-          onMouseLeave={() => setAllStateToFalse()}
-        >
-          <a href="/buenos-aires">Buenos Aires</a>
-          <a href="/">Bogotá</a>
-        </div>
-      )}
     </TabsBox>
   )
 }
