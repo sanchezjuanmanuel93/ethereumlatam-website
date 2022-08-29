@@ -37,15 +37,18 @@ const locale =
 function App() {
   return (
     <div className="App">
-      
+      <Router>
         <IntlProvider
         locale={locale || defaultLanguage}
         messages={messages[locale || defaultLanguage]}
         >
-          <Bogota />
-          
+          <Routes>
+            <Route path='/' exact element={<Bogota />} />
+            <Route path='/bogota' exact element={<Bogota />} />
+            <Route path='/buenos-aires' exact element={<BuenosAires />} />
+          </Routes>
         </IntlProvider>
-      
+      </Router>
     </div>
   )
 }
