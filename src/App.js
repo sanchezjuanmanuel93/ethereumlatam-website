@@ -1,17 +1,13 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { IntlProvider } from 'react-intl'
 import { addLocaleData } from 'react-intl'
 
 import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
 import messages_pt from './translations/pt.json'
-import Bogota from './pages/Bogota';
-import BuenosAires from './pages/BuenosAires';
+import Bogota from './pages/Bogota'
+import BuenosAires from './pages/BuenosAires'
 
 const messages = {
   es: messages_es,
@@ -25,32 +21,24 @@ const locale =
     ? localStorage.getItem('locale')
     : 'en'
 
-    let defaultEdition = 'bogota'
-    localStorage.setItem('edition', 'bogota')
-    const edition =
-      typeof window.localStorage !== 'undefined'
-        ? localStorage.getItem('edition')
-        : 'bogota'
-
-
+let defaultEdition = 'bogota'
+localStorage.setItem('edition', 'bogota')
+const edition =
+  typeof window.localStorage !== 'undefined'
+    ? localStorage.getItem('edition')
+    : 'bogota'
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <IntlProvider
+      <IntlProvider
         locale={locale || defaultLanguage}
         messages={messages[locale || defaultLanguage]}
-        >
-          <Routes>
-            <Route path='/' exact element={<Bogota />} />
-            <Route path='/bogota' exact element={<Bogota />} />
-            <Route path='/buenos-aires' exact element={<BuenosAires />} />
-          </Routes>
-        </IntlProvider>
-      </Router>
+      >
+        <Bogota />
+      </IntlProvider>
     </div>
   )
 }
 
-export default App;
+export default App
