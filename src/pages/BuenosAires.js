@@ -15,8 +15,8 @@ function BuenosAires () {
     return (
         <div className="App">
             <Navbar />
-            <Hero heroText="BUENOS AIRES" heroSubText=">> ARGENTINA" heroImg={require("../assets/carousel-ba.png")} />
-            <EthToLatam typePassed="BuenosAires" />
+            <Hero />
+            <EthToLatam />
             <Speakers />
             <Sponsors />
             <MediaPartners/>

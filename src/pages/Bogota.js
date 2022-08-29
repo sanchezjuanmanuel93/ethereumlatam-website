@@ -6,18 +6,17 @@ import TheOtherSide from '../sections/TheOtherSide'
 import Venue from '../sections/Venue'
 import Footer from '../sections/Footer'
 
-function Bogota () {
-  localStorage.setItem('edition', 'bogota')
+function Index () {
     return (
-        <>
+        <div className="App">
             <Navbar />
-            <Hero heroText="BOGOTA" heroSubText=">> COLOMBIA" />
-            <EthToLatam typePassed="Bogota" />
-            <Venue />
+            <Hero />
+            <EthToLatam />
+            <Venue/>
             <Faqs/>
             <Footer />
-        </>
+        </div>
     )
 }
 
-export default Bogota
+export default Index;

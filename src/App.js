@@ -10,7 +10,6 @@ import { addLocaleData } from 'react-intl'
 import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
 import messages_pt from './translations/pt.json'
-import Index from "./pages/Index";
 import Bogota from './pages/Bogota';
 import BuenosAires from './pages/BuenosAires';
 
@@ -44,7 +43,7 @@ function App() {
         messages={messages[locale || defaultLanguage]}
         >
           <Routes>
-            <Route path='/' exact element={<Index />} />
+            <Route path='/' exact element={<Bogota />} />
             <Route path='/bogota' exact element={<Bogota />} />
             <Route path='/buenos-aires' exact element={<BuenosAires />} />
           </Routes>

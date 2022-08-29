@@ -9,7 +9,7 @@ import date2bog from '../assets/date2-bogota.svg'
 import underline from '../assets/latam-underline.svg'
 import arrow from '../assets/arrow.svg'
 
-const EthToLatam = ({typePassed}) => {
+const EthToLatam = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))

@@ -5,8 +5,11 @@ import styled from 'styled-components'
 import Loop from '../components/Loop'
 //import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
+import loopArg from '../assets/carousel-ba.png' 
+import loopCol from '../assets/carousel-bog.png'
 
-const Hero = ({ heroText, heroSubText, heroImg }) => {
+
+const Hero = ({ heroImg }) => {
   const edition = localStorage.getItem('edition')
   return (
     <HeroSection>
@@ -22,9 +25,9 @@ const Hero = ({ heroText, heroSubText, heroImg }) => {
 
           <img alt="img" src={logo} />
           <p className="green">
-            {heroText}
+            <FormattedMessage id={edition + '.hero.city'} />
             <br />
-            {heroSubText}
+            <FormattedMessage id={edition + '.hero.country'} />
           </p>
         </Box>
         <Button
@@ -38,7 +41,7 @@ const Hero = ({ heroText, heroSubText, heroImg }) => {
           <FormattedMessage id={edition + '.hero.button'} />
         </Button>
       </Container>
-      <Loop reverse={true} content={<img alt="img" src={heroImg} />} />
+      <Loop reverse={true} content={<img alt="img" src={edition === 'bogota' ? loopCol : loopArg} />} />
     </HeroSection>
   )
 }
