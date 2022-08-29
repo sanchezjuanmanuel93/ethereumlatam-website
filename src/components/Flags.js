@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import arg from '../assets/arg.svg'
 import brz from '../assets/brz.svg'
+import bog from '../assets/colombia.svg'
 import eeuu from '../assets/eeuu.svg'
 
 const GetTickets = () => {
@@ -11,6 +12,7 @@ const GetTickets = () => {
     }
     window.location.reload()
   }
+  const edition = localStorage.getItem('edition')
 
   const locale =
     typeof window.localStorage !== 'undefined'
@@ -25,7 +27,7 @@ const GetTickets = () => {
           changeLanguage('es')
         }}
       >
-        <img src={arg} />
+        <img src={edition === 'bogota' ? bog : arg} />
       </FlagButton>
       <FlagButton
         className={locale == 'pt' && 'active'}
