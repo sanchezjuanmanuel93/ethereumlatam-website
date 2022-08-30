@@ -22,7 +22,7 @@ const GetTickets = () => {
   return (
     <FlagBox>
       <FlagButton
-        className={locale == 'es' && 'active'}
+        className={locale == 'es' ? 'active' : ''}
         onClick={() => {
           changeLanguage('es')
         }}
@@ -30,7 +30,7 @@ const GetTickets = () => {
         <img src={edition === 'bogota' ? bog : arg} />
       </FlagButton>
       <FlagButton
-        className={locale == 'pt' && 'active'}
+        className={locale == 'pt'  ? 'active' : ''}
         onClick={() => {
           changeLanguage('pt')
         }}
@@ -38,7 +38,7 @@ const GetTickets = () => {
         <img src={brz} />
       </FlagButton>
       <FlagButton
-        className={locale == 'en' && 'active'}
+        className={locale == 'en'  ? 'active' : ''}
         onClick={() => {
           changeLanguage('en')
         }}

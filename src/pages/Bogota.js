@@ -7,6 +7,7 @@ import Venue from '../sections/Venue'
 import Footer from '../sections/Footer'
 
 function Index () {
+  localStorage.setItem('edition', 'bogota')
     return (
         <div className="App">
             <Navbar />

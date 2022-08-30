@@ -114,21 +114,21 @@ const Schedule = () => {
           <div>
             <button
               onClick={handleClick}
-              className={active === 0 && 'active'}
+              className={active === 0 ? 'active' : ''}
               id={0}
             >
               TALKS
             </button>
             <button
               onClick={handleClick}
-              className={active === 1 && 'active'}
+              className={active === 1 ? 'active' : ''}
               id={1}
             >
               WORKSHOPS
             </button>
           </div>
         </Head>
-        <Content className={active === 0 && 'active'}>
+        <Content className={active === 0 ? 'active' : ''}>
           <Day>
             <Date className="one">
               <h2>
@@ -400,12 +400,12 @@ const Schedule = () => {
               <h3>12th</h3>
             </Date>
             <Talks>
-            <Entry>
-              <Hours>09:15</Hours>
-              <div>
-                <h3>Venue opening</h3>
-              </div>
-            </Entry>
+              <Entry>
+                <Hours>09:15</Hours>
+                <div>
+                  <h3>Venue opening</h3>
+                </div>
+              </Entry>
               <Entry>
                 <Hours>10:00 - 10:30</Hours>
                 <div className="twoColumns">
@@ -676,12 +676,12 @@ const Schedule = () => {
               <h3>13th</h3>
             </Date>
             <Talks>
-            <Entry>
-              <Hours>12:30</Hours>
-              <div>
-                <h3>Venue opening</h3>
-              </div>
-            </Entry>
+              <Entry>
+                <Hours>12:30</Hours>
+                <div>
+                  <h3>Venue opening</h3>
+                </div>
+              </Entry>
               <Entry>
                 <Hours>13:30 - 13:55</Hours>
                 <div className="twoColumns">
