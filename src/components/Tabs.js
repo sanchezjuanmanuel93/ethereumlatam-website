@@ -28,53 +28,55 @@ const Tabs = ({ mode }) => {
     setIsDropDownOpen(false)
     setSubDropDown(false)
   }
-  // <Link to={'#about'}>
-  //   <FormattedMessage id="navbar.about" />
-  // </Link>
-  // <Link to={'#speakers'}>
-  //   <FormattedMessage id="navbar.speakers" />
-  // </Link>
-  //
-  // <Link to={'#sponsors'}>
-  //   <FormattedMessage id="navbar.sponsors" />
-  // </Link>
-  // <Link to={'#venue'}>
-  //   <FormattedMessage id="navbar.venue" />
-  // </Link>
-  // <Link to={'#agenda'}>
-  //   <FormattedMessage id="navbar.schedule" />
-  // </Link>
-  // <Link to={'#theOtherSide'}>Side events</Link>
-  // <Link to={'#faqs'}>
-  //   <FormattedMessage id="navbar.faqs" />
-  // </Link>
+
+  const edition = localStorage.getItem('edition')
   return (
     <TabsBox mode={mode}>
       <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.about" />
       </Link>
-      <Link to="speakers" spy={true} smooth={true} offset={50} duration={500}>
-        <FormattedMessage id="navbar.speakers" />
-      </Link>
+      {edition === 'buenos-aires' && (
+        <>
+          <Link
+            to="speakers"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <FormattedMessage id="navbar.speakers" />
+          </Link>
 
-      <Link to="sponsors" spy={true} smooth={true} offset={50} duration={500}>
-        <FormattedMessage id="navbar.sponsors" />
-      </Link>
+          <Link
+            to="sponsors"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            <FormattedMessage id="navbar.sponsors" />
+          </Link>
+        </>
+      )}
       <Link to="venue" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.venue" />
       </Link>
-      <Link to="agenda" spy={true} smooth={true} offset={50} duration={500}>
-        <FormattedMessage id="navbar.schedule" />
-      </Link>
-      <Link
-        to="theOtherSide"
-        spy={true}
-        smooth={true}
-        offset={50}
-        duration={500}
-      >
-        Side events
-      </Link>
+      {edition === 'buenos-aires' && (
+        <>
+          <Link to="agenda" spy={true} smooth={true} offset={50} duration={500}>
+            <FormattedMessage id="navbar.schedule" />
+          </Link>
+          <Link
+            to="theOtherSide"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Side events
+          </Link>
+        </>
+      )}
       <Link to="faqs" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.faqs" />
       </Link>
