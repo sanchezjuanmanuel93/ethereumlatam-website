@@ -34,7 +34,7 @@ export default function Venue() {
             <FormattedMessage id={edition + ".venue.address"} />
           </h2>
           {width < medium && <img className="venue" src={edition === 'bogota' ? venueSmallBog : venueSmall} />}
-          <a href="https://www.cecbuenosaires.com.ar/" target="_blank">
+          <a href={edition === 'bogota' ? "https://agora-bogota.com/" : "https://www.cecbuenosaires.com.ar/"} target="_blank">
             <FormattedMessage id="venue.link" />
           </a>
         </Box>
