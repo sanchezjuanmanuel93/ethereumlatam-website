@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
+import { HashLink as Link } from "react-router-hash-link";
 import Dropdown from 'react-dropdown'
 
 const Tabs = ({ mode }) => {
@@ -33,9 +34,10 @@ const Tabs = ({ mode }) => {
       <a href="#about">
         <FormattedMessage id="navbar.about" />
       </a>
-      <a href="#speakers">
+      
+      <Link to={'/buenos-aires#speakers'}>
         <FormattedMessage id="navbar.speakers" />
-      </a>
+      </Link>
       <a href="#sponsors">
         <FormattedMessage id="navbar.sponsors" />
       </a>
