@@ -31,26 +31,25 @@ const Tabs = ({ mode }) => {
   }
   return (
     <TabsBox mode={mode}>
-      <a href="#about">
+      <Link to={'#about'}>
         <FormattedMessage id="navbar.about" />
-      </a>
-      
-      <Link to={'/buenos-aires#speakers'}>
+      </Link>
+      <Link to={'#speakers'}>
         <FormattedMessage id="navbar.speakers" />
       </Link>
-      <a href="#sponsors">
+      <Link to={'#sponsors'}>
         <FormattedMessage id="navbar.sponsors" />
-      </a>
-      <a href="#venue">
+      </Link>
+      <Link to={'#venue'}>
         <FormattedMessage id="navbar.venue" />
-      </a>
-      <a href="#agenda">
+      </Link>
+      <Link to={'#agenda'}>
         <FormattedMessage id="navbar.schedule" />
-      </a>
-      <a href="#theOtherSide">Side events</a>
-      <a href="#faqs">
+      </Link>
+      <Link to={'#theOtherSide'}>Side events</Link>
+      <Link to={'#faqs'}>
         <FormattedMessage id="navbar.faqs" />
-      </a>
+      </Link>
     </TabsBox>
   )
 }
