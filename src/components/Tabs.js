@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
-import { HashLink as Link } from "react-router-hash-link";
+
 import Dropdown from 'react-dropdown'
+import { Link } from 'react-scroll'
 
 const Tabs = ({ mode }) => {
-  
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
   const [subDropDown, setSubDropDown] = useState(false)
   const showDropDown = () => {
@@ -20,34 +20,62 @@ const Tabs = ({ mode }) => {
     }
   }
 
-
-  const _onSelect = (option) => {
+  const _onSelect = option => {
     console.log('You selected ', option.label)
-    this.setState({selected: option})
+    this.setState({ selected: option })
   }
   const setAllStateToFalse = () => {
     setIsDropDownOpen(false)
     setSubDropDown(false)
   }
+  // <Link to={'#about'}>
+  //   <FormattedMessage id="navbar.about" />
+  // </Link>
+  // <Link to={'#speakers'}>
+  //   <FormattedMessage id="navbar.speakers" />
+  // </Link>
+  //
+  // <Link to={'#sponsors'}>
+  //   <FormattedMessage id="navbar.sponsors" />
+  // </Link>
+  // <Link to={'#venue'}>
+  //   <FormattedMessage id="navbar.venue" />
+  // </Link>
+  // <Link to={'#agenda'}>
+  //   <FormattedMessage id="navbar.schedule" />
+  // </Link>
+  // <Link to={'#theOtherSide'}>Side events</Link>
+  // <Link to={'#faqs'}>
+  //   <FormattedMessage id="navbar.faqs" />
+  // </Link>
   return (
     <TabsBox mode={mode}>
-      <Link to={'#about'}>
+      <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.about" />
       </Link>
-      <Link to={'#speakers'}>
+      <Link to="speakers" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.speakers" />
       </Link>
-      <Link to={'#sponsors'}>
+
+      <Link to="sponsors" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.sponsors" />
       </Link>
-      <Link to={'#venue'}>
+      <Link to="venue" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.venue" />
       </Link>
-      <Link to={'#agenda'}>
+      <Link to="agenda" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.schedule" />
       </Link>
-      <Link to={'#theOtherSide'}>Side events</Link>
-      <Link to={'#faqs'}>
+      <Link
+        to="theOtherSide"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        Side events
+      </Link>
+      <Link to="faqs" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.faqs" />
       </Link>
     </TabsBox>
