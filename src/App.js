@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import { IntlProvider } from 'react-intl'
 import { addLocaleData } from 'react-intl'
 
@@ -35,7 +35,10 @@ function App() {
         locale={locale || defaultLanguage}
         messages={messages[locale || defaultLanguage]}
       >
-        <Bogota />
+      <Routes>
+        <Route path="/" element={<Bogota />} />
+        <Route path="/buenos-aires" element={<BuenosAires />}
+      </Routes>
       </IntlProvider>
     </div>
   )

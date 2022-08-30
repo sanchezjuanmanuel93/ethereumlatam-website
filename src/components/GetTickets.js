@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 const GetTickets = () => {
   return (
@@ -8,8 +9,8 @@ const GetTickets = () => {
       <div className="dropdown">
         <button className="dropbtn">Editions</button>
         <div className="dropdown-content">
-          <a href="/buenos-aires">BuenosAires</a>
-          <a href="/">Bogotá</a>
+          <Link to="/buenos-aires">Buenos aires</Link>
+          <Link to="/">Bogotá</Link>
         </div>
       </div>
     </SelectSection>

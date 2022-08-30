@@ -6,6 +6,7 @@ import { addLocaleData } from 'react-intl'
 import { BrowserRouter as Router } from 'react-router-dom';*/
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import { BrowserRouter } from 'react-router-dom'
 
 /*import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
@@ -29,15 +30,13 @@ ReactDOM.render(
   //     locale={locale || defaultLanguage}
   //     messages={messages[locale || defaultLanguage]}
   //   >
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
   //  </IntlProvider>
   // </Router>,
   document.getElementById('root')
 )
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()
