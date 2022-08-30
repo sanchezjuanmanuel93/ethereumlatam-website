@@ -15,11 +15,11 @@ const messages = {
   pt: messages_pt,
 }
 
-let defaultLanguage = 'en'
+let defaultLanguage = 'es'
 const locale =
   typeof window.localStorage !== 'undefined'
     ? localStorage.getItem('locale')
-    : 'en'
+    : 'es'
 
 let defaultEdition = 'bogota'
 localStorage.setItem('edition', 'bogota')
