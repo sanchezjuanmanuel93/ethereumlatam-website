@@ -6,7 +6,7 @@ import { addLocaleData } from 'react-intl'
 import { BrowserRouter as Router } from 'react-router-dom';*/
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 /*import messages_en from './translations/en.json'
 import messages_es from './translations/es.json'
@@ -31,9 +31,9 @@ ReactDOM.render(
   //     messages={messages[locale || defaultLanguage]}
   //   >
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   //  </IntlProvider>
   // </Router>,
