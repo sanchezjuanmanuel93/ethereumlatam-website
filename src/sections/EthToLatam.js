@@ -106,6 +106,14 @@ const TextBox = styled.div`
   @media only screen and (max-width: 700px) {
     padding: 25px 0 0 74px;
   }
+  h6 {
+    font-family: 'Helvetica-Bold';
+    font-size: 23px;
+    line-height: 32px;
+    color: #80ff9f;
+    text-transform: uppercase;
+    margin: 60px 0 20px 0;
+  }
   p {
     font-family: 'Helvetica';
     font-weight: 400;
