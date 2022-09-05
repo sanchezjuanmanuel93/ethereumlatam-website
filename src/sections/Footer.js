@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <Container>
-        <img src={roadToDevcon} />
+        <a href="https://devcon.org/" target="_blank"><img src={roadToDevcon} /></a>
         <div>
           <div>
             <a href="https://twitter.com/ethlatam" target="_blank">
