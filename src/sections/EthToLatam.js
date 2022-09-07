@@ -110,7 +110,7 @@ const TextBox = styled.div`
     font-family: 'Helvetica-Bold';
     font-size: 23px;
     line-height: 32px;
-    color: #80ff9f;
+    color: #737373;
     text-transform: uppercase;
     margin: 60px 0 20px 0;
   }
