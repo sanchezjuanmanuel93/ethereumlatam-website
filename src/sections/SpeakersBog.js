@@ -143,9 +143,8 @@ const Speakers = () => {
             >
               <img src={justin} style={{ objectPosition: '100% 20%' }} />
               <div>
-                <h1>Justin Ðrake</h1>
+                <h1>Justin Drake</h1>
                 <Subtitile className="withPadding">
-                  <Country src={uk} />
                   <h2>Ethereum Foundation </h2>
                 </Subtitile>
               </div>
@@ -260,7 +259,7 @@ const Speakers = () => {
                 <h1>Diego Fernandez</h1>
                 <Subtitile>
                   <Country src={argentina} />
-                  <h2>Gobierno de la ciudad  Buenos Aires</h2>
+                  <h2>Gob de Bs. As</h2>
                 </Subtitile>
               </div>
             </Content>
