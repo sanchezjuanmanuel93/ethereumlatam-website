@@ -5,6 +5,7 @@ import elipse from '../assets/elipse.svg'
 import arrow from '../assets/arrow-down.svg'
 
 import aya from '../assets/speakersBog/Aya.jpeg'
+import aya2 from '../assets/speakers2/aya.jpeg'
 import pablo from '../assets/speakers2/pablo.jpg'
 import diego from '../assets/speakersBog/DiegoMazo.png'
 import jordi from '../assets/speakersBog/jordi.jpg'
@@ -21,6 +22,9 @@ import cristian from '../assets/speakersBog/CristianEspinozaGarner.jpg'
 import ale from '../assets/speakersBog/AleBorda.jpg'
 import cryptochica from '../assets/speakersBog/cryptochica.png'
 import criptolawyer from '../assets/speakersBog/criptolawyer.jpg'
+import justin from '../assets/speakersBog/justin.jpeg'
+import diegoF from '../assets/speakersBog/DiegoFernandez.jpeg'
+import lucas from '../assets/speakersBog/LucasJolias.jpg'
 
 import japon from '../assets/flags/jp.svg'
 import argentina from '../assets/flags/ar.svg'
@@ -32,6 +36,7 @@ import suiza from '../assets/flags/ch.svg'
 import honduras from '../assets/flags/hn.svg'
 import peru from '../assets/flags/pe.svg'
 import venezuela from '../assets/flags/ve.svg'
+import uk from '../assets/flags/gb.svg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -59,11 +64,10 @@ const Speakers = () => {
               href="https://twitter.com/AyaMiyagotchi"
               className="vipContent"
             >
-              <img src={aya} style={{ objectPosition: '100% 20%' }} />
+              <img src={aya2} style={{ objectPosition: '100% 20%' }} />
               <div>
                 <h1>Aya Miyaguchi</h1>
                 <Subtitile className="withPadding">
-                  <Country src={japon} />
                   <h2>Ethereum Foundation </h2>
                 </Subtitile>
               </div>
@@ -130,6 +134,57 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="vip">
+            <Content
+              className="vipContent"
+              target="_blank"
+              href="https://twitter.com/drakefjustin"
+              className="vipContent"
+            >
+              <img src={justin} style={{ objectPosition: '100% 20%' }} />
+              <div>
+                <h1>Justin Ðrake</h1>
+                <Subtitile className="withPadding">
+                  <Country src={uk} />
+                  <h2>Ethereum Foundation </h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/aroisenzvit"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '35% 50%' }} src={alfredo} />
+              <div>
+                <h1>Alfredo Roisenzvit</h1>
+                <Subtitile>
+                  <Country src={argentina} />
+                  <h2>MoonQuant Capital</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/crisgarner"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 50%' }} src={cristian} />
+              <div>
+                <h1>Cristian Espinoza Garner</h1>
+                <Subtitile>
+                  <Country src={honduras} />
+                  <h2>Cryptex Finance</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -165,32 +220,15 @@ const Speakers = () => {
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
-              href="https://twitter.com/aroisenzvit"
+              href="https://twitter.com/ocandocrypto"
               className="importantPersonContent"
             >
-              <img style={{ objectPosition: '35% 50%' }} src={alfredo} />
+              <img style={{ objectPosition: '100% 50%' }} src={ocando} />
               <div>
-                <h1>Alfredo Roisenzvit</h1>
+                <h1>Angela Ocando</h1>
                 <Subtitile>
-                  <Country src={argentina} />
-                  <h2>MoonQuant Capital</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
-          
-          <BoxItem className="importantPerson">
-            <Content
-              target="_blank"
-              href="https://twitter.com/crisgarner"
-              className="importantPersonContent"
-            >
-              <img style={{ objectPosition: '100% 50%' }} src={cristian} />
-              <div>
-                <h1>Cristian Espinoza Garner</h1>
-                <Subtitile>
-                  <Country src={honduras} />
-                  <h2>Cryptex Finance</h2>
+                  <Country src={colombia} />
+                  <h2>Platzi</h2>
                 </Subtitile>
               </div>
             </Content>
@@ -211,6 +249,22 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/fernandezdiego"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 50%' }} src={diegoF} />
+              <div>
+                <h1>Diego Fernandez</h1>
+                <Subtitile>
+                  <Country src={argentina} />
+                  <h2>Gobierno de la ciudad  Buenos Aires</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="vip">
             <Content
               className="vipContent"
@@ -227,22 +281,7 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="importantPerson">
-            <Content
-              target="_blank"
-              href="https://twitter.com/ocandocrypto"
-              className="importantPersonContent"
-            >
-              <img style={{ objectPosition: '100% 50%' }} src={ocando} />
-              <div>
-                <h1>Angela Ocando</h1>
-                <Subtitile>
-                  <Country src={colombia} />
-                  <h2>Platzi</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
+
 
           <BoxItem className="importantPerson">
             <Content
@@ -256,6 +295,41 @@ const Speakers = () => {
                 <Subtitile>
                   <Country src={colombia} />
                   <h2>Maker Growth</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/cryptochica_arg"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 50%' }} src={cryptochica} />
+              <div>
+                <h1>Cryptochica</h1>
+                <Subtitile>
+                  <Country src={argentina} />
+                  <h2>DeFi Latam</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+
+
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/mateodazab"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 50%' }} src={mateo} />
+              <div>
+                <h1>Mateo Daza</h1>
+                <Subtitile>
+                  <Country src={colombia} />
+                  <h2>Giveth.io</h2>
                 </Subtitile>
               </div>
             </Content>
@@ -279,33 +353,15 @@ const Speakers = () => {
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
-              href="https://twitter.com/cryptochica_arg"
+              href="https://twitter.com/lucasjolias"
               className="importantPersonContent"
             >
-              <img style={{ objectPosition: '100% 50%' }} src={cryptochica} />
+              <img style={{ objectPosition: '100% 50%' }} src={lucas} />
               <div>
-                <h1>Cryptochica</h1>
+                <h1>Lucas Jolias</h1>
                 <Subtitile>
                   <Country src={argentina} />
-                  <h2>DeFi Latam</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
-          
-          
-          <BoxItem className="importantPerson">
-            <Content
-              target="_blank"
-              href="https://twitter.com/mateodazab"
-              className="importantPersonContent"
-            >
-              <img style={{ objectPosition: '100% 50%' }} src={mateo} />
-              <div>
-                <h1>Mateo Daza</h1>
-                <Subtitile>
-                  <Country src={colombia} />
-                  <h2>Giveth.io</h2>
+                  <h2>OS City</h2>
                 </Subtitile>
               </div>
             </Content>
