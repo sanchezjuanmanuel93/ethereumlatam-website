@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Loop from '../components/Loop'
 //import image from '../assets/carousel.png'
 import logo from '../assets/logo.svg'
-import loopArg from '../assets/carousel-ba.png' 
+import loopArg from '../assets/carousel-ba.png'
 import loopCol from '../assets/carousel-bog.png'
 
 
@@ -34,7 +34,7 @@ const Hero = ({ heroImg }) => {
           href={
             edition === 'buenos-aires'
               ? 'https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists'
-              : undefined
+              : 'https://ethlatam.ticketh.xyz/'
           }
           target="_blank"
         >

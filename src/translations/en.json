@@ -6,21 +6,21 @@
   "navbar.venue": "Venue",
   "navbar.faqs": "Faqs",
   "navbar.button": "Tickets Sold Out",
-  
+
   "hero.button": "Tickets Sold Out",
   "ethtolatam.title": "B<span class='pixel'>r</span>ingin<span class='pixel'>g E</span>TH",
   "ethtolatam.title2": "t<span class='pixel'>o</span> L<span class='pixel'>a</span>tam",
   "sponsors.title": "O<span class='pixel'>ur</span><br />S<span class='pixel'>p</span>ons<span class='pixel'>o</span>rs",
   "media.title": "M<span class='pixel'>e</span>di<span class='pixel'>a</span> & <span class='pixel'>edu</span><br />Pa<span class='pixel'>r</span>t<span class='pixel'>ne</span>rs",
-  
+
   "venue.link": "→ Useful information",
   "theOtherSide.title": "Th<span class='pixel'>e o</span>th<span class='pixel'>er s</span>i<span class='pixel'>de</span>",
   "faqs.title": "F<span class='pixel'>aq</span>",
   "schedule.title": "A<span class='pixel'>ge</span>n<span class='pixel'>da</span>",
   "schedule.break": "Lunch break",
   "schedule.closing": "Closing ceremony",
-  
-  "bogota.hero.button": "Tickets coming soon",
+
+  "bogota.hero.button": "Get tickets",
   "bogota.hero.date": "10",
   "bogota.hero.month": "OCTOBER",
   "bogota.hero.year": "2022",
@@ -42,7 +42,7 @@
   "bogota.faqs.5.content": "You can send us your proposal to the following email: hello@ethlatam.org",
   "bogota.faqs.6.title": "I am an educational institution and I would like to contribute as an educational partner for ETHLatam Bogotá.",
   "bogota.faqs.6.content": "You can send us your proposal to the following email: hello@ethlatam.org",
-  
+
   "buenos-aires.hero.date": "11-12-13",
   "buenos-aires.hero.month": "AUGUST",
   "buenos-aires.hero.year": "2022",
@@ -67,5 +67,5 @@
   "buenos-aires.faqs.6.content": "<p>Our goal with ETH Latam is to encourage decentralized coordination of an Ethereum-based event series. There will naturally be a lot more events, parties, and activities taking place the week of ETH Latam.</p><p>If you want to host your own side event, we’re happy to help! Just fill out <a href='https://docs.google.com/forms/d/e/1FAIpQLSeMF0NTey0Dgq8_74e6Ddc9NU2ISTguiHH0_mM8EpYRdhbGIw/viewform'>this form</a></p>",
   "buenos-aires.faqs.7.title": "Have questions or ideas?",
   "buenos-aires.faqs.7.content": "Do you have any questions or ideas that you want to suggest? Email us at <a href='mailto:hello@ethlatam.org'>hello@ethlatam.org</a>"
-  
+
 }

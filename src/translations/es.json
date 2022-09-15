@@ -26,9 +26,9 @@
   "faqs.title": "P<span class='pixel'>re</span>gunt<span class='pixel'>as</span><br/><span class='indentation'/>f<span class='pixel'>r</span>ec<span class='pixel'>ue</span>nte<span class='pixel'>s</span>",
   "schedule.break": "Break para el almuerzo",
   "schedule.closing": "Cierre",
-  
-  
-  "bogota.hero.button": "Tickets proximamente",
+
+
+  "bogota.hero.button": "Tickets aqui",
   "bogota.hero.date": "10",
   "bogota.hero.month": "OCTUBRE",
   "bogota.hero.year": "2022",
@@ -50,7 +50,7 @@
   "bogota.faqs.5.content": "Puedes enviarnos tu propuesta al siguiente email: hello@ethlatam.org",
   "bogota.faqs.6.title": "Soy una institución educativa y me quisiera aportar como partner educativo para ETHLatam Bogotá.",
   "bogota.faqs.6.content": "Puedes enviarnos tu propuesta al siguiente email: hello@ethlatam.org",
-  
+
   "buenos-aires.hero.button": "Ver en youtube",
   "buenos-aires.hero.date": "11-12-13",
   "buenos-aires.hero.month": "AGOSTO",
@@ -77,5 +77,5 @@
   "buenos-aires.faqs.6.content": "<p>Nuestro objetivo con ETH Latam es fomentar la coordinación descentralizada de una eventos basados ​​en Ethereum. Naturalmente, habrá muchos más eventos, fiestas y actividades durante la semana de ETH Latam.</p><p>Si deseas organizar tu propio side event, completa <a href='https://docs.google.com/forms/d/e/1FAIpQLSeMF0NTey0Dgq8_74e6Ddc9NU2ISTguiHH0_mM8EpYRdhbGIw/viewform'>este formulario</a></p>",
   "buenos-aires.faqs.7.title": "¿Preguntas o ideas?",
   "buenos-aires.faqs.7.content": "¿Tienes alguna pregunta o idea que quisieras sugerir? Envíanos un correo electrónico a <a href='mailto:hello@ethlatam.org'>hello@ethlatam.org</a>"
-  
+
 }
