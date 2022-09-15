@@ -8,6 +8,7 @@ import logo from '../assets/logo.svg'
 import loopArg from '../assets/carousel-ba.png'
 import loopCol from '../assets/carousel-bog.png'
 
+import colombia from '../assets/flags/co.svg'
 
 const Hero = ({ heroImg }) => {
   const edition = localStorage.getItem('edition')
@@ -39,9 +40,15 @@ const Hero = ({ heroImg }) => {
           target="_blank"
         >
           <FormattedMessage id={edition + '.hero.button'} />
+          {edition === 'bogota' && <Country src={colombia} />}
         </Button>
       </Container>
-      <Loop reverse={true} content={<img alt="img" src={edition === 'bogota' ? loopCol : loopArg} />} />
+      <Loop
+        reverse={true}
+        content={
+          <img alt="img" src={edition === 'bogota' ? loopCol : loopArg} />
+        }
+      />
     </HeroSection>
   )
 }
@@ -72,6 +79,15 @@ const HeroSection = styled.section`
     justify-content: center;
     flex-wrap: wrap;
   }
+`
+
+const Country = styled.img`
+  height: 15px !important;
+  display: inline;
+  width: 24px !important;
+  margin: 0 0 0 10px !important;
+  padding: 0 !important;
+  border-radius: 2px;
 `
 
 const Container = styled.div`
@@ -107,7 +123,6 @@ const Box = styled.div`
 const Button = styled.a`
   background: transparent;
   font-family: 'Pixel';
-  height: 40px;
   margin: 72px auto 100px auto;
   text-decoration: none;
   padding: 18px 36px;
