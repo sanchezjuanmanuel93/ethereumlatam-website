@@ -40,7 +40,6 @@ const Hero = ({ heroImg }) => {
           target="_blank"
         >
           <FormattedMessage id={edition + '.hero.button'} />
-          {edition === 'bogota' && <Country src={colombia} />}
         </Button>
       </Container>
       <Loop

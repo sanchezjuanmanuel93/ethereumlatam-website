@@ -111,7 +111,7 @@ const Speakers = () => {
               <div>
                 <h1>Manu Alzuru</h1>
                 <Subtitile>
-                  <Country src={españa} />
+                  <Country src={venezuela} />
                   <h2>DoinGudHQ</h2>
                 </Subtitile>
               </div>
@@ -195,7 +195,7 @@ const Speakers = () => {
                 <h1>Solange Gueiros</h1>
                 <Subtitile>
                   <Country src={brasil} />
-                  <h2>Chainlink</h2>
+                  <h2>Ethereum Brasil y Chainlink Labs</h2>
                 </Subtitile>
               </div>
             </Content>
@@ -226,7 +226,7 @@ const Speakers = () => {
               <div>
                 <h1>Angela Ocando</h1>
                 <Subtitile>
-                  <Country src={colombia} />
+                  <Country src={venezuela} />
                   <h2>Platzi</h2>
                 </Subtitile>
               </div>
@@ -292,7 +292,7 @@ const Speakers = () => {
               <div>
                 <h1>Tobal García</h1>
                 <Subtitile>
-                  <Country src={colombia} />
+                  <Country src={venezuela} />
                   <h2>Maker Growth</h2>
                 </Subtitile>
               </div>
