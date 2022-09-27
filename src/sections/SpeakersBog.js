@@ -762,7 +762,7 @@ const Speakers = () => {
                 <h1>Jordi Baylina</h1>
                 <Subtitile className="withPadding">
                   <Country src={suiza} />
-                  <h2>Giveth.io</h2>
+                  <h2>Polygon Technologies</h2>
                 </Subtitile>
               </div>
             </Content>

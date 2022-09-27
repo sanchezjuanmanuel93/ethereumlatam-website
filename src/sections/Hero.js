@@ -22,6 +22,12 @@ const Hero = ({ heroImg }) => {
             <FormattedMessage id={edition + '.hero.date'} />
             <br />
             <FormattedMessage id={edition + '.hero.year'} />
+            {edition === 'bogota' && (
+              <>
+                <br />
+                <FormattedMessage id={edition + '.hero.hour'} />
+              </>
+            )}
           </p>
 
           <img alt="img" src={logo} />
