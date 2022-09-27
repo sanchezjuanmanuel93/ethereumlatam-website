@@ -430,22 +430,7 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content
-              className="vipContent"
-              target="_blank"
-              href="https://twitter.com/maurotov"
-            >
-              <img style={{ objectPosition: '100% 39%' }} src={mauricio} />
-              <div>
-                <h1>Mauricio Tovar</h1>
-                <Subtitile className="withPadding">
-                  <Country src={colombia} />
-                  <h2>Tropykus Finance</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
+
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -526,22 +511,6 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content
-              className="vipContent"
-              target="_blank"
-              href="https://twitter.com/ariiellus"
-            >
-              <img style={{ objectPosition: '100% 39%' }} src={ariel} />
-              <div>
-                <h1>@ariiellus</h1>
-                <Subtitile className="withPadding">
-                  <Country src={mexico} />
-                  <h2>Ethereum Mexico, Arch Finance</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -574,6 +543,23 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="vip">
+            <Content
+              className="vipContent"
+              target="_blank"
+              href="https://twitter.com/ariiellus"
+            >
+              <img style={{ objectPosition: '100% 39%' }} src={ariel} />
+              <div>
+                <h1>@ariiellus</h1>
+                <Subtitile className="withPadding">
+                  <Country src={mexico} />
+                  <h2>Ethereum Mexico, Arch Finance</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -651,6 +637,22 @@ const Speakers = () => {
                 <Subtitile>
                   <Country src={mexico} />
                   <h2>Ethereum Foundation - Test Developer</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="vip">
+            <Content
+              className="vipContent"
+              target="_blank"
+              href="https://twitter.com/maurotov"
+            >
+              <img style={{ objectPosition: '100% 39%' }} src={mauricio} />
+              <div>
+                <h1>Mauricio Tovar</h1>
+                <Subtitile className="withPadding">
+                  <Country src={colombia} />
+                  <h2>Tropykus Finance</h2>
                 </Subtitile>
               </div>
             </Content>
