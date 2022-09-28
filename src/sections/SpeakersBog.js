@@ -538,7 +538,7 @@ const Speakers = () => {
                 <h1>Martin Triay</h1>
                 <Subtitile>
                   <Country src={argentina} />
-                  <h2>OpenZeppelin</h2>
+                  <h2>OpenZeppelin.</h2>
                 </Subtitile>
               </div>
             </Content>
