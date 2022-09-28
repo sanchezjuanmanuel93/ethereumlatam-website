@@ -151,7 +151,7 @@ const Speakers = () => {
               <img style={{ objectPosition: '100% 20%' }} src={camilaR} />
               <div>
                 <h1>CAMILA RUSSO</h1>
-                <h2>The Defiant</h2>
+                <h2>The Defiant.</h2>
               </div>
             </Content>
           </BoxItem>
