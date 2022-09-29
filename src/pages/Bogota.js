@@ -5,6 +5,7 @@ import SpeakersBog from '../sections/SpeakersBog'
 import Faqs from '../sections/Faqs'
 import TheOtherSide from '../sections/TheOtherSide'
 import Venue from '../sections/Venue'
+import Agenda from '../sections/Agenda'
 import Footer from '../sections/Footer'
 
 function Index () {
@@ -15,6 +16,7 @@ function Index () {
             <Hero />
             <EthToLatam />
             <SpeakersBog />
+            <Agenda />
             <Venue/>
             <Faqs/>
             <Footer />
