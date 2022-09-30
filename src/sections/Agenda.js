@@ -120,6 +120,18 @@ const Schedule = () => {
               </h2>
             </Date>
             <Talks>
+            <Entry>
+              <Hours>9:00 - 9:30</Hours>
+
+                <div>
+
+                  <h3>Apertura</h3>
+                  <p>
+                    Aya Miyaguchi, Ethereum Foundation
+                  </p>
+                </div>
+
+            </Entry>
               <Entry>
                 <Hours>9:30 - 10:00</Hours>
                 <div className="twoColumns">
@@ -509,7 +521,7 @@ const Hours = styled.p`
 `
 
 const Container = styled.div`
-  max-width: 1440px;
+  max-width: 1240px;
   padding: 60px 40px 160px 40px;
   @media only screen and (max-width: 1100px) {
     padding: 0 15px 80px 15px;
