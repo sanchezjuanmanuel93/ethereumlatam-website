@@ -40,6 +40,7 @@ import nicolasG from '../assets/speakersBog/nicolasgallardo.jpg'
 import omar from '../assets/speakersBog/omar.jpeg'
 import anabelen from '../assets/speakersBog/anabelen.jpeg'
 import oscar from '../assets/speakersBog/oscar.png'
+import irais from '../assets/speakersBog/irais.png'
 import mario from '../assets/speakersBog/mario.jpg'
 import diegol from '../assets/speakersBog/diegol.png'
 import ahh from '../assets/speakersBog/ahh.png'
@@ -66,7 +67,6 @@ import dominicana from '../assets/flags/do.svg'
 import costarica from '../assets/flags/cr.svg'
 import chile from '../assets/flags/cl.svg'
 
-
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
   useEffect(() => {
@@ -74,7 +74,7 @@ const Speakers = () => {
   }, [])
   const medium = 700
   return (
-    <SpeakersSection id="speakers">
+    <SpeakersSection id="speakersBog">
       <Container>
         <h1>
           <span className="pixel">S</span>
@@ -299,6 +299,22 @@ const Speakers = () => {
           </BoxItem>
 
 
+          <BoxItem className="vip">
+            <Content
+              className="vipContent"
+              target="_blank"
+              href="https://twitter.com/das_grasshopper"
+            >
+              <img style={{ objectPosition: '100% 39%' }} src={jj} />
+              <div>
+                <h1>JJ Campuzano</h1>
+                <Subtitile className="withPadding">
+                  <Country src={mexico} />
+                  <h2>CypherpunkCitadel DAO</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -315,7 +331,6 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -349,22 +364,7 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-          <BoxItem className="vip">
-            <Content
-              className="vipContent"
-              target="_blank"
-              href="https://twitter.com/das_grasshopper"
-            >
-              <img style={{ objectPosition: '100% 39%' }} src={jj} />
-              <div>
-                <h1>JJ Campuzano</h1>
-                <Subtitile className="withPadding">
-                  <Country src={mexico} />
-                  <h2>CypherpunkCitadel DAO</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
+
           <BoxItem className="importantPerson">
             <Content
               target="_blank"
@@ -489,8 +489,8 @@ const Speakers = () => {
               <div>
                 <h1>Joxes</h1>
                 <Subtitile className="withPadding">
-                <Country src={venezuela} />
-                <h2>DeFi LATAM, L2 en Español, Optimism</h2>
+                  <Country src={venezuela} />
+                  <h2>DeFi LATAM, L2 en Español, Optimism</h2>
                 </Subtitile>
               </div>
             </Content>
@@ -538,7 +538,23 @@ const Speakers = () => {
                 <h1>Martin Triay</h1>
                 <Subtitile>
                   <Country src={argentina} />
-                  <h2>OpenZeppelin.</h2>
+                  <h2>OpenZeppelin</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/irais_reyes"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '100% 50%' }} src={irais} />
+              <div>
+                <h1>Iraís Reyes</h1>
+                <Subtitile>
+                  <Country src={mexico} />
+                  <h2>Diputada del H. Congreso del Estado de Nuevo León</h2>
                 </Subtitile>
               </div>
             </Content>
@@ -568,10 +584,10 @@ const Speakers = () => {
             >
               <img style={{ objectPosition: '100% 50%' }} src={anabelen} />
               <div>
-                <h1>Ana Belén</h1>
+                <h1>Ana Tech</h1>
                 <Subtitile>
-                  <Country src={colombia} />
-                  <h2>HER Dao y Bankless Dao</h2>
+                  <Country src={mexico} />
+                  <h2>Ethereum México, H.E.R. DAO LATAM, BanklessDAO</h2>
                 </Subtitile>
               </div>
             </Content>

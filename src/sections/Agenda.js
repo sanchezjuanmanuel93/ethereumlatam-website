@@ -105,7 +105,7 @@ const Schedule = () => {
   }
 
   return (
-    <ScheduleSection id="agenda" locale={locale}>
+    <ScheduleSection id="agendaBog" locale={locale}>
       <Container>
         <Head>
           <h1>
@@ -120,23 +120,19 @@ const Schedule = () => {
               </h2>
             </Date>
             <Talks>
-            <Entry>
-              <Hours>9:00 - 9:30</Hours>
+              <Entry>
+                <Hours>9:00 - 9:30</Hours>
 
                 <div>
-
                   <h3>Apertura</h3>
-                  <p>
-                    Aya Miyaguchi, Ethereum Foundation
-                  </p>
+                  <p>Aya Miyaguchi, Ethereum Foundation</p>
                 </div>
-
-            </Entry>
+              </Entry>
               <Entry>
                 <Hours>9:30 - 10:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Problemas Reales & Soluciones Reales en Latam.</h3>
                     <p>
                       Diego Fernandez, Secretario de Innovación de la Ciudad de
@@ -146,7 +142,7 @@ const Schedule = () => {
                     </p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Importancia de Privacidad </h3>
                     <p />
                   </div>
@@ -156,12 +152,12 @@ const Schedule = () => {
                 <Hours>10:00 - 10:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>La evolución del dinero. Desde el oro hasta ETH. </h3>
                     <p>Alfredo Roisenzvit, MoonQuant.capital.</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>BrightID, descentralizando la identidad digital</h3>
                     <p>Carlos Mesa, Bright ID</p>
                   </div>
@@ -171,12 +167,12 @@ const Schedule = () => {
                 <Hours>10:30 - 11:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Qué es Ethereum</h3>
                     <p>JJ Campuzano, CypherpunkCitadel Dao</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>La importancia de manejar un full node</h3>
                     <p>Joxes, Researcher y Divulgador</p>
                   </div>
@@ -186,12 +182,12 @@ const Schedule = () => {
                 <Hours>11:00 - 11:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
-                    <h3>Introducción a DeFi</h3>
-                    <p>Romina Sejas, Defi Latam</p>
+                    <p>Sala Amazonía</p>
+                    <h3>dinero ultra sonido </h3>
+                    <p>Justin Drake, Ethereum Foundation</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>
                       La forma final de Ethereum: Proposer Builder Separation,
                       proto y full danksharding
@@ -204,12 +200,12 @@ const Schedule = () => {
                 <Hours>11:30 - 12:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>El poder de la descentralización</h3>
                     <p>Mariano Conti</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Todos vamos a tener NFTs!</h3>
                     <p>Diego Lora, Q'ORI Project</p>
                   </div>
@@ -219,7 +215,7 @@ const Schedule = () => {
                 <Hours>12:00 - 12:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Monedas Estables</h3>
                     <p>
                       Tobal García, Maker Growth + Nadia Alvarez, Maker Dao +
@@ -227,7 +223,7 @@ const Schedule = () => {
                     </p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Cómo participar en la gobernanza de una DAO</h3>
                     <p>
                       Ana HER, Dao y Bankless Dao + Jean de Kleros, board member
@@ -240,12 +236,12 @@ const Schedule = () => {
                 <Hours>13:30 - 14:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Qué es una DAO</h3>
                     <p>Maria Gomez </p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Seguridad para el usuario y estafas comunes</h3>
                     <p>Pablo Sabatella, Defy Education</p>
                   </div>
@@ -255,12 +251,12 @@ const Schedule = () => {
                 <Hours>14:00 - 14:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Introducción a "Zero Knowledge Proof"</h3>
                     <p>Jordi Baylina, Polygon</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Educación Web 3</h3>
                     <p>
                       Panel: Angela, Platzi + Solange (chainlink) + Candu
@@ -274,12 +270,12 @@ const Schedule = () => {
                 <Hours>14:30 -15:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
-                    <h3>Dinero ultra sonido </h3>
-                    <p>Justin Drake, Ethereum Foundation</p>
+                    <p>Sala Amazonía</p>
+                    <h3>Introducción a DeFi</h3>
+                    <p>Romina Sejas, Defi Latam</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Regulación en Crypto</h3>
                     <p>
                       Ana CryptoLawyer + Andres Junge, Notabene + Emilia Campos
@@ -292,12 +288,12 @@ const Schedule = () => {
                 <Hours>15:00 -15:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Los retos del Merge y su trascendencia</h3>
                     <p>Mario Vega, Ethereum Foundation</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>
                       Como armar tu proyecto WEB 3: cómo detectar una
                       oportunidad, levantar capital, armar equipo y lanzarlo
@@ -310,7 +306,7 @@ const Schedule = () => {
                 <Hours>15:30 - 16:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>
                       Escalabilidad de Ethereum: una historia de
                       descentralización
@@ -318,7 +314,7 @@ const Schedule = () => {
                     <p>Omar Espejel, Starknet</p>
                   </div>
                   <div>
-                    <p>Andina</p>
+                    <p>Sala Andina</p>
                     <h3>Qué son los "Public Goods"</h3>
                     <p>
                       Ale Borda, Fifty Years + Cristian Espinoza G. , Cryptex
@@ -332,7 +328,7 @@ const Schedule = () => {
                 <Hours>16:00 - 16:30</Hours>
                 <div>
                   <div>
-                    <p>Amazonía</p>
+                    <p>Sala Amazonía</p>
                     <h3>Futuro de Ethereum</h3>
                     <p>-</p>
                   </div>
@@ -352,12 +348,12 @@ const Schedule = () => {
                 <Hours>9:30 - 10:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Como crear tu primer smart contract</h3>
                     <p>Solange Gueiros</p>
                   </div>
                   <div>
-                    <p>Orinoquía</p>
+                    <p>Sala Orinoquía</p>
                     <h3>Cómo usar L2s por menos Gas Fees</h3>
                     <p>Ahmed Castro</p>
                   </div>
@@ -367,12 +363,12 @@ const Schedule = () => {
                 <Hours>10:00 - 10:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Introducción a solidity</h3>
                     <p>Oscar Barajas</p>
                   </div>
                   <div>
-                    <p>Orinoquía</p>
+                    <p>Sala Orinoquía</p>
                     <h3>Staking en Ethereum: por qué deberías y cómo</h3>
                     <p>Pol Lanski</p>
                   </div>
@@ -382,12 +378,12 @@ const Schedule = () => {
                 <Hours>10:30 - 11:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>SpeedRunEthereum</h3>
                     <p>Carlos @carletex</p>
                   </div>
                   <div>
-                    <p>Orinoquía</p>
+                    <p>Sala Orinoquía</p>
                     <h3>Por qué necesitamos comunicación en Web 3</h3>
                     <p>Jaf, EPNS</p>
                   </div>
@@ -397,7 +393,7 @@ const Schedule = () => {
                 <Hours>11:00 - 11:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Frontend y Web3</h3>
                     <p>Natacha de la Rosa</p>
                   </div>
@@ -407,12 +403,12 @@ const Schedule = () => {
                 <Hours>12:00 - 12:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Tokeniza tu arte</h3>
                     <p>Ahh Sun</p>
                   </div>
                   <div>
-                    <p>Orinoquía</p>
+                    <p>Sala Orinoquía</p>
                     <h3>Como crear un token ERC20</h3>
                     <p>Alejandro Santander</p>
                   </div>
@@ -422,12 +418,12 @@ const Schedule = () => {
                 <Hours>13:30 -14:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Como crear un NFT y publicarlo en un marketplace</h3>
                     <p>Doris Hernandez</p>
                   </div>
                   <div>
-                    <p>Orinoquía</p>
+                    <p>Sala Orinoquía</p>
                     <h3>Como manejar un full nodo en raspberry pi</h3>
                     <p>Diego Losada @ethereumonarm</p>
                   </div>
@@ -437,12 +433,12 @@ const Schedule = () => {
                 <Hours>14:00 - 14:30</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Cómo usar una billetera</h3>
                     <p>Pilar Rodriguez</p>
                   </div>
                   <div>
-                    <p></p>
+                    <p />
                     <h3 />
                     <p />
                   </div>
@@ -452,12 +448,12 @@ const Schedule = () => {
                 <Hours>15:00 -16:00</Hours>
                 <div className="twoColumns">
                   <div>
-                    <p>Caribe</p>
+                    <p>Sala Caribe</p>
                     <h3>Toolkit para desarrollar en Web3</h3>
                     <p>Patricio Palladino</p>
                   </div>
                   <div>
-                    <p></p>
+                    <p />
                     <h3 />
                     <p />
                   </div>

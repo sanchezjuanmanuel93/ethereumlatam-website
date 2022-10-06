@@ -35,17 +35,18 @@ const Tabs = ({ mode }) => {
       <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.about" />
       </Link>
+      <Link
+        to={edition === 'buenos-aires' ? 'speakers' : 'speakersBog'}
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        <FormattedMessage id="navbar.speakers" />
+      </Link>
       {edition === 'buenos-aires' && (
         <>
-          <Link
-            to="speakers"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            <FormattedMessage id="navbar.speakers" />
-          </Link>
+
 
           <Link
             to="sponsors"
@@ -61,11 +62,17 @@ const Tabs = ({ mode }) => {
       <Link to="venue" spy={true} smooth={true} offset={50} duration={500}>
         <FormattedMessage id="navbar.venue" />
       </Link>
+      <Link
+        to={edition === 'buenos-aires' ? 'agenda' : 'agendaBog'}
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        <FormattedMessage id="navbar.schedule" />
+      </Link>
       {edition === 'buenos-aires' && (
         <>
-          <Link to="agenda" spy={true} smooth={true} offset={50} duration={500}>
-            <FormattedMessage id="navbar.schedule" />
-          </Link>
           <Link
             to="theOtherSide"
             spy={true}
