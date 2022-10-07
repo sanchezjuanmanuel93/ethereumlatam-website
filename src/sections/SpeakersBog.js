@@ -5,6 +5,7 @@ import elipse from '../assets/elipse.svg'
 import arrow from '../assets/arrow-down.svg'
 
 import aya from '../assets/speakersBog/Aya.jpeg'
+import vitalik from '../assets/speakers2/vitalik.png'
 import aya2 from '../assets/speakers2/aya.jpeg'
 import pablo from '../assets/speakers2/pablo.jpg'
 import diego from '../assets/speakersBog/DiegoMazo.png'
@@ -86,6 +87,21 @@ const Speakers = () => {
           ers {width >= medium && <Arrow src={arrow} />}
         </h1>
         <BoxWrapper>
+          <BoxItem className="supervip">
+            <Content
+              target="_blank"
+              href="https://twitter.com/VitalikButerin"
+              className="supervipContent"
+            >
+              <img src={vitalik} style={{ objectPosition: '100% 20%' }} />
+              <div>
+                <h1>Vitalik</h1>
+                <Subtitile className="withPadding">
+                  <h2>Ethereum Foundation </h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
           <BoxItem className="vip">
             <Content
               className="vipContent"
@@ -297,7 +313,6 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
-
 
           <BoxItem className="vip">
             <Content
@@ -523,22 +538,6 @@ const Speakers = () => {
                 <Subtitile>
                   <Country src={españa} />
                   <h2>BuidlGuidl</h2>
-                </Subtitile>
-              </div>
-            </Content>
-          </BoxItem>
-          <BoxItem className="importantPerson">
-            <Content
-              target="_blank"
-              href="https://twitter.com/martriay"
-              className="importantPersonContent"
-            >
-              <img style={{ objectPosition: '100% 50%' }} src={martint} />
-              <div>
-                <h1>Martin Triay</h1>
-                <Subtitile>
-                  <Country src={argentina} />
-                  <h2>OpenZeppelin</h2>
                 </Subtitile>
               </div>
             </Content>
