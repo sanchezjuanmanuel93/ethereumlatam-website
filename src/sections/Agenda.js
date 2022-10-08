@@ -121,8 +121,14 @@ const Schedule = () => {
             </Date>
             <Talks>
               <Entry>
-                <Hours>9:00 - 9:30</Hours>
+                <Hours>8:00 - 9:00</Hours>
 
+                <div>
+                  <h3>Acreditación</h3>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>9:00 - 9:30</Hours>
                 <div>
                   <h3>Apertura</h3>
                   <p>Aya Miyaguchi, Ethereum Foundation</p>
@@ -133,18 +139,8 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>Problemas Reales & Soluciones Reales en Latam.</h3>
-                    <p>
-                      Diego Fernandez, Secretario de Innovación de la Ciudad de
-                      Bs. As + Lucas Jolías, Fundador y director de OS City +
-                      Iraís Reyes, Diputada Monterrey + Sergio Bravo, Co Founder
-                      Defiant. Modera: Mauricio Tovar, Tropykus
-                    </p>
-                  </div>
-                  <div>
-                    <p>Sala Andina</p>
-                    <h3>Importancia de Privacidad </h3>
-                    <p />
+                    <h3>Conociendo a Vitalik, Fundador de Ethereum</h3>
+                    <p>Mariano Conti entrevista a Vitalik</p>
                   </div>
                 </div>
               </Entry>
@@ -158,8 +154,8 @@ const Schedule = () => {
                   </div>
                   <div>
                     <p>Sala Andina</p>
-                    <h3>BrightID, descentralizando la identidad digital</h3>
-                    <p>Carlos Mesa, Bright ID</p>
+                    <h3>Por qué necesitamos comunicación en Web 3</h3>
+                    <p>Jaf, EPNS</p>
                   </div>
                 </div>
               </Entry>
@@ -188,11 +184,8 @@ const Schedule = () => {
                   </div>
                   <div>
                     <p>Sala Andina</p>
-                    <h3>
-                      La forma final de Ethereum: Proposer Builder Separation,
-                      proto y full danksharding
-                    </h3>
-                    <p>Ariiellus + Diego , Cryptoversidad</p>
+                    <h3>Todos vamos a tener NFTs!</h3>
+                    <p>Diego Lora, Q'ORI Project</p>
                   </div>
                 </div>
               </Entry>
@@ -201,13 +194,21 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>El poder de la descentralización</h3>
-                    <p>Mariano Conti</p>
+                    <h3>Problemas Reales & Soluciones Reales en Latam</h3>
+                    <p>
+                      Diego Fernandez, Secretario de Innovación de la Ciudad de
+                      Bs. As + Lucas Jolías, Fundador y director de OS City +
+                      Iraís Reyes, Diputada Monterrey + Sergio Bravo, Co Founder
+                      Defiant. Modera: Mauricio Tovar, Tropykus
+                    </p>
                   </div>
                   <div>
                     <p>Sala Andina</p>
-                    <h3>Todos vamos a tener NFTs!</h3>
-                    <p>Diego Lora, Q'ORI Project</p>
+                    <h3>
+                      La forma final de Ethereum: Proposer Builder Separation,
+                      proto y full danksharding
+                    </h3>
+                    <p>Ariiellus + Diego , Cryptoversidad</p>
                   </div>
                 </div>
               </Entry>
@@ -271,8 +272,11 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>Introducción a DeFi</h3>
-                    <p>Romina Sejas, Defi Latam</p>
+                    <h3>
+                      Escalabilidad de Ethereum: una historia de
+                      descentralización
+                    </h3>
+                    <p>Omar Espejel, Starknet</p>
                   </div>
                   <div>
                     <p>Sala Andina</p>
@@ -295,8 +299,8 @@ const Schedule = () => {
                   <div>
                     <p>Sala Andina</p>
                     <h3>
-                      Como armar tu proyecto WEB 3: cómo detectar una
-                      oportunidad, levantar capital, armar equipo y lanzarlo
+                      Algunos ingredientes (sin la receta) para armar un
+                      proyecto Web3
                     </h3>
                     <p>Gabriel Gruber, Exactly</p>
                   </div>
@@ -307,11 +311,8 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>
-                      Escalabilidad de Ethereum: una historia de
-                      descentralización
-                    </h3>
-                    <p>Omar Espejel, Starknet</p>
+                    <h3>Introducción a DeFi</h3>
+                    <p>Romina Sejas, Defi Latam</p>
                   </div>
                   <div>
                     <p>Sala Andina</p>
@@ -329,8 +330,8 @@ const Schedule = () => {
                 <div>
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>Futuro de Ethereum</h3>
-                    <p>-</p>
+                    <h3>El poder de la descentralización</h3>
+                    <p>Mariano Conti</p>
                   </div>
                 </div>
               </Entry>
@@ -345,12 +346,27 @@ const Schedule = () => {
             </Date>
             <Talks>
               <Entry>
-                <Hours>9:30 - 10:00</Hours>
+                <Hours>10:00 - 10:30</Hours>
                 <div className="twoColumns">
                   <div>
                     <p>Sala Caribe</p>
                     <h3>Como crear tu primer smart contract</h3>
                     <p>Solange Gueiros</p>
+                  </div>
+                  <div>
+                    <p>Sala Orinoquía</p>
+                    <h3>SBrightID, descentralizando la identidad digital</h3>
+                    <p>Carlos Mesa, Bright ID</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>10:30 - 11:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Sala Caribe</p>
+                    <h3>Introducción a Scaffold-ETH y SpeedRunEthereum</h3>
+                    <p>Carlos @carletex</p>
                   </div>
                   <div>
                     <p>Sala Orinoquía</p>
@@ -360,13 +376,8 @@ const Schedule = () => {
                 </div>
               </Entry>
               <Entry>
-                <Hours>10:00 - 10:30</Hours>
+                <Hours>11:00 - 11:30</Hours>
                 <div className="twoColumns">
-                  <div>
-                    <p>Sala Caribe</p>
-                    <h3>Introducción a solidity</h3>
-                    <p>Oscar Barajas</p>
-                  </div>
                   <div>
                     <p>Sala Orinoquía</p>
                     <h3>Staking en Ethereum: por qué deberías y cómo</h3>
@@ -375,27 +386,12 @@ const Schedule = () => {
                 </div>
               </Entry>
               <Entry>
-                <Hours>10:30 - 11:00</Hours>
+                <Hours>11:30 - 11:12</Hours>
                 <div className="twoColumns">
-                  <div>
-                    <p>Sala Caribe</p>
-                    <h3>SpeedRunEthereum</h3>
-                    <p>Carlos @carletex</p>
-                  </div>
                   <div>
                     <p>Sala Orinoquía</p>
-                    <h3>Por qué necesitamos comunicación en Web 3</h3>
-                    <p>Jaf, EPNS</p>
-                  </div>
-                </div>
-              </Entry>
-              <Entry>
-                <Hours>11:00 - 11:30</Hours>
-                <div className="twoColumns">
-                  <div>
-                    <p>Sala Caribe</p>
-                    <h3>Frontend y Web3</h3>
-                    <p>Natacha de la Rosa</p>
+                    <h3>Como manejar un full nodo en raspberry pi</h3>
+                    <p>Diego Losada @ethereumonarm</p>
                   </div>
                 </div>
               </Entry>
@@ -407,11 +403,6 @@ const Schedule = () => {
                     <h3>Tokeniza tu arte</h3>
                     <p>Ahh Sun</p>
                   </div>
-                  <div>
-                    <p>Sala Orinoquía</p>
-                    <h3>Como crear un token ERC20</h3>
-                    <p>Alejandro Santander</p>
-                  </div>
                 </div>
               </Entry>
               <Entry>
@@ -422,11 +413,6 @@ const Schedule = () => {
                     <h3>Como crear un NFT y publicarlo en un marketplace</h3>
                     <p>Doris Hernandez</p>
                   </div>
-                  <div>
-                    <p>Sala Orinoquía</p>
-                    <h3>Como manejar un full nodo en raspberry pi</h3>
-                    <p>Diego Losada @ethereumonarm</p>
-                  </div>
                 </div>
               </Entry>
               <Entry>
@@ -435,27 +421,37 @@ const Schedule = () => {
                   <div>
                     <p>Sala Caribe</p>
                     <h3>Cómo usar una billetera</h3>
-                    <p>Pilar Rodriguez</p>
+                    <p>Pilar Rodriguez, Defiant</p>
                   </div>
                   <div>
-                    <p />
-                    <h3 />
-                    <p />
+                    <p>Sala Orinoquía</p>
+                    <h3>Optimism</h3>
+                    <p>Joxes + Axl</p>
                   </div>
                 </div>
               </Entry>
               <Entry>
-                <Hours>15:00 -16:00</Hours>
+                <Hours>14:30 - 15:00</Hours>
                 <div className="twoColumns">
                   <div>
                     <p>Sala Caribe</p>
-                    <h3>Toolkit para desarrollar en Web3</h3>
+                    <h3>Probando tus aplicaciones descentralizadas</h3>
+                    <p>Natacha de la Rosa</p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>15:15 -16:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Sala Caribe</p>
+                    <h3>Desarrollo de Smart Contracts con Harhat</h3>
                     <p>Patricio Palladino</p>
                   </div>
                   <div>
-                    <p />
-                    <h3 />
-                    <p />
+                    <p>Sala Orinoquía</p>
+                    <h3>Como crear un token ERC20</h3>
+                    <p>Alejandro Santander</p>
                   </div>
                 </div>
               </Entry>
