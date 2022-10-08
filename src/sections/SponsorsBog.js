@@ -5,7 +5,9 @@ import { FormattedHTMLMessage } from 'react-intl'
 import ens from '../assets/sponsorsBog/ens.svg'
 import push from '../assets/sponsorsBog/Push.svg'
 import opt from '../assets/sponsorsBog/opt.svg'
+import optEsp from '../assets/sponsorsBog/OPESP.svg'
 import layer from '../assets/sponsorsBog/layer.png'
+import livepeer from '../assets/sponsorsBog/livepeer.svg'
 
 const SponsorsBog = () => {
   const locale =
@@ -25,24 +27,35 @@ const SponsorsBog = () => {
           <FormattedHTMLMessage id="sponsors.title" />
         </h1>
         <Row>
-          <BoxItem className="tierTwo">
+          <BoxItem className="tierOne">
             <BoxInfo>
               <img src={ens} width="150" />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierTwo">
+          <BoxItem className="tierOne">
             <BoxInfo>
-              <img src={layer} width="250" />
+              <img src={livepeer} width="150" />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierTwo">
+          <BoxItem className="tierOne">
             <BoxInfo>
               <img src={opt} height="100" />
             </BoxInfo>
           </BoxItem>
-          <BoxItem className="tierTwo">
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={layer} width="250" />
+            </BoxInfo>
+          </BoxItem>
+
+          <BoxItem className="tierOne">
             <BoxInfo>
               <img src={push} height="70" />
+            </BoxInfo>
+          </BoxItem>
+          <BoxItem className="tierOne">
+            <BoxInfo>
+              <img src={optEsp} height="90" />
             </BoxInfo>
           </BoxItem>
         </Row>

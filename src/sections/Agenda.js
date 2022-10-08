@@ -122,7 +122,6 @@ const Schedule = () => {
             <Talks>
               <Entry>
                 <Hours>8:00 - 9:00</Hours>
-
                 <div>
                   <h3>Acreditación</h3>
                 </div>
@@ -130,6 +129,7 @@ const Schedule = () => {
               <Entry>
                 <Hours>9:00 - 9:30</Hours>
                 <div>
+                  <p>Sala Amazonía</p>
                   <h3>Apertura</h3>
                   <p>Aya Miyaguchi, Ethereum Foundation</p>
                 </div>
@@ -184,23 +184,31 @@ const Schedule = () => {
                   </div>
                   <div>
                     <p>Sala Andina</p>
-                    <h3>Todos vamos a tener NFTs!</h3>
+                    <h3>¡Todos vamos a tener NFTs!</h3>
                     <p>Diego Lora, Q'ORI Project</p>
                   </div>
                 </div>
               </Entry>
               <Entry>
-                <Hours>11:30 - 12:00</Hours>
+                <Hours>11:30 - 11:35</Hours>
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>Problemas Reales & Soluciones Reales en Latam</h3>
+                    <h3>Bienvenida a Bogotá</h3>
                     <p>
-                      Diego Fernandez, Secretario de Innovación de la Ciudad de
-                      Bs. As + Lucas Jolías, Fundador y director de OS City +
-                      Iraís Reyes, Diputada Monterrey + Sergio Bravo, Co Founder
-                      Defiant. Modera: Mauricio Tovar, Tropykus
+                      Alfredo Bateman, Secretario de Desarrollo Económico de
+                      Bogotá
                     </p>
+                  </div>
+                </div>
+              </Entry>
+              <Entry>
+                <Hours>11:35 - 12:00</Hours>
+                <div className="twoColumns">
+                  <div>
+                    <p>Sala Amazonía</p>
+                    <h3>Introducción a DeFi</h3>
+                    <p>Romina Sejas, Defi Latam</p>
                   </div>
                   <div>
                     <p>Sala Andina</p>
@@ -283,7 +291,7 @@ const Schedule = () => {
                     <h3>Regulación en Crypto</h3>
                     <p>
                       Ana CryptoLawyer + Andres Junge, Notabene + Emilia Campos
-                      , MCZ Brasil
+                      , MCZ Brasil. Moderador: Erick Rincon
                     </p>
                   </div>
                 </div>
@@ -311,8 +319,13 @@ const Schedule = () => {
                 <div className="twoColumns">
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>Introducción a DeFi</h3>
-                    <p>Romina Sejas, Defi Latam</p>
+                    <h3>Problemas Reales & Soluciones Reales en Latam</h3>
+                    <p>
+                      Diego Fernandez, Secretario de Innovación de la Ciudad de
+                      Bs. As + Lucas Jolías, Fundador y director de OS City +
+                      Iraís Reyes, Diputada Monterrey + Sergio Bravo, Co Founder
+                      Defiant. Modera: Mauricio Tovar, Tropykus
+                    </p>
                   </div>
                   <div>
                     <p>Sala Andina</p>
@@ -386,8 +399,13 @@ const Schedule = () => {
                 </div>
               </Entry>
               <Entry>
-                <Hours>11:30 - 11:12</Hours>
+                <Hours>11:30 - 12:00</Hours>
                 <div className="twoColumns">
+                  <div>
+                    <p>Sala Caribe</p>
+                    <h3>Introducción a solidity</h3>
+                    <p>Oscar Barajas, Platzi</p>
+                  </div>
                   <div>
                     <p>Sala Orinoquía</p>
                     <h3>Como manejar un full nodo en raspberry pi</h3>
@@ -402,6 +420,11 @@ const Schedule = () => {
                     <p>Sala Caribe</p>
                     <h3>Tokeniza tu arte</h3>
                     <p>Ahh Sun</p>
+                  </div>
+                  <div>
+                    <p>Sala Orinoquía</p>
+                    <h3>Construyendo infraestructura en web3 con Livepeer</h3>
+                    <p>Angela Ocando, Platzi</p>
                   </div>
                 </div>
               </Entry>
@@ -425,8 +448,8 @@ const Schedule = () => {
                   </div>
                   <div>
                     <p>Sala Orinoquía</p>
-                    <h3>Optimism</h3>
-                    <p>Joxes + Axl</p>
+                    <h3>Como crear un token ERC20</h3>
+                    <p>Sebastián Perez, mightyblock.co</p>
                   </div>
                 </div>
               </Entry>
@@ -437,6 +460,14 @@ const Schedule = () => {
                     <p>Sala Caribe</p>
                     <h3>Probando tus aplicaciones descentralizadas</h3>
                     <p>Natacha de la Rosa</p>
+                  </div>
+                  <div>
+                    <p>Sala Orinoquía</p>
+                    <h3>Introducción a Optimism</h3>
+                    <p>
+                      Joxes DefiLatam/ L2 es Esapñol / OptimismESP Axlvaz
+                      DefiLatam/ 0xRosChain/ OptimismESP
+                    </p>
                   </div>
                 </div>
               </Entry>
