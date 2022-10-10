@@ -37,16 +37,23 @@ const Hero = ({ heroImg }) => {
             <FormattedMessage id={edition + '.hero.country'} />
           </p>
         </Box>
-        <Button
-          href={
-            edition === 'buenos-aires'
-              ? 'https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists'
-              : 'https://ethlatam.ticketh.xyz/'
-          }
-          target="_blank"
-        >
-          <FormattedMessage id={edition + '.hero.button'} />
-        </Button>
+        {edition === 'buenos-aires' ? (
+          <Button
+            href="https://www.youtube.com/channel/UCYZOSfxEQ4hmocHqjZAy_dw/playlists"
+            target="_blank"
+          >
+            <FormattedMessage id={edition + '.hero.button'} />
+          </Button>
+        ) : (
+          <div className="streaming-buttons">
+            <Button href="https://youtu.be/tjOjDdm3V4A" target="_blank">
+              Streaming sala Amazonia
+            </Button>
+            <Button href="https://youtu.be/gvYaRfQgBKg" target="_blank">
+              Streaming sala Andina
+            </Button>
+          </div>
+        )}
       </Container>
       <Loop
         reverse={true}
@@ -140,12 +147,12 @@ const Button = styled.a`
   box-sizing: border-box;
   box-shadow: -6px 6px 0px 1px #faf7f5;
   display: block;
-  width: 366px;
+  width: 395px;
   height: 61px;
   @media only screen and (max-width: 870px) {
     display: block;
     width: 254px;
-    height: 82px;
+    height: 102px;
     margin: 72px auto 50px auto;
   }
   @media only screen and (max-width: 700px) {

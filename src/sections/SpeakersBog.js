@@ -50,6 +50,13 @@ import pol from '../assets/speakersBog/pol.jpg'
 import emilia from '../assets/speakersBog/emilia.jpeg'
 import gaby from '../assets/speakersBog/gaby.jpg'
 import doris from '../assets/speakersBog/doris.jpeg'
+import pilar from '../assets/speakersBog/pilar.jpeg'
+import eric from '../assets/speakersBog/Eric.jpg'
+import candela from '../assets/speakersBog/Candela.jpg'
+import sebas from '../assets/speakersBog/sebasperez.jpg'
+import maria from '../assets/speakersBog/maria.jpg'
+import lola from '../assets/speakersBog/lola.jpg'
+import pato from '../assets/speakersBog/pato.png'
 
 import japon from '../assets/flags/jp.svg'
 import argentina from '../assets/flags/ar.svg'
@@ -764,6 +771,94 @@ const Speakers = () => {
                 <Subtitile>
                   <Country src={honduras} />
                   <h2>Dippi</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/rrodriguezpilar"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '66% 50%' }} src={pilar} />
+              <div>
+                <h1>Pilar Rodríguez</h1>
+                <Subtitile>
+                  <Country src={argentina} />
+                  <h2>Defiant Wallet</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/ErikSuazo2"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '66% 50%' }} src={eric} />
+              <div>
+                <h1>Erik Suazo</h1>
+                <Subtitile>
+                  <Country src={honduras} />
+                  <h2>Hoplite Zapper y Miembro de Optimism Español</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content
+              target="_blank"
+              href="https://twitter.com/cryptocandu"
+              className="importantPersonContent"
+            >
+              <img style={{ objectPosition: '66% 50%' }} src={candela} />
+              <div>
+                <h1>Candela Fazzano</h1>
+                <Subtitile>
+                  <Country src={argentina} />
+                  <h2>CM DeFi Latam Co-leading Mujeres en Crypto</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={sebas} />
+              <div>
+                <h1>Sebas Pérez</h1>
+                <Subtitile>
+                  <h2>mightyblock.co</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={lola} />
+              <div>
+                <h1>Lola Rodríguez</h1>
+                <Subtitile />
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={pato} />
+              <div>
+                <h1>Patricio Palladino</h1>
+                <Subtitile />
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={maria} />
+              <div>
+                <h1>María Gómez</h1>
+                <Subtitile>
+                  <h2>interchain.io</h2>
                 </Subtitile>
               </div>
             </Content>

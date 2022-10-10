@@ -236,7 +236,7 @@ const Schedule = () => {
                     <h3>Cómo participar en la gobernanza de una DAO</h3>
                     <p>
                       Ana HER, Dao y Bankless Dao + Jean de Kleros, board member
-                      de PoH + Eric Suazo Optimism. Modera Nico Gallardo.
+                      de PoH + Eric Suazo Optimism en español. Modera Nico Gallardo.
                     </p>
                   </div>
                 </div>
