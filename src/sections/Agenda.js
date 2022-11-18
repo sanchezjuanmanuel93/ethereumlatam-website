@@ -333,7 +333,7 @@ const Schedule = () => {
                     <p>
                       Ale Borda, Fifty Years + Cristian Espinoza G. , Cryptex
                       Finance & Ethereum Honduras + Mateo Daza, Giveth.io + Manu
-                      Alzuru, DoinGudHQ
+                      Alzuru, DoinGudHQ. Modera: Daniel Marquez
                     </p>
                   </div>
                 </div>
@@ -343,8 +343,7 @@ const Schedule = () => {
                 <div>
                   <div>
                     <p>Sala Amazonía</p>
-                    <h3>El poder de la descentralización</h3>
-                    <p>Mariano Conti</p>
+                    <h3>Presentación Comunidades Latam</h3>
                   </div>
                 </div>
               </Entry>

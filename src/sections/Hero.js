@@ -22,12 +22,6 @@ const Hero = ({ heroImg }) => {
             <FormattedMessage id={edition + '.hero.date'} />
             <br />
             <FormattedMessage id={edition + '.hero.year'} />
-            {edition === 'bogota' && (
-              <>
-                <br />
-                <FormattedMessage id={edition + '.hero.hour'} />
-              </>
-            )}
           </p>
 
           <img alt="img" src={logo} />
@@ -45,14 +39,12 @@ const Hero = ({ heroImg }) => {
             <FormattedMessage id={edition + '.hero.button'} />
           </Button>
         ) : (
-          <div className="streaming-buttons">
-            <Button href="https://youtu.be/tjOjDdm3V4A" target="_blank">
-              Streaming sala Amazonia
-            </Button>
-            <Button href="https://youtu.be/gvYaRfQgBKg" target="_blank">
-              Streaming sala Andina
-            </Button>
-          </div>
+          <Button
+            href="https://www.youtube.com/watch?v=gvYaRfQgBKg&list=PLXLZg2ObgxWG0aHsrXBTYJu21Fb0wfoWi"
+            target="_blank"
+          >
+            <FormattedMessage id={edition + '.hero.button'} />
+          </Button>
         )}
       </Container>
       <Loop

@@ -57,6 +57,7 @@ import sebas from '../assets/speakersBog/sebasperez.jpg'
 import maria from '../assets/speakersBog/maria.jpg'
 import lola from '../assets/speakersBog/lola.jpg'
 import pato from '../assets/speakersBog/pato.png'
+import patow from '../assets/speakersBog/patow.jpeg'
 
 import japon from '../assets/flags/jp.svg'
 import argentina from '../assets/flags/ar.svg'
@@ -74,6 +75,17 @@ import uk from '../assets/flags/gb.svg'
 import dominicana from '../assets/flags/do.svg'
 import costarica from '../assets/flags/cr.svg'
 import chile from '../assets/flags/cl.svg'
+
+
+import bateman from '../assets/speakersBog/bateman.jpeg'
+import carlatex from '../assets/speakersBog/carletex.jpeg'
+import erick from '../assets/speakersBog/erick.jpeg'
+import sebap from '../assets/speakersBog/sebasperez.jpeg'
+import amehd from '../assets/speakersBog/amehd.jpeg'
+import axl  from '../assets/speakersBog/Axl.jpeg'
+import ericsuazo from '../assets/speakersBog/ericsuazo.jpeg'
+import guille from '../assets/speakersBog/GuillermoGoncalvez.jpeg'
+import danielm from '../assets/speakersBog/danielmarquez.jpeg'
 
 const Speakers = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -406,12 +418,12 @@ const Speakers = () => {
           <BoxItem className="vip">
             <Content
               target="_blank"
-              href="https://twitter.com/nanexcool"
+              href="https://twitter.com/worthalter?lang=es"
               className="vipContent"
             >
-              <img src={mariano} />
+              <img style={{ objectPosition: '100% 23%' }} src={patow} />
               <div>
-                <h1>Mariano Conti</h1>
+                <h1>Patricio Wolthalter</h1>
 
                 <Subtitile className="withPadding">
                   <Country src={argentina} />
@@ -879,11 +891,99 @@ const Speakers = () => {
               </div>
             </Content>
           </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://twitter.com/alfredobateman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={bateman} />
+              <div>
+                <h1>Alfredo Bateman</h1>
+                <Subtitile />
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={danielm} />
+              <div>
+                <h1>Daniel Marquez</h1>
+                <Subtitile>
+                  <Country src={colombia} />
+                  <h2>Koyomaki</h2>
+                </Subtitile>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '30% 50%' }} src={guille} />
+              <div>
+                <h1>Guillermo Goncalvez</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={ericsuazo} />
+              <div>
+                <h1>Eric Suazo</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={axl} />
+              <div>
+                <h1>Axl</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={amehd} />
+              <div>
+                <h1>Ahmed Castro</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={sebap} />
+              <div>
+                <h1>Sebastián Perez</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={erick} />
+              <div>
+                <h1>Erick Rincón Cárdenas</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
+          <BoxItem className="importantPerson">
+            <Content target="_blank" href="https://ethlatam.org" className="importantPersonContent">
+              <img style={{ objectPosition: '66% 50%' }} src={carlatex} />
+              <div>
+                <h1>Carletex</h1>
+                <Subtitile/>
+              </div>
+            </Content>
+          </BoxItem>
         </BoxWrapper>
       </Container>
     </SpeakersSection>
   )
 }
+
+
+
+
 
 const SpeakersSection = styled.section`
   background: #0b0c0d;
